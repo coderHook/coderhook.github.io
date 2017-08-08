@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Pedro Abel Diaz'
 SITENAME = 'Datascience CoderHook'
-SITEURL = 'http://localhost:8000'
+SITEURL = 'http://coderhook.github.io'
 
 TIMEZONE = 'Europe/Paris'
 
@@ -13,7 +13,7 @@ DEFAULT_LANG = 'en'
 PATH = 'content'
 
 # Appearance
-TYPOGRIFY = True
+TYPOGRIFY = False
 THEME = 'themes/pelican-elegant'
 DEFAULT_PAGINATION = False
 
