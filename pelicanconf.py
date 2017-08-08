@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Pedro Abel Diaz'
 SITENAME = 'Datascience CoderHook'
-SITEURL = 'http://coderhook.github.io'
+SITEURL = 'http://localhost:8000'
 
 TIMEZONE = 'Europe/Paris'
 
