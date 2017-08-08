@@ -10,7 +10,7 @@ TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'en'
 
-PATH = 'content'
+#PATH = 'content'
 
 # Appearance
 TYPOGRIFY = False
