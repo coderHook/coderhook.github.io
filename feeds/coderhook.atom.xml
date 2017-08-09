@@ -3995,7 +3995,7 @@ RERERERU97h4JSIiIiIiorr3Hy1KC6NlSCU5AAAAAElFTkSuQmCC
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="python firsts"></category></entry><entry><title>First Time Using MatplotLib</title><link href="http://coderhook.github.io/Plotting%20data%20with%20different%20plots,%20hist,%20linear%20and%20scatter%20plot." rel="alternate"></link><published>2017-03-14T20:00:00+01:00</published><updated>2017-03-14T20:00:00+01:00</updated><author><name>coderHook</name></author><id>tag:coderhook.github.io,2017-03-14:/Plotting data with different plots, hist, linear and scatter plot.</id><summary type="html">
+</content><category term="python"></category><category term="matplotlib"></category><category term="data visualization"></category></entry><entry><title>First Time Using MatplotLib</title><link href="http://coderhook.github.io/Plotting%20data%20with%20different%20plots,%20hist,%20linear%20and%20scatter%20plot." rel="alternate"></link><published>2017-03-14T20:00:00+01:00</published><updated>2017-03-14T20:00:00+01:00</updated><author><name>coderHook</name></author><id>tag:coderhook.github.io,2017-03-14:/Plotting data with different plots, hist, linear and scatter plot.</id><summary type="html">
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
@@ -6488,4 +6488,4 @@ GILQBgDAEIQ2AACGILQBADDE/wIbpMNp0rG+eAAAAABJRU5ErkJggg==
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="Matplotlib"></category></entry></feed>
+</content><category term="Matplotlib"></category><category term="Python"></category><category term="Data Visualization"></category></entry></feed>
