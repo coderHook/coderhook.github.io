@@ -1,0 +1,7 @@
+Title: First Time Using MatplotLib
+Slug: Plotting data with different plots, hist, linear and scatter plot.
+Date: 2017-03-14 20:00
+Category: posts, matplotlib
+Tags: Matplotlib,
+author: coderHook
+Summary: In this post we cover 3 of the most useful plots that we can use using matplotlib, for this we will analyze a movie review dataset in order to get some interesting insights.
