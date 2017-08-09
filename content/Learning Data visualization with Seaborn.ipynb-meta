@@ -1,0 +1,15 @@
+Title: Learning Data Visualization with Seaborn and Python.
+Slug: learning seaborn
+Date: 2017-03-03 22:00
+Category: Data Visualization
+Tags: Python, Data Visualization, Seaborn, Matplotlib
+Author: coderHook
+Summary: In this project, we are going to present some samples on how to use seaborn to get a better visualization.
+- We are going to cover:
+    - Creating an Histogram.
+    - Generating a Density Plot.
+    - Modifying the Appearence of the plots.
+    - Conditional Distributions Using A Single Condition.
+    - Creating Conditional Plots Using Two Conditions.
+    - Creating Conditional Plots Using Three Conditions.
+    - Adding a Legend

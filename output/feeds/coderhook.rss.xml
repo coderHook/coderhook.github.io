@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Datascience CoderHook - coderHook</title><link>https://coderhook.github.io/</link><description></description><lastBuildDate>Tue, 08 Aug 2017 20:00:00 +0200</lastBuildDate><item><title>Visualizing the Gender Gap</title><link>https://coderhook.github.io/Lets%20see%20how%20the%20gender%20gap%20affects%20on%20the%20studies.</link><description>
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">coderHook</dc:creator><pubDate>Tue, 08 Aug 2017 20:00:00 +0200</pubDate><guid isPermaLink="false">tag:coderhook.github.io,2017-08-08:/Lets see how the gender gap affects on the studies.</guid><category>python</category><category>matplotlib</category><category>data visualization</category></item><item><title>Predicting Board Games Reviews using Linear Regression.</title><link>https://coderhook.github.io/predicting%20board%20games%20reviews%20lr</link><description>
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="Predicting-Board-Games-Reviews"&gt;Predicting Board Games Reviews&lt;a class="anchor-link" href="#Predicting-Board-Games-Reviews"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="In-this-project-we-are-going-to-first,-see-how-to-pick-a-metric-error-for-our-model,-we-are-going-to-work-with-clusters-and-check-for-correlations,-and-finally-we-will-create-a-model-for-our-predictions."&gt;In this project we are going to first, see how to pick a metric error for our model, we are going to work with clusters and check for correlations, and finally we will create a model for our predictions.&lt;a class="anchor-link" href="#In-this-project-we-are-going-to-first,-see-how-to-pick-a-metric-error-for-our-model,-we-are-going-to-work-with-clusters-and-check-for-correlations,-and-finally-we-will-create-a-model-for-our-predictions."&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">coderHook</dc:creator><pubDate>Thu, 06 Jul 2017 22:00:00 +0200</pubDate><guid isPermaLink="false">tag:coderhook.github.io,2017-07-06:/predicting board games reviews lr</guid><category>Python</category><category>Linear Regression</category><category>Statistics</category></item><item><title>How to Win at Jeopardy using Python and our knowledge in statistics.</title><link>https://coderhook.github.io/predicting%20jeopardy%20game%20questions</link><description>
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="Winning-at-Jeopardy-Game-(part-1/2)"&gt;Winning at Jeopardy Game (part 1/2)&lt;a class="anchor-link" href="#Winning-at-Jeopardy-Game-(part-1/2)"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h4 id="Jeopardy!-es-un-concurso-de-televisión-estadounidense-creado-por-Merv-Griffin.-Es-un-concurso-de-conocimientos-con-preguntas-sobre-numerosos-temas-como-historia,-idiomas,-literatura,-cultura-popular,-bellas-artes,-ciencia,-geografía,-y-deportes.-Consiste-en-que-uno-de-los-tres-concursantes-elige-uno-de-los-paneles-del-tablero-de-juego,-el-cual,-al-ser-descubierto,-revela-una-pista-en-forma-de-respuesta;-los-concursantes-entonces-tienen-que-dar-sus-respuestas-en-forma-de-una-pregunta."&gt;Jeopardy! es un concurso de televisión estadounidense creado por Merv Griffin. Es un concurso de conocimientos con preguntas sobre numerosos temas como historia, idiomas, literatura, cultura popular, bellas artes, ciencia, geografía, y deportes. Consiste en que uno de los tres concursantes elige uno de los paneles del tablero de juego, el cual, al ser descubierto, revela una pista en forma de respuesta; los concursantes entonces tienen que dar sus respuestas en forma de una pregunta.&lt;a class="anchor-link" href="#Jeopardy!-es-un-concurso-de-televisión-estadounidense-creado-por-Merv-Griffin.-Es-un-concurso-de-conocimientos-con-preguntas-sobre-numerosos-temas-como-historia,-idiomas,-literatura,-cultura-popular,-bellas-artes,-ciencia,-geografía,-y-deportes.-Consiste-en-que-uno-de-los-tres-concursantes-elige-uno-de-los-paneles-del-tablero-de-juego,-el-cual,-al-ser-descubierto,-revela-una-pista-en-forma-de-respuesta;-los-concursantes-entonces-tienen-que-dar-sus-respuestas-en-forma-de-una-pregunta."&gt;¶&lt;/a&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">coderHook</dc:creator><pubDate>Tue, 04 Jul 2017 22:00:00 +0200</pubDate><guid isPermaLink="false">tag:coderhook.github.io,2017-07-04:/predicting jeopardy game questions</guid><category>Python</category><category>Linear Regression</category><category>Statistics</category></item><item><title>Movie Review Analysis: Making predictions with the data.</title><link>https://coderhook.github.io/Using%20Linear%20Regression%20to%20see%20how%20accurate%20are%20our%20predictions.</link><description>
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="Movie-Reviews-Analysis:-Statistics-analisis,-Visualising-results-and-getting-Predictions."&gt;Movie Reviews Analysis: Statistics analisis, Visualising results and getting Predictions.&lt;a class="anchor-link" href="#Movie-Reviews-Analysis:-Statistics-analisis,-Visualising-results-and-getting-Predictions."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="In-this-project-We-will-continue-with-the-analysis-of-the-movie-review,-but-this-time-we-are-going-to-use-statistics-to-programm-manually-in-python-the-linear-regression-and-see-how-far-away-the-data-is-from-the-prediction,-so-can-see-our-accuracy."&gt;In this project We will continue with the analysis of the movie review, but this time we are going to use statistics to programm manually in python the linear regression and see how far away the data is from the prediction, so can see our accuracy.&lt;a class="anchor-link" href="#In-this-project-We-will-continue-with-the-analysis-of-the-movie-review,-but-this-time-we-are-going-to-use-statistics-to-programm-manually-in-python-the-linear-regression-and-see-how-far-away-the-data-is-from-the-prediction,-so-can-see-our-accuracy."&gt;¶&lt;/a&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">coderHook</dc:creator><pubDate>Tue, 13 Jun 2017 20:00:00 +0200</pubDate><guid isPermaLink="false">tag:coderhook.github.io,2017-06-13:/Using Linear Regression to see how accurate are our predictions.</guid><category>python</category><category>matplotlib</category><category>data visualization</category><category>Statistics</category><category>data analysis</category></item><item><title>Descriptive Statistics with Python and Pandas.</title><link>https://coderhook.github.io/Descriptive%20Statistics</link><description>
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="Using-Descriptive-Statitics-with-Python-and-Pandas."&gt;Using Descriptive Statitics with Python and Pandas.&lt;a class="anchor-link" href="#Using-Descriptive-Statitics-with-Python-and-Pandas."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;In this notebook we are going to calculate the mean, Variance and standard deviation, CoVariance and Correlation and we are going to see it through some data visualizations to understand more in deep what we are doing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">coderHook</dc:creator><pubDate>Sat, 10 Jun 2017 21:00:00 +0200</pubDate><guid isPermaLink="false">tag:coderhook.github.io,2017-06-10:/Descriptive Statistics</guid><category>Python</category><category>Pandas</category><category>Statistics</category></item><item><title>Creating Relations with SQL and Python</title><link>https://coderhook.github.io/proj%20sqlite3%20and%20python</link><description>
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="Creating-Relations-in-SQL-and-Python"&gt;Creating Relations in SQL and Python&lt;a class="anchor-link" href="#Creating-Relations-in-SQL-and-Python"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="In-this-project-we-are-going-to-create-relations-using-Sqlite3-and-python,-we-are-going-to:"&gt;In this project we are going to create relations using Sqlite3 and python, we are going to:&lt;a class="anchor-link" href="#In-this-project-we-are-going-to-create-relations-using-Sqlite3-and-python,-we-are-going-to:"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h4 id="Creating-The-Ceremonies-Table"&gt;Creating The Ceremonies Table&lt;a class="anchor-link" href="#Creating-The-Ceremonies-Table"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="Foreign-Key-Constraints"&gt;Foreign Key Constraints&lt;a class="anchor-link" href="#Foreign-Key-Constraints"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="Setting-Up-One-To-Many"&gt;Setting Up One-To-Many&lt;a class="anchor-link" href="#Setting-Up-One-To-Many"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="Deleting-And-Renaming-Tables"&gt;Deleting And Renaming Tables&lt;a class="anchor-link" href="#Deleting-And-Renaming-Tables"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="Creating-A-Join-Table"&gt;Creating A Join Table&lt;a class="anchor-link" href="#Creating-A-Join-Table"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">coderHook</dc:creator><pubDate>Sat, 10 Jun 2017 21:00:00 +0200</pubDate><guid isPermaLink="false">tag:coderhook.github.io,2017-06-10:/proj sqlite3 and python</guid><category>Python</category><category>SQL</category></item><item><title>Star Wars survey: What version and Who likes it more.</title><link>https://coderhook.github.io/Lets%20see%20who%20and%20what%20version%20of%20star%20wars%20people%20tend%20to%20like%20more.</link><description>
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="Star-Wars-Survey"&gt;Star Wars Survey&lt;a class="anchor-link" href="#Star-Wars-Survey"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="In-this-project-we-are-going-first-to-clean-the-data,-and-then-get-some-interesting-insight-on-the-movies-of-Star-Wars-to-see-what-version-were-more-popular."&gt;In this project we are going first to clean the data, and then get some interesting insight on the movies of Star Wars to see what version were more popular.&lt;a class="anchor-link" href="#In-this-project-we-are-going-first-to-clean-the-data,-and-then-get-some-interesting-insight-on-the-movies-of-Star-Wars-to-see-what-version-were-more-popular."&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">coderHook</dc:creator><pubDate>Fri, 02 Jun 2017 20:00:00 +0200</pubDate><guid isPermaLink="false">tag:coderhook.github.io,2017-06-02:/Lets see who and what version of star wars people tend to like more.</guid><category>python</category><category>matplotlib</category><category>data visualization</category></item><item><title>First Time Using MatplotLib</title><link>https://coderhook.github.io/Plotting%20data%20with%20different%20plots,%20hist,%20linear%20and%20scatter%20plot.</link><description>
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="First-Time-with-Matplotlib."&gt;First Time with Matplotlib.&lt;a class="anchor-link" href="#First-Time-with-Matplotlib."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="An-easy-way-to-visualize-data-using-the-main-tools-availables."&gt;An easy way to visualize data using the main tools availables.&lt;a class="anchor-link" href="#An-easy-way-to-visualize-data-using-the-main-tools-availables."&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;In this notebook we are going to show 3 kind of plots:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Linear Plots: Gave a good sense on the tendency of the data.
+- Scatter Plot: Great to see if the data follow a tendency or if it is too "scatter".
+- Bar Plots: Easy to compare data an see which of the variables appears more frequently or even the distribution of it.
+
+&lt;/code&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">coderHook</dc:creator><pubDate>Tue, 14 Mar 2017 20:00:00 +0100</pubDate><guid isPermaLink="false">tag:coderhook.github.io,2017-03-14:/Plotting data with different plots, hist, linear and scatter plot.</guid><category>Matplotlib</category><category>Python</category><category>Data Visualization</category></item><item><title>Learning Data Visualization with Seaborn and Python.</title><link>https://coderhook.github.io/learning%20seaborn</link><description>
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="Learning-Data-Visualization-with-Seaborn-and-Python."&gt;Learning Data Visualization with Seaborn and Python.&lt;a class="anchor-link" href="#Learning-Data-Visualization-with-Seaborn-and-Python."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="In-this-project,-we-are-going-to-present-some-samples-on-how-to-use-seaborn-to-get-a-better-visualization."&gt;In this project, we are going to present some samples on how to use seaborn to get a better visualization.&lt;a class="anchor-link" href="#In-this-project,-we-are-going-to-present-some-samples-on-how-to-use-seaborn-to-get-a-better-visualization."&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;- We are going to cover:
+    - Creating an Histogram.
+    - Generating a Density Plot.
+    - Modifying the Appearence of the plots.
+    - Conditional Distributions Using A Single Condition.
+    - Creating Conditional Plots Using Two Conditions.
+    - Creating Conditional Plots Using Three Conditions.
+    - Adding a Legend&lt;/code&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">coderHook</dc:creator><pubDate>Fri, 03 Mar 2017 22:00:00 +0100</pubDate><guid isPermaLink="false">tag:coderhook.github.io,2017-03-03:/learning seaborn</guid><category>Python</category><category>Data Visualization</category><category>Seaborn</category><category>Matplotlib</category></item><item><title>Thanksgiving Celebration Insights.</title><link>https://coderhook.github.io/thanksgiving%20insights</link><description>
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="Exploring-the-tendencies-in-Celebrating-Thanksgiving."&gt;Exploring the tendencies in Celebrating Thanksgiving.&lt;a class="anchor-link" href="#Exploring-the-tendencies-in-Celebrating-Thanksgiving."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="In-this-project-we-are-going-to-explore-the-tendencies-that-people-follow-in-this-celebration."&gt;In this project we are going to explore the tendencies that people follow in this celebration.&lt;a class="anchor-link" href="#In-this-project-we-are-going-to-explore-the-tendencies-that-people-follow-in-this-celebration."&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;h4 id="First,-we-are-going-to-check-what-dishes-and-desserts-are-the-favourites-among-people."&gt;First, we are going to check what dishes and desserts are the favourites among people.&lt;a class="anchor-link" href="#First,-we-are-going-to-check-what-dishes-and-desserts-are-the-favourites-among-people."&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="Secondly,-we-are-going-to-get-the-income-and-see-how-it-is-correlated-from-How-far-people-travel-to-celebrate-Thnksgiving."&gt;Secondly, we are going to get the income and see how it is correlated from How far people travel to celebrate Thnksgiving.&lt;a class="anchor-link" href="#Secondly,-we-are-going-to-get-the-income-and-see-how-it-is-correlated-from-How-far-people-travel-to-celebrate-Thnksgiving."&gt;¶&lt;/a&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">coderHook</dc:creator><pubDate>Fri, 03 Mar 2017 22:00:00 +0100</pubDate><guid isPermaLink="false">tag:coderhook.github.io,2017-03-03:/thanksgiving insights</guid><category>Python</category><category>Data Manipulation</category></item></channel></rss>
