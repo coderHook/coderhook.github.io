@@ -45,7 +45,7 @@ SOCIAL = (
 STATIC_PATHS = ['theme/images', 'images']
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))
 TAG_SAVE_AS = ''
-AUTHOR_SAVE_AS = ''
+AUTHOR_SAVE_AS = 'coderHook'
 CATEGORY_SAVE_AS = ''
 USE_SHORTCUT_ICONS = True
 
