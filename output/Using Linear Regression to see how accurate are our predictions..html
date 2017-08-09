@@ -1,0 +1,3815 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="coderHook" />
+        <meta name="copyright" content="coderHook" />
+
+        <meta name="description" content="Movie Reviews Analysis: Statistics analisis, Visualising results and getting Predictions.¶In this project We will continue with the analysis of the movie review, but this time we are going to use statistics to programm manually in python the linear regression and see how far away the data is from the prediction, so can see our accuracy.¶
+" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="python, matplotlib, data visualization, Statistics, data analysis, Data Analysis, " />
+
+<meta property="og:title" content="Movie Review Analysis: Making predictions with the data. "/>
+<meta property="og:url" content="./Using Linear Regression to see how accurate are our predictions." />
+<meta property="og:description" content="Movie Reviews Analysis: Statistics analisis, Visualising results and getting Predictions.¶In this project We will continue with the analysis of the movie review, but this time we are going to use statistics to programm manually in python the linear regression and see how far away the data is from the prediction, so can see our accuracy.¶" />
+<meta property="og:site_name" content="Datascience CoderHook" />
+<meta property="og:article:author" content="coderHook" />
+<meta property="og:article:published_time" content="2017-06-13T20:00:00+02:00" />
+<meta name="twitter:title" content="Movie Review Analysis: Making predictions with the data. ">
+<meta name="twitter:description" content="Movie Reviews Analysis: Statistics analisis, Visualising results and getting Predictions.¶In this project We will continue with the analysis of the movie review, but this time we are going to use statistics to programm manually in python the linear regression and see how far away the data is from the prediction, so can see our accuracy.¶">
+
+        <title>Movie Review Analysis: Making predictions with the data.  · Datascience CoderHook
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./theme/css/custom.css" media="screen">
+        <link rel="shortcut icon" href="./theme/images/favicon.ico" type="image/x-icon" type="image/png" />
+        <link rel="icon" href="./theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon" href="./theme/images/apple-touch-icon.png"  type="image/png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="./theme/images/apple-touch-icon-57x57.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./theme/images/apple-touch-icon-72x72.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./theme/images/apple-touch-icon-76x76.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./theme/images/apple-touch-icon-114x114.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./theme/images/apple-touch-icon-120x120.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./theme/images/apple-touch-icon-144x144.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link href="https://coderhook.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Datascience CoderHook - Full Atom Feed" />
+    </head>
+    <body>
+        <div id="content-sans-footer">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="./"><span class=site-name>Datascience CoderHook</span></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right top-menu">
+                            <li ><a href=".">Home</a></li>
+                            <li ><a href="./categories.html">Categories</a></li>
+                            <li ><a href="./tags.html">Tags</a></li>
+                            <li ><a href="./archives.html">Archives</a></li>
+                            <li><form class="navbar-search" action="./search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span10">
+<article>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+    <h1><a href="./Using Linear Regression to see how accurate are our predictions."> Movie Review Analysis: Making predictions with the data.  </a></h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+
+            
+            <style type="text/css">/*!
+*
+* IPython notebook
+*
+*/
+/* CSS font colors for translated ANSI colors. */
+.ansibold {
+  font-weight: bold;
+}
+/* use dark versions for foreground, to improve visibility */
+.ansiblack {
+  color: black;
+}
+.ansired {
+  color: darkred;
+}
+.ansigreen {
+  color: darkgreen;
+}
+.ansiyellow {
+  color: #c4a000;
+}
+.ansiblue {
+  color: darkblue;
+}
+.ansipurple {
+  color: darkviolet;
+}
+.ansicyan {
+  color: steelblue;
+}
+.ansigray {
+  color: gray;
+}
+/* and light for background, for the same reason */
+.ansibgblack {
+  background-color: black;
+}
+.ansibgred {
+  background-color: red;
+}
+.ansibggreen {
+  background-color: green;
+}
+.ansibgyellow {
+  background-color: yellow;
+}
+.ansibgblue {
+  background-color: blue;
+}
+.ansibgpurple {
+  background-color: magenta;
+}
+.ansibgcyan {
+  background-color: cyan;
+}
+.ansibggray {
+  background-color: gray;
+}
+div.cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  width: 100%;
+  padding: 5px;
+  /* This acts as a spacer between cells, that is outside the border */
+  margin: 0px;
+  outline: none;
+  border-left-width: 1px;
+  padding-left: 5px;
+  background: linear-gradient(to right, transparent -40px, transparent 1px, transparent 1px, transparent 100%);
+}
+div.cell.jupyter-soft-selected {
+  border-left-color: #90CAF9;
+  border-left-color: #E3F2FD;
+  border-left-width: 1px;
+  padding-left: 5px;
+  border-right-color: #E3F2FD;
+  border-right-width: 1px;
+  background: #E3F2FD;
+}
+@media print {
+  div.cell.jupyter-soft-selected {
+    border-color: transparent;
+  }
+}
+div.cell.selected {
+  border-color: #ababab;
+  border-left-width: 0px;
+  padding-left: 6px;
+  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 5px, transparent 5px, transparent 100%);
+}
+@media print {
+  div.cell.selected {
+    border-color: transparent;
+  }
+}
+div.cell.selected.jupyter-soft-selected {
+  border-left-width: 0;
+  padding-left: 6px;
+  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 7px, #E3F2FD 7px, #E3F2FD 100%);
+}
+.edit_mode div.cell.selected {
+  border-color: #66BB6A;
+  border-left-width: 0px;
+  padding-left: 6px;
+  background: linear-gradient(to right, #66BB6A -40px, #66BB6A 5px, transparent 5px, transparent 100%);
+}
+@media print {
+  .edit_mode div.cell.selected {
+    border-color: transparent;
+  }
+}
+.prompt {
+  /* This needs to be wide enough for 3 digit prompt numbers: In[100]: */
+  min-width: 14ex;
+  /* This padding is tuned to match the padding on the CodeMirror editor. */
+  padding: 0.4em;
+  margin: 0px;
+  font-family: monospace;
+  text-align: right;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+  /* Don't highlight prompt number selection */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Use default cursor */
+  cursor: default;
+}
+@media (max-width: 540px) {
+  .prompt {
+    text-align: left;
+  }
+}
+div.inner_cell {
+  min-width: 0;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+}
+/* input_area and input_prompt must match in top border and margin for alignment */
+div.input_area {
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+  background: #f7f7f7;
+  line-height: 1.21429em;
+}
+/* This is needed so that empty prompt areas can collapse to zero height when there
+   is no content in the output_subarea and the prompt. The main purpose of this is
+   to make sure that empty JavaScript output_subareas have no height. */
+div.prompt:empty {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+div.unrecognized_cell {
+  padding: 5px 5px 5px 0px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+div.unrecognized_cell .inner_cell {
+  border-radius: 2px;
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+  border: 1px solid #cfcfcf;
+  background: #eaeaea;
+}
+div.unrecognized_cell .inner_cell a {
+  color: inherit;
+  text-decoration: none;
+}
+div.unrecognized_cell .inner_cell a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+@media (max-width: 540px) {
+  div.unrecognized_cell > div.prompt {
+    display: none;
+  }
+}
+div.code_cell {
+  /* avoid page breaking on code cells when printing */
+}
+@media print {
+  div.code_cell {
+    page-break-inside: avoid;
+  }
+}
+/* any special styling for code cells that are currently running goes here */
+div.input {
+  page-break-inside: avoid;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.input {
+    /* Old browsers */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box;
+    box-orient: vertical;
+    box-align: stretch;
+    /* Modern browsers */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+/* input_area and input_prompt must match in top border and margin for alignment */
+div.input_prompt {
+  color: #303F9F;
+  border-top: 1px solid transparent;
+}
+div.input_area > div.highlight {
+  margin: 0.4em;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+div.input_area > div.highlight > pre {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+/* The following gets added to the <head> if it is detected that the user has a
+ * monospace font with inconsistent normal/bold/italic height.  See
+ * notebookmain.js.  Such fonts will have keywords vertically offset with
+ * respect to the rest of the text.  The user should select a better font.
+ * See: https://github.com/ipython/ipython/issues/1503
+ *
+ * .CodeMirror span {
+ *      vertical-align: bottom;
+ * }
+ */
+.CodeMirror {
+  line-height: 1.21429em;
+  /* Changed from 1em to our global default */
+  font-size: 14px;
+  height: auto;
+  /* Changed to auto to autogrow */
+  background: none;
+  /* Changed from white to allow our bg to show through */
+}
+.CodeMirror-scroll {
+  /*  The CodeMirror docs are a bit fuzzy on if overflow-y should be hidden or visible.*/
+  /*  We have found that if it is visible, vertical scrollbars appear with font size changes.*/
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.CodeMirror-lines {
+  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
+  /* we have set a different line-height and want this to scale with that. */
+  padding: 0.4em;
+}
+.CodeMirror-linenumber {
+  padding: 0 8px 0 4px;
+}
+.CodeMirror-gutters {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.CodeMirror pre {
+  /* In CM3 this went to 4px from 0 in CM2. We need the 0 value because of how we size */
+  /* .CodeMirror-lines */
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+Adapted from GitHub theme
+
+*/
+.highlight-base {
+  color: #000;
+}
+.highlight-variable {
+  color: #000;
+}
+.highlight-variable-2 {
+  color: #1a1a1a;
+}
+.highlight-variable-3 {
+  color: #333333;
+}
+.highlight-string {
+  color: #BA2121;
+}
+.highlight-comment {
+  color: #408080;
+  font-style: italic;
+}
+.highlight-number {
+  color: #080;
+}
+.highlight-atom {
+  color: #88F;
+}
+.highlight-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.highlight-builtin {
+  color: #008000;
+}
+.highlight-error {
+  color: #f00;
+}
+.highlight-operator {
+  color: #AA22FF;
+  font-weight: bold;
+}
+.highlight-meta {
+  color: #AA22FF;
+}
+/* previously not defined, copying from default codemirror */
+.highlight-def {
+  color: #00f;
+}
+.highlight-string-2 {
+  color: #f50;
+}
+.highlight-qualifier {
+  color: #555;
+}
+.highlight-bracket {
+  color: #997;
+}
+.highlight-tag {
+  color: #170;
+}
+.highlight-attribute {
+  color: #00c;
+}
+.highlight-header {
+  color: blue;
+}
+.highlight-quote {
+  color: #090;
+}
+.highlight-link {
+  color: #00c;
+}
+/* apply the same style to codemirror */
+.cm-s-ipython span.cm-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.cm-s-ipython span.cm-atom {
+  color: #88F;
+}
+.cm-s-ipython span.cm-number {
+  color: #080;
+}
+.cm-s-ipython span.cm-def {
+  color: #00f;
+}
+.cm-s-ipython span.cm-variable {
+  color: #000;
+}
+.cm-s-ipython span.cm-operator {
+  color: #AA22FF;
+  font-weight: bold;
+}
+.cm-s-ipython span.cm-variable-2 {
+  color: #1a1a1a;
+}
+.cm-s-ipython span.cm-variable-3 {
+  color: #333333;
+}
+.cm-s-ipython span.cm-comment {
+  color: #408080;
+  font-style: italic;
+}
+.cm-s-ipython span.cm-string {
+  color: #BA2121;
+}
+.cm-s-ipython span.cm-string-2 {
+  color: #f50;
+}
+.cm-s-ipython span.cm-meta {
+  color: #AA22FF;
+}
+.cm-s-ipython span.cm-qualifier {
+  color: #555;
+}
+.cm-s-ipython span.cm-builtin {
+  color: #008000;
+}
+.cm-s-ipython span.cm-bracket {
+  color: #997;
+}
+.cm-s-ipython span.cm-tag {
+  color: #170;
+}
+.cm-s-ipython span.cm-attribute {
+  color: #00c;
+}
+.cm-s-ipython span.cm-header {
+  color: blue;
+}
+.cm-s-ipython span.cm-quote {
+  color: #090;
+}
+.cm-s-ipython span.cm-link {
+  color: #00c;
+}
+.cm-s-ipython span.cm-error {
+  color: #f00;
+}
+.cm-s-ipython span.cm-tab {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAMCAYAAAAkuj5RAAAAAXNSR0IArs4c6QAAAGFJREFUSMft1LsRQFAQheHPowAKoACx3IgEKtaEHujDjORSgWTH/ZOdnZOcM/sgk/kFFWY0qV8foQwS4MKBCS3qR6ixBJvElOobYAtivseIE120FaowJPN75GMu8j/LfMwNjh4HUpwg4LUAAAAASUVORK5CYII=);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+div.output_wrapper {
+  /* this position must be relative to enable descendents to be absolute within it */
+  position: relative;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 1;
+}
+/* class for the output area when it should be height-limited */
+div.output_scroll {
+  /* ideally, this would be max-height, but FF barfs all over that */
+  height: 24em;
+  /* FF needs this *and the wrapper* to specify full width, or it will shrinkwrap */
+  width: 100%;
+  overflow: auto;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  display: block;
+}
+/* output div while it is collapsed */
+div.output_collapsed {
+  margin: 0px;
+  padding: 0px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+div.out_prompt_overlay {
+  height: 100%;
+  padding: 0px 0.4em;
+  position: absolute;
+  border-radius: 2px;
+}
+div.out_prompt_overlay:hover {
+  /* use inner shadow to get border that is computed the same on WebKit/FF */
+  -webkit-box-shadow: inset 0 0 1px #000;
+  box-shadow: inset 0 0 1px #000;
+  background: rgba(240, 240, 240, 0.5);
+}
+div.output_prompt {
+  color: #D84315;
+}
+/* This class is the outer container of all output sections. */
+div.output_area {
+  padding: 0px;
+  page-break-inside: avoid;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+div.output_area .MathJax_Display {
+  text-align: left !important;
+}
+div.output_area 
+div.output_area 
+div.output_area img,
+div.output_area svg {
+  max-width: 100%;
+  height: auto;
+}
+div.output_area img.unconfined,
+div.output_area svg.unconfined {
+  max-width: none;
+}
+/* This is needed to protect the pre formating from global settings such
+   as that of bootstrap */
+.output {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.output_area {
+    /* Old browsers */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box;
+    box-orient: vertical;
+    box-align: stretch;
+    /* Modern browsers */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+div.output_area pre {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  color: black;
+  background-color: transparent;
+  border-radius: 0;
+}
+/* This class is for the output subarea inside the output_area and after
+   the prompt div. */
+div.output_subarea {
+  overflow-x: auto;
+  padding: 0.4em;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+  max-width: calc(100% - 14ex);
+}
+div.output_scroll div.output_subarea {
+  overflow-x: visible;
+}
+/* The rest of the output_* classes are for special styling of the different
+   output types */
+/* all text output has this class: */
+div.output_text {
+  text-align: left;
+  color: #000;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+}
+/* stdout/stderr are 'text' as well as 'stream', but execute_result/error are *not* streams */
+div.output_stderr {
+  background: #fdd;
+  /* very light red background for stderr */
+}
+div.output_latex {
+  text-align: left;
+}
+/* Empty output_javascript divs should have no height */
+div.output_javascript:empty {
+  padding: 0;
+}
+.js-error {
+  color: darkred;
+}
+/* raw_input styles */
+div.raw_input_container {
+  line-height: 1.21429em;
+  padding-top: 5px;
+}
+pre.raw_input_prompt {
+  /* nothing needed here. */
+}
+input.raw_input {
+  font-family: monospace;
+  font-size: inherit;
+  color: inherit;
+  width: auto;
+  /* make sure input baseline aligns with prompt */
+  vertical-align: baseline;
+  /* padding + margin = 0.5em between prompt and cursor */
+  padding: 0em 0.25em;
+  margin: 0em 0.25em;
+}
+input.raw_input:focus {
+  box-shadow: none;
+}
+p.p-space {
+  margin-bottom: 10px;
+}
+div.output_unrecognized {
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+}
+div.output_unrecognized a {
+  color: inherit;
+  text-decoration: none;
+}
+div.output_unrecognized a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.rendered_html {
+  color: #000;
+  /* any extras will just be numbers: */
+}
+
+
+
+.rendered_html :link {
+  text-decoration: underline;
+}
+.rendered_html :visited {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.rendered_html h1:first-child {
+  margin-top: 0.538em;
+}
+.rendered_html h2:first-child {
+  margin-top: 0.636em;
+}
+.rendered_html h3:first-child {
+  margin-top: 0.777em;
+}
+.rendered_html h4:first-child {
+  margin-top: 1em;
+}
+.rendered_html h5:first-child {
+  margin-top: 1em;
+}
+.rendered_html h6:first-child {
+  margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+.rendered_html * + ul {
+  margin-top: 1em;
+}
+.rendered_html * + ol {
+  margin-top: 1em;
+}
+
+
+.rendered_html pre,
+
+
+
+.rendered_html tr,
+.rendered_html th,
+
+.rendered_html td,
+
+
+.rendered_html * + table {
+  margin-top: 1em;
+}
+
+.rendered_html * + p {
+  margin-top: 1em;
+}
+
+.rendered_html * + img {
+  margin-top: 1em;
+}
+.rendered_html img,
+
+.rendered_html img.unconfined,
+
+div.text_cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.text_cell > div.prompt {
+    display: none;
+  }
+}
+div.text_cell_render {
+  /*font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;*/
+  outline: none;
+  resize: none;
+  width: inherit;
+  border-style: none;
+  padding: 0.5em 0.5em 0.5em 0.4em;
+  color: #000;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a.anchor-link:link {
+  text-decoration: none;
+  padding: 0px 20px;
+  visibility: hidden;
+}
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h5:hover .anchor-link,
+h6:hover .anchor-link {
+  visibility: visible;
+}
+.text_cell.rendered .input_area {
+  display: none;
+}
+.text_cell.rendered 
+.text_cell.unrendered .text_cell_render {
+  display: none;
+}
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.cm-header-1 {
+  font-size: 185.7%;
+}
+.cm-header-2 {
+  font-size: 157.1%;
+}
+.cm-header-3 {
+  font-size: 128.6%;
+}
+.cm-header-4 {
+  font-size: 110%;
+}
+.cm-header-5 {
+  font-size: 100%;
+  font-style: italic;
+}
+.cm-header-6 {
+  font-size: 100%;
+  font-style: italic;
+}
+</style>
+<style type="text/css">.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
+<style type="text/css">
+/* Temporary definitions which will become obsolete with Notebook release 5.0 */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-bold { font-weight: bold; }
+</style>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Movie-Reviews-Analysis:-Statistics-analisis,-Visualising-results-and-getting-Predictions.">Movie Reviews Analysis: Statistics analisis, Visualising results and getting Predictions.<a class="anchor-link" href="#Movie-Reviews-Analysis:-Statistics-analisis,-Visualising-results-and-getting-Predictions.">¶</a></h1><h3 id="In-this-project-We-will-continue-with-the-analysis-of-the-movie-review,-but-this-time-we-are-going-to-use-statistics-to-programm-manually-in-python-the-linear-regression-and-see-how-far-away-the-data-is-from-the-prediction,-so-can-see-our-accuracy.">In this project We will continue with the analysis of the movie review, but this time we are going to use statistics to programm manually in python the linear regression and see how far away the data is from the prediction, so can see our accuracy.<a class="anchor-link" href="#In-this-project-We-will-continue-with-the-analysis-of-the-movie-review,-but-this-time-we-are-going-to-use-statistics-to-programm-manually-in-python-the-linear-regression-and-see-how-far-away-the-data-is-from-the-prediction,-so-can-see-our-accuracy.">¶</a></h3><ul>
+<li>slope, intercept, r_value, p_value, stderr</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [26]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">movies</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"fandango_score_comparison.csv"</span><span class="p">)</span>
+<span class="n">movies</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[26]:</div>
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>FILM</th>
+<th>RottenTomatoes</th>
+<th>RottenTomatoes_User</th>
+<th>Metacritic</th>
+<th>Metacritic_User</th>
+<th>IMDB</th>
+<th>Fandango_Stars</th>
+<th>Fandango_Ratingvalue</th>
+<th>RT_norm</th>
+<th>RT_user_norm</th>
+<th>...</th>
+<th>IMDB_norm</th>
+<th>RT_norm_round</th>
+<th>RT_user_norm_round</th>
+<th>Metacritic_norm_round</th>
+<th>Metacritic_user_norm_round</th>
+<th>IMDB_norm_round</th>
+<th>Metacritic_user_vote_count</th>
+<th>IMDB_user_vote_count</th>
+<th>Fandango_votes</th>
+<th>Fandango_Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Avengers: Age of Ultron (2015)</td>
+<td>74</td>
+<td>86</td>
+<td>66</td>
+<td>7.1</td>
+<td>7.8</td>
+<td>5.0</td>
+<td>4.5</td>
+<td>3.70</td>
+<td>4.30</td>
+<td>...</td>
+<td>3.90</td>
+<td>3.5</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>1330</td>
+<td>271107</td>
+<td>14846</td>
+<td>0.5</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Cinderella (2015)</td>
+<td>85</td>
+<td>80</td>
+<td>67</td>
+<td>7.5</td>
+<td>7.1</td>
+<td>5.0</td>
+<td>4.5</td>
+<td>4.25</td>
+<td>4.00</td>
+<td>...</td>
+<td>3.55</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>249</td>
+<td>65709</td>
+<td>12640</td>
+<td>0.5</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Ant-Man (2015)</td>
+<td>80</td>
+<td>90</td>
+<td>64</td>
+<td>8.1</td>
+<td>7.8</td>
+<td>5.0</td>
+<td>4.5</td>
+<td>4.00</td>
+<td>4.50</td>
+<td>...</td>
+<td>3.90</td>
+<td>4.0</td>
+<td>4.5</td>
+<td>3.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>627</td>
+<td>103660</td>
+<td>12055</td>
+<td>0.5</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Do You Believe? (2015)</td>
+<td>18</td>
+<td>84</td>
+<td>22</td>
+<td>4.7</td>
+<td>5.4</td>
+<td>5.0</td>
+<td>4.5</td>
+<td>0.90</td>
+<td>4.20</td>
+<td>...</td>
+<td>2.70</td>
+<td>1.0</td>
+<td>4.0</td>
+<td>1.0</td>
+<td>2.5</td>
+<td>2.5</td>
+<td>31</td>
+<td>3136</td>
+<td>1793</td>
+<td>0.5</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Hot Tub Time Machine 2 (2015)</td>
+<td>14</td>
+<td>28</td>
+<td>29</td>
+<td>3.4</td>
+<td>5.1</td>
+<td>3.5</td>
+<td>3.0</td>
+<td>0.70</td>
+<td>1.40</td>
+<td>...</td>
+<td>2.55</td>
+<td>0.5</td>
+<td>1.5</td>
+<td>1.5</td>
+<td>1.5</td>
+<td>2.5</td>
+<td>88</td>
+<td>19560</td>
+<td>1021</td>
+<td>0.5</td>
+</tr>
+<tr>
+<th>5</th>
+<td>The Water Diviner (2015)</td>
+<td>63</td>
+<td>62</td>
+<td>50</td>
+<td>6.8</td>
+<td>7.2</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>3.15</td>
+<td>3.10</td>
+<td>...</td>
+<td>3.60</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>2.5</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>34</td>
+<td>39373</td>
+<td>397</td>
+<td>0.5</td>
+</tr>
+<tr>
+<th>6</th>
+<td>Irrational Man (2015)</td>
+<td>42</td>
+<td>53</td>
+<td>53</td>
+<td>7.6</td>
+<td>6.9</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>2.10</td>
+<td>2.65</td>
+<td>...</td>
+<td>3.45</td>
+<td>2.0</td>
+<td>2.5</td>
+<td>2.5</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>17</td>
+<td>2680</td>
+<td>252</td>
+<td>0.5</td>
+</tr>
+<tr>
+<th>7</th>
+<td>Top Five (2014)</td>
+<td>86</td>
+<td>64</td>
+<td>81</td>
+<td>6.8</td>
+<td>6.5</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>4.30</td>
+<td>3.20</td>
+<td>...</td>
+<td>3.25</td>
+<td>4.5</td>
+<td>3.0</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>124</td>
+<td>16876</td>
+<td>3223</td>
+<td>0.5</td>
+</tr>
+<tr>
+<th>8</th>
+<td>Shaun the Sheep Movie (2015)</td>
+<td>99</td>
+<td>82</td>
+<td>81</td>
+<td>8.8</td>
+<td>7.4</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>4.95</td>
+<td>4.10</td>
+<td>...</td>
+<td>3.70</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>62</td>
+<td>12227</td>
+<td>896</td>
+<td>0.5</td>
+</tr>
+<tr>
+<th>9</th>
+<td>Love & Mercy (2015)</td>
+<td>89</td>
+<td>87</td>
+<td>80</td>
+<td>8.5</td>
+<td>7.8</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>4.45</td>
+<td>4.35</td>
+<td>...</td>
+<td>3.90</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>54</td>
+<td>5367</td>
+<td>864</td>
+<td>0.5</td>
+</tr>
+<tr>
+<th>10</th>
+<td>Far From The Madding Crowd (2015)</td>
+<td>84</td>
+<td>77</td>
+<td>71</td>
+<td>7.5</td>
+<td>7.2</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>4.20</td>
+<td>3.85</td>
+<td>...</td>
+<td>3.60</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>35</td>
+<td>12129</td>
+<td>804</td>
+<td>0.5</td>
+</tr>
+<tr>
+<th>11</th>
+<td>Black Sea (2015)</td>
+<td>82</td>
+<td>60</td>
+<td>62</td>
+<td>6.6</td>
+<td>6.4</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>4.10</td>
+<td>3.00</td>
+<td>...</td>
+<td>3.20</td>
+<td>4.0</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>3.5</td>
+<td>3.0</td>
+<td>37</td>
+<td>16547</td>
+<td>218</td>
+<td>0.5</td>
+</tr>
+<tr>
+<th>12</th>
+<td>Leviathan (2014)</td>
+<td>99</td>
+<td>79</td>
+<td>92</td>
+<td>7.2</td>
+<td>7.7</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>4.95</td>
+<td>3.95</td>
+<td>...</td>
+<td>3.85</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>145</td>
+<td>22521</td>
+<td>64</td>
+<td>0.5</td>
+</tr>
+<tr>
+<th>13</th>
+<td>Unbroken (2014)</td>
+<td>51</td>
+<td>70</td>
+<td>59</td>
+<td>6.5</td>
+<td>7.2</td>
+<td>4.5</td>
+<td>4.1</td>
+<td>2.55</td>
+<td>3.50</td>
+<td>...</td>
+<td>3.60</td>
+<td>2.5</td>
+<td>3.5</td>
+<td>3.0</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>218</td>
+<td>77518</td>
+<td>9443</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>14</th>
+<td>The Imitation Game (2014)</td>
+<td>90</td>
+<td>92</td>
+<td>73</td>
+<td>8.2</td>
+<td>8.1</td>
+<td>5.0</td>
+<td>4.6</td>
+<td>4.50</td>
+<td>4.60</td>
+<td>...</td>
+<td>4.05</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>566</td>
+<td>334164</td>
+<td>8055</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>15</th>
+<td>Taken 3 (2015)</td>
+<td>9</td>
+<td>46</td>
+<td>26</td>
+<td>4.6</td>
+<td>6.1</td>
+<td>4.5</td>
+<td>4.1</td>
+<td>0.45</td>
+<td>2.30</td>
+<td>...</td>
+<td>3.05</td>
+<td>0.5</td>
+<td>2.5</td>
+<td>1.5</td>
+<td>2.5</td>
+<td>3.0</td>
+<td>240</td>
+<td>104235</td>
+<td>6757</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>16</th>
+<td>Ted 2 (2015)</td>
+<td>46</td>
+<td>58</td>
+<td>48</td>
+<td>6.5</td>
+<td>6.6</td>
+<td>4.5</td>
+<td>4.1</td>
+<td>2.30</td>
+<td>2.90</td>
+<td>...</td>
+<td>3.30</td>
+<td>2.5</td>
+<td>3.0</td>
+<td>2.5</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>197</td>
+<td>49102</td>
+<td>6437</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>17</th>
+<td>Southpaw (2015)</td>
+<td>59</td>
+<td>80</td>
+<td>57</td>
+<td>8.2</td>
+<td>7.8</td>
+<td>5.0</td>
+<td>4.6</td>
+<td>2.95</td>
+<td>4.00</td>
+<td>...</td>
+<td>3.90</td>
+<td>3.0</td>
+<td>4.0</td>
+<td>3.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>128</td>
+<td>23561</td>
+<td>5597</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>18</th>
+<td>Night at the Museum: Secret of the Tomb (2014)</td>
+<td>50</td>
+<td>58</td>
+<td>47</td>
+<td>5.8</td>
+<td>6.3</td>
+<td>4.5</td>
+<td>4.1</td>
+<td>2.50</td>
+<td>2.90</td>
+<td>...</td>
+<td>3.15</td>
+<td>2.5</td>
+<td>3.0</td>
+<td>2.5</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>103</td>
+<td>50291</td>
+<td>5445</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>19</th>
+<td>Pixels (2015)</td>
+<td>17</td>
+<td>54</td>
+<td>27</td>
+<td>5.3</td>
+<td>5.6</td>
+<td>4.5</td>
+<td>4.1</td>
+<td>0.85</td>
+<td>2.70</td>
+<td>...</td>
+<td>2.80</td>
+<td>1.0</td>
+<td>2.5</td>
+<td>1.5</td>
+<td>2.5</td>
+<td>3.0</td>
+<td>246</td>
+<td>19521</td>
+<td>3886</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>20</th>
+<td>McFarland, USA (2015)</td>
+<td>79</td>
+<td>89</td>
+<td>60</td>
+<td>7.2</td>
+<td>7.5</td>
+<td>5.0</td>
+<td>4.6</td>
+<td>3.95</td>
+<td>4.45</td>
+<td>...</td>
+<td>3.75</td>
+<td>4.0</td>
+<td>4.5</td>
+<td>3.0</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>59</td>
+<td>13769</td>
+<td>3364</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>21</th>
+<td>Insidious: Chapter 3 (2015)</td>
+<td>59</td>
+<td>56</td>
+<td>52</td>
+<td>6.9</td>
+<td>6.3</td>
+<td>4.5</td>
+<td>4.1</td>
+<td>2.95</td>
+<td>2.80</td>
+<td>...</td>
+<td>3.15</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>2.5</td>
+<td>3.5</td>
+<td>3.0</td>
+<td>115</td>
+<td>25134</td>
+<td>3276</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>22</th>
+<td>The Man From U.N.C.L.E. (2015)</td>
+<td>68</td>
+<td>80</td>
+<td>55</td>
+<td>7.9</td>
+<td>7.6</td>
+<td>4.5</td>
+<td>4.1</td>
+<td>3.40</td>
+<td>4.00</td>
+<td>...</td>
+<td>3.80</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>3.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>144</td>
+<td>22104</td>
+<td>2686</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>23</th>
+<td>Run All Night (2015)</td>
+<td>60</td>
+<td>59</td>
+<td>59</td>
+<td>7.3</td>
+<td>6.6</td>
+<td>4.5</td>
+<td>4.1</td>
+<td>3.00</td>
+<td>2.95</td>
+<td>...</td>
+<td>3.30</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>141</td>
+<td>50438</td>
+<td>2066</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>24</th>
+<td>Trainwreck (2015)</td>
+<td>85</td>
+<td>74</td>
+<td>75</td>
+<td>6.0</td>
+<td>6.7</td>
+<td>4.5</td>
+<td>4.1</td>
+<td>4.25</td>
+<td>3.70</td>
+<td>...</td>
+<td>3.35</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>3.0</td>
+<td>3.5</td>
+<td>169</td>
+<td>27380</td>
+<td>8381</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>25</th>
+<td>Selma (2014)</td>
+<td>99</td>
+<td>86</td>
+<td>89</td>
+<td>7.1</td>
+<td>7.5</td>
+<td>5.0</td>
+<td>4.6</td>
+<td>4.95</td>
+<td>4.30</td>
+<td>...</td>
+<td>3.75</td>
+<td>5.0</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>316</td>
+<td>45344</td>
+<td>7025</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>26</th>
+<td>Ex Machina (2015)</td>
+<td>92</td>
+<td>86</td>
+<td>78</td>
+<td>7.9</td>
+<td>7.7</td>
+<td>4.5</td>
+<td>4.1</td>
+<td>4.60</td>
+<td>4.30</td>
+<td>...</td>
+<td>3.85</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>672</td>
+<td>154499</td>
+<td>3458</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>27</th>
+<td>Still Alice (2015)</td>
+<td>88</td>
+<td>85</td>
+<td>72</td>
+<td>7.8</td>
+<td>7.5</td>
+<td>4.5</td>
+<td>4.1</td>
+<td>4.40</td>
+<td>4.25</td>
+<td>...</td>
+<td>3.75</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>153</td>
+<td>57123</td>
+<td>1258</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>28</th>
+<td>Wild Tales (2014)</td>
+<td>96</td>
+<td>92</td>
+<td>77</td>
+<td>8.8</td>
+<td>8.2</td>
+<td>4.5</td>
+<td>4.1</td>
+<td>4.80</td>
+<td>4.60</td>
+<td>...</td>
+<td>4.10</td>
+<td>5.0</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>107</td>
+<td>50285</td>
+<td>235</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>29</th>
+<td>The End of the Tour (2015)</td>
+<td>92</td>
+<td>89</td>
+<td>84</td>
+<td>7.5</td>
+<td>7.9</td>
+<td>4.5</td>
+<td>4.1</td>
+<td>4.60</td>
+<td>4.45</td>
+<td>...</td>
+<td>3.95</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>19</td>
+<td>1320</td>
+<td>121</td>
+<td>0.4</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>116</th>
+<td>Clouds of Sils Maria (2015)</td>
+<td>89</td>
+<td>67</td>
+<td>78</td>
+<td>7.1</td>
+<td>6.8</td>
+<td>3.5</td>
+<td>3.4</td>
+<td>4.45</td>
+<td>3.35</td>
+<td>...</td>
+<td>3.40</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>36</td>
+<td>11392</td>
+<td>162</td>
+<td>0.1</td>
+</tr>
+<tr>
+<th>117</th>
+<td>Testament of Youth (2015)</td>
+<td>81</td>
+<td>79</td>
+<td>77</td>
+<td>7.9</td>
+<td>7.3</td>
+<td>4.0</td>
+<td>3.9</td>
+<td>4.05</td>
+<td>3.95</td>
+<td>...</td>
+<td>3.65</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>15</td>
+<td>5495</td>
+<td>127</td>
+<td>0.1</td>
+</tr>
+<tr>
+<th>118</th>
+<td>Infinitely Polar Bear (2015)</td>
+<td>80</td>
+<td>76</td>
+<td>64</td>
+<td>7.9</td>
+<td>7.2</td>
+<td>4.0</td>
+<td>3.9</td>
+<td>4.00</td>
+<td>3.80</td>
+<td>...</td>
+<td>3.60</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>3.0</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>8</td>
+<td>1062</td>
+<td>124</td>
+<td>0.1</td>
+</tr>
+<tr>
+<th>119</th>
+<td>Phoenix (2015)</td>
+<td>99</td>
+<td>81</td>
+<td>91</td>
+<td>8.0</td>
+<td>7.2</td>
+<td>3.5</td>
+<td>3.4</td>
+<td>4.95</td>
+<td>4.05</td>
+<td>...</td>
+<td>3.60</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>21</td>
+<td>3687</td>
+<td>70</td>
+<td>0.1</td>
+</tr>
+<tr>
+<th>120</th>
+<td>The Wolfpack (2015)</td>
+<td>84</td>
+<td>73</td>
+<td>75</td>
+<td>7.0</td>
+<td>7.1</td>
+<td>3.5</td>
+<td>3.4</td>
+<td>4.20</td>
+<td>3.65</td>
+<td>...</td>
+<td>3.55</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>8</td>
+<td>1488</td>
+<td>66</td>
+<td>0.1</td>
+</tr>
+<tr>
+<th>121</th>
+<td>The Stanford Prison Experiment (2015)</td>
+<td>84</td>
+<td>87</td>
+<td>68</td>
+<td>8.5</td>
+<td>7.1</td>
+<td>4.0</td>
+<td>3.9</td>
+<td>4.20</td>
+<td>4.35</td>
+<td>...</td>
+<td>3.55</td>
+<td>4.0</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>6</td>
+<td>950</td>
+<td>51</td>
+<td>0.1</td>
+</tr>
+<tr>
+<th>122</th>
+<td>Tangerine (2015)</td>
+<td>95</td>
+<td>86</td>
+<td>86</td>
+<td>7.3</td>
+<td>7.4</td>
+<td>4.0</td>
+<td>3.9</td>
+<td>4.75</td>
+<td>4.30</td>
+<td>...</td>
+<td>3.70</td>
+<td>5.0</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>14</td>
+<td>696</td>
+<td>36</td>
+<td>0.1</td>
+</tr>
+<tr>
+<th>123</th>
+<td>Magic Mike XXL (2015)</td>
+<td>62</td>
+<td>64</td>
+<td>60</td>
+<td>5.4</td>
+<td>6.3</td>
+<td>4.5</td>
+<td>4.4</td>
+<td>3.10</td>
+<td>3.20</td>
+<td>...</td>
+<td>3.15</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>2.5</td>
+<td>3.0</td>
+<td>52</td>
+<td>11937</td>
+<td>9363</td>
+<td>0.1</td>
+</tr>
+<tr>
+<th>124</th>
+<td>Home (2015)</td>
+<td>45</td>
+<td>65</td>
+<td>55</td>
+<td>7.3</td>
+<td>6.7</td>
+<td>4.5</td>
+<td>4.4</td>
+<td>2.25</td>
+<td>3.25</td>
+<td>...</td>
+<td>3.35</td>
+<td>2.5</td>
+<td>3.5</td>
+<td>3.0</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>177</td>
+<td>41158</td>
+<td>7705</td>
+<td>0.1</td>
+</tr>
+<tr>
+<th>125</th>
+<td>The Wedding Ringer (2015)</td>
+<td>27</td>
+<td>66</td>
+<td>35</td>
+<td>3.3</td>
+<td>6.7</td>
+<td>4.5</td>
+<td>4.4</td>
+<td>1.35</td>
+<td>3.30</td>
+<td>...</td>
+<td>3.35</td>
+<td>1.5</td>
+<td>3.5</td>
+<td>2.0</td>
+<td>1.5</td>
+<td>3.5</td>
+<td>126</td>
+<td>37292</td>
+<td>6506</td>
+<td>0.1</td>
+</tr>
+<tr>
+<th>126</th>
+<td>Woman in Gold (2015)</td>
+<td>52</td>
+<td>81</td>
+<td>51</td>
+<td>7.2</td>
+<td>7.4</td>
+<td>4.5</td>
+<td>4.4</td>
+<td>2.60</td>
+<td>4.05</td>
+<td>...</td>
+<td>3.70</td>
+<td>2.5</td>
+<td>4.0</td>
+<td>2.5</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>72</td>
+<td>17957</td>
+<td>2435</td>
+<td>0.1</td>
+</tr>
+<tr>
+<th>127</th>
+<td>The Last Five Years (2015)</td>
+<td>60</td>
+<td>60</td>
+<td>60</td>
+<td>6.9</td>
+<td>6.0</td>
+<td>4.5</td>
+<td>4.4</td>
+<td>3.00</td>
+<td>3.00</td>
+<td>...</td>
+<td>3.00</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>3.5</td>
+<td>3.0</td>
+<td>20</td>
+<td>4110</td>
+<td>99</td>
+<td>0.1</td>
+</tr>
+<tr>
+<th>128</th>
+<td>Mission: Impossible â€“ Rogue Nation (2015)</td>
+<td>92</td>
+<td>90</td>
+<td>75</td>
+<td>8.0</td>
+<td>7.8</td>
+<td>4.5</td>
+<td>4.4</td>
+<td>4.60</td>
+<td>4.50</td>
+<td>...</td>
+<td>3.90</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>362</td>
+<td>82579</td>
+<td>8357</td>
+<td>0.1</td>
+</tr>
+<tr>
+<th>129</th>
+<td>Amy (2015)</td>
+<td>97</td>
+<td>91</td>
+<td>85</td>
+<td>8.8</td>
+<td>8.0</td>
+<td>4.5</td>
+<td>4.4</td>
+<td>4.85</td>
+<td>4.55</td>
+<td>...</td>
+<td>4.00</td>
+<td>5.0</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>60</td>
+<td>5630</td>
+<td>729</td>
+<td>0.1</td>
+</tr>
+<tr>
+<th>130</th>
+<td>Jurassic World (2015)</td>
+<td>71</td>
+<td>81</td>
+<td>59</td>
+<td>7.0</td>
+<td>7.3</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>3.55</td>
+<td>4.05</td>
+<td>...</td>
+<td>3.65</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>3.0</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>1281</td>
+<td>241807</td>
+<td>34390</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>131</th>
+<td>Minions (2015)</td>
+<td>54</td>
+<td>52</td>
+<td>56</td>
+<td>5.7</td>
+<td>6.7</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>2.70</td>
+<td>2.60</td>
+<td>...</td>
+<td>3.35</td>
+<td>2.5</td>
+<td>2.5</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>3.5</td>
+<td>204</td>
+<td>55895</td>
+<td>14998</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>132</th>
+<td>Max (2015)</td>
+<td>35</td>
+<td>73</td>
+<td>47</td>
+<td>5.9</td>
+<td>7.0</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>1.75</td>
+<td>3.65</td>
+<td>...</td>
+<td>3.50</td>
+<td>2.0</td>
+<td>3.5</td>
+<td>2.5</td>
+<td>3.0</td>
+<td>3.5</td>
+<td>15</td>
+<td>5444</td>
+<td>3412</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>133</th>
+<td>Paul Blart: Mall Cop 2 (2015)</td>
+<td>5</td>
+<td>36</td>
+<td>13</td>
+<td>2.4</td>
+<td>4.3</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>0.25</td>
+<td>1.80</td>
+<td>...</td>
+<td>2.15</td>
+<td>0.5</td>
+<td>2.0</td>
+<td>0.5</td>
+<td>1.0</td>
+<td>2.0</td>
+<td>211</td>
+<td>15004</td>
+<td>3054</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>134</th>
+<td>The Longest Ride (2015)</td>
+<td>31</td>
+<td>73</td>
+<td>33</td>
+<td>4.8</td>
+<td>7.2</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>1.55</td>
+<td>3.65</td>
+<td>...</td>
+<td>3.60</td>
+<td>1.5</td>
+<td>3.5</td>
+<td>1.5</td>
+<td>2.5</td>
+<td>3.5</td>
+<td>49</td>
+<td>25214</td>
+<td>2603</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>135</th>
+<td>The Lazarus Effect (2015)</td>
+<td>14</td>
+<td>23</td>
+<td>31</td>
+<td>4.9</td>
+<td>5.2</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>0.70</td>
+<td>1.15</td>
+<td>...</td>
+<td>2.60</td>
+<td>0.5</td>
+<td>1.0</td>
+<td>1.5</td>
+<td>2.5</td>
+<td>2.5</td>
+<td>62</td>
+<td>17691</td>
+<td>1651</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>136</th>
+<td>The Woman In Black 2 Angel of Death (2015)</td>
+<td>22</td>
+<td>25</td>
+<td>42</td>
+<td>4.4</td>
+<td>4.9</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>1.10</td>
+<td>1.25</td>
+<td>...</td>
+<td>2.45</td>
+<td>1.0</td>
+<td>1.5</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>2.5</td>
+<td>55</td>
+<td>14873</td>
+<td>1333</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>137</th>
+<td>Danny Collins (2015)</td>
+<td>77</td>
+<td>75</td>
+<td>58</td>
+<td>7.1</td>
+<td>7.1</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>3.85</td>
+<td>3.75</td>
+<td>...</td>
+<td>3.55</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>3.0</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>33</td>
+<td>11206</td>
+<td>531</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>138</th>
+<td>Spare Parts (2015)</td>
+<td>52</td>
+<td>83</td>
+<td>50</td>
+<td>7.1</td>
+<td>7.2</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>2.60</td>
+<td>4.15</td>
+<td>...</td>
+<td>3.60</td>
+<td>2.5</td>
+<td>4.0</td>
+<td>2.5</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>7</td>
+<td>47377</td>
+<td>450</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>139</th>
+<td>Serena (2015)</td>
+<td>18</td>
+<td>25</td>
+<td>36</td>
+<td>5.3</td>
+<td>5.4</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>0.90</td>
+<td>1.25</td>
+<td>...</td>
+<td>2.70</td>
+<td>1.0</td>
+<td>1.5</td>
+<td>2.0</td>
+<td>2.5</td>
+<td>2.5</td>
+<td>19</td>
+<td>12165</td>
+<td>50</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>140</th>
+<td>Inside Out (2015)</td>
+<td>98</td>
+<td>90</td>
+<td>94</td>
+<td>8.9</td>
+<td>8.6</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>4.90</td>
+<td>4.50</td>
+<td>...</td>
+<td>4.30</td>
+<td>5.0</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>807</td>
+<td>96252</td>
+<td>15749</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>141</th>
+<td>Mr. Holmes (2015)</td>
+<td>87</td>
+<td>78</td>
+<td>67</td>
+<td>7.9</td>
+<td>7.4</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>4.35</td>
+<td>3.90</td>
+<td>...</td>
+<td>3.70</td>
+<td>4.5</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>33</td>
+<td>7367</td>
+<td>1348</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>142</th>
+<td>'71 (2015)</td>
+<td>97</td>
+<td>82</td>
+<td>83</td>
+<td>7.5</td>
+<td>7.2</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>4.85</td>
+<td>4.10</td>
+<td>...</td>
+<td>3.60</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>3.5</td>
+<td>60</td>
+<td>24116</td>
+<td>192</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>143</th>
+<td>Two Days, One Night (2014)</td>
+<td>97</td>
+<td>78</td>
+<td>89</td>
+<td>8.8</td>
+<td>7.4</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>4.85</td>
+<td>3.90</td>
+<td>...</td>
+<td>3.70</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>123</td>
+<td>24345</td>
+<td>118</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>144</th>
+<td>Gett: The Trial of Viviane Amsalem (2015)</td>
+<td>100</td>
+<td>81</td>
+<td>90</td>
+<td>7.3</td>
+<td>7.8</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>5.00</td>
+<td>4.05</td>
+<td>...</td>
+<td>3.90</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>4.5</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>19</td>
+<td>1955</td>
+<td>59</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>145</th>
+<td>Kumiko, The Treasure Hunter (2015)</td>
+<td>87</td>
+<td>63</td>
+<td>68</td>
+<td>6.4</td>
+<td>6.7</td>
+<td>3.5</td>
+<td>3.5</td>
+<td>4.35</td>
+<td>3.15</td>
+<td>...</td>
+<td>3.35</td>
+<td>4.5</td>
+<td>3.0</td>
+<td>3.5</td>
+<td>3.0</td>
+<td>3.5</td>
+<td>19</td>
+<td>5289</td>
+<td>41</td>
+<td>0.0</td>
+</tr>
+</tbody>
+</table>
+<p>146 rows × 22 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [27]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [28]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">movies</span><span class="p">[</span><span class="s2">"Metacritic_norm_round"</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+4uLidPcIAHDJ85H6ZZddpi1btqiqqkqJREKNjY0EOgAELONvkgEA8E/arih1cyHSM888o5tvvlmR
+SETt7e3pKu25p/3792v69OkqLy9XeXm5XnzxxYz209jYqFAopHnz5o25jd8zctOX33OSBs/RVFZW
+qqSkRKWlpXr99ddH3c7Pebnpye9ZnT9/XhUVFSorK1NJSYmef/75Ubfzc05uegpin5IGr68pLy9X
+TU3NqPcH8fgbrydPczJpcPHiRXPjjTeajo4Oc+HCBTN//nxz7NixYdu0traaJUuWGGOM+eqrr0xF
+RUU6SqfUUywWM9XV1Rnt45+++OIL09bWZkpLS0e93+8Zue3L7zkZY0xXV5dpa2szxhjz22+/mVtu
+uSXwfcpNT0HM6vfffzfGGDMwMGAqKirMl19+Oez+IParZD0FMSdjjHn11VfNqlWrRq0d1ONvvJ68
+zCktR+puLkRqaWnRY489JkmqqKhQX1+furszd2Wn24ujjI+rTwsXLlR+fv6Y9/s9I7d9Sf7OSZLC
+4bAikYgkKS8vT8XFxSOug/B7Xm56kvyf1dSpUyUNHiEnEokRf8sg9qtkPUn+z6mzs1Otra1avXr1
+qPcHMadkPUkTn1NaQt3NhUj/3qagoCCjFyu5vTjq4MGDikQiWrp0qY4ePZqxftzwe0YTEeScOjo6
+1N7eroqKimG3BzmvsXqS/J9VIpFQWVmZwuGwotGo5s6dO+z+IOaUrCfJ/zmtXbtWL7/88phPeQ1i
+Tsl6kiY+p6x+lcYFCxboxx9/VHt7u9asWaNly5YF3dKkFOSc+vv7VVdXp82bNysvL8+3uuMZr6cg
+ZpWTk6O2tjZ1dnbq888/1/79+zNeM9We/J7Tnj17FAqFFIlEZIzx/b8Erz15mVNaQt3NhUgFBQU6
+derUuNukk5ue8vLyhv5NXLx4sf7880/9/PPPGespGb9n5FZQcxoYGFBdXZ3q6+tVW1s74v4g5pWs
+pyD3qWnTpmnp0qX69ttvh90e5H41Vk9+z+nAgQPavXu3brjhBj366KP67LPPhpZa/ub3nNz05GlO
+Ka7xG2MGT4b8fVLy/PnzZv78+ebo0aPDttmzZ8/QSYiDBw9m/CSEm57i8fjQ519//bUpLCzMaE/G
+GPPDDz+Y2267bdT7/J6R276CmJMxxtTX15u1a9eOeX8Q80rWk9+zOnPmjPnll1+MMcacO3fO3H33
+3eaTTz4Zto3fc3LTU1D7lDFjn3wM8vE3Vk9e5pSW134Z60KkrVu3ynEcPfXUU1qyZIlaW1t10003
+6corr9S7776bjtIp9fTBBx/ozTffVG5urq644gq9//77Ge1p5cqVisViOnv2rK6//no1NzfrwoUL
+gc3IbV9+z0kaPIp57733VFpaqrKyMjmOow0bNujkyZOBzctNT37PqqurSw0NDTLGKJFIqL6+Xvfd
+d1+gjz03PQWxT40myDm56cnLnLj4CAAsktUnSgHANoQ6AFiEUAcAixDqAGARQh0ALEKoA4BFCHUA
+sAihDgAW+T9oQJYzLnAJ0gAAAABJRU5ErkJggg==
+" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [29]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">movies</span><span class="p">[</span><span class="s2">"Fandango_Stars"</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>As we can see, there is a huge difference between the review scores from Fandango and Metacritic. Metacritic has far more review scores greater than 3.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Mean,-Median,-And-Standard-Deviation">Mean, Median, And Standard Deviation<a class="anchor-link" href="#Mean,-Median,-And-Standard-Deviation">¶</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Let's quantify the difference that we can appreciate in both histograms.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [30]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [31]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">means</span> <span class="o">=</span><span class="p">[</span><span class="n">movies</span><span class="p">[</span><span class="s2">"Fandango_Stars"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span>  <span class="n">movies</span><span class="p">[</span><span class="s2">"Metacritic_norm_round"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [32]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">means</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[4.0890410958904111, 2.9726027397260273]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [33]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">medians</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">movies</span><span class="p">[</span><span class="s2">"Fandango_Stars"</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">movies</span><span class="p">[</span><span class="s2">"Metacritic_norm_round"</span><span class="p">])]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [34]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">medians</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[4.0, 3.0]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [35]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">std_dev</span> <span class="o">=</span> <span class="p">[</span><span class="n">movies</span><span class="p">[</span><span class="s2">"Fandango_Stars"</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">(),</span>  <span class="n">movies</span><span class="p">[</span><span class="s2">"Metacritic_norm_round"</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [36]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">std_dev</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0.54038597797873344, 0.99096056137433586]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Methodologies-for-Metacritic-and-Fandango">Methodologies for Metacritic and Fandango<a class="anchor-link" href="#Methodologies-for-Metacritic-and-Fandango">¶</a></h3><ul>
+<li>Metacritic, do not use the user votes. You can see the votes, but the main score that appear is independent and just take the votes from professional people.</li>
+<li>Fandango, it takes user votes in a system of 5 stars. all the movies get a rate of 3+,</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Some-insigths-from-the-data">Some insigths from the data<a class="anchor-link" href="#Some-insigths-from-the-data">¶</a></h3><ul>
+<li><p>We can apreciate that, while the mean in Matacritic is lower than the median, in Fandango it is the opposite, the means are higher than the median. It is due to the reason that the data in Fandango is skewed to the high values, always >3.</p>
+</li>
+<li><p>Standard deviation: We can appreciate how it is much lower in Fandango than in Metacritic, this is because ...</p>
+</li>
+<li><p>The mean from Fandango is much higher because the values in it goes from 3 to 5 and in Metacritic they go from 1 to 5.</p>
+</li>
+<li><p>Finally, we can appreciate that the standard deviation is lower in Fandango than in Metacritic, it suggest that the data is more spread out from the mean in Metacritic than in Fandango, so in Fandango it is more correlated. We will see it.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Scatter-Plots">Scatter Plots<a class="anchor-link" href="#Scatter-Plots">¶</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [37]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">movies</span><span class="p">[</span><span class="s2">"Fandango_Stars"</span><span class="p">],</span> <span class="n">movies</span><span class="p">[</span><span class="s2">"Metacritic_norm_round"</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s2">"r"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [38]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Continue with the second point.</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [39]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">movies</span><span class="p">[</span><span class="s2">"fm_diff"</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">movies</span><span class="p">[</span><span class="s2">"Metacritic_norm_round"</span><span class="p">]</span> <span class="o">-</span> <span class="n">movies</span><span class="p">[</span><span class="s2">"Fandango_Stars"</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [40]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">movies</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">"fm_diff"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[40]:</div>
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>FILM</th>
+<th>RottenTomatoes</th>
+<th>RottenTomatoes_User</th>
+<th>Metacritic</th>
+<th>Metacritic_User</th>
+<th>IMDB</th>
+<th>Fandango_Stars</th>
+<th>Fandango_Ratingvalue</th>
+<th>RT_norm</th>
+<th>RT_user_norm</th>
+<th>...</th>
+<th>RT_norm_round</th>
+<th>RT_user_norm_round</th>
+<th>Metacritic_norm_round</th>
+<th>Metacritic_user_norm_round</th>
+<th>IMDB_norm_round</th>
+<th>Metacritic_user_vote_count</th>
+<th>IMDB_user_vote_count</th>
+<th>Fandango_votes</th>
+<th>Fandango_Difference</th>
+<th>fm_diff</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>3</th>
+<td>Do You Believe? (2015)</td>
+<td>18</td>
+<td>84</td>
+<td>22</td>
+<td>4.7</td>
+<td>5.4</td>
+<td>5.0</td>
+<td>4.5</td>
+<td>0.90</td>
+<td>4.20</td>
+<td>...</td>
+<td>1.0</td>
+<td>4.0</td>
+<td>1.0</td>
+<td>2.5</td>
+<td>2.5</td>
+<td>31</td>
+<td>3136</td>
+<td>1793</td>
+<td>0.5</td>
+<td>4.0</td>
+</tr>
+<tr>
+<th>85</th>
+<td>Little Boy (2015)</td>
+<td>20</td>
+<td>81</td>
+<td>30</td>
+<td>5.9</td>
+<td>7.4</td>
+<td>4.5</td>
+<td>4.3</td>
+<td>1.00</td>
+<td>4.05</td>
+<td>...</td>
+<td>1.0</td>
+<td>4.0</td>
+<td>1.5</td>
+<td>3.0</td>
+<td>3.5</td>
+<td>38</td>
+<td>5927</td>
+<td>811</td>
+<td>0.2</td>
+<td>3.0</td>
+</tr>
+<tr>
+<th>47</th>
+<td>Annie (2014)</td>
+<td>27</td>
+<td>61</td>
+<td>33</td>
+<td>4.8</td>
+<td>5.2</td>
+<td>4.5</td>
+<td>4.2</td>
+<td>1.35</td>
+<td>3.05</td>
+<td>...</td>
+<td>1.5</td>
+<td>3.0</td>
+<td>1.5</td>
+<td>2.5</td>
+<td>2.5</td>
+<td>108</td>
+<td>19222</td>
+<td>6835</td>
+<td>0.3</td>
+<td>3.0</td>
+</tr>
+<tr>
+<th>19</th>
+<td>Pixels (2015)</td>
+<td>17</td>
+<td>54</td>
+<td>27</td>
+<td>5.3</td>
+<td>5.6</td>
+<td>4.5</td>
+<td>4.1</td>
+<td>0.85</td>
+<td>2.70</td>
+<td>...</td>
+<td>1.0</td>
+<td>2.5</td>
+<td>1.5</td>
+<td>2.5</td>
+<td>3.0</td>
+<td>246</td>
+<td>19521</td>
+<td>3886</td>
+<td>0.4</td>
+<td>3.0</td>
+</tr>
+<tr>
+<th>134</th>
+<td>The Longest Ride (2015)</td>
+<td>31</td>
+<td>73</td>
+<td>33</td>
+<td>4.8</td>
+<td>7.2</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>1.55</td>
+<td>3.65</td>
+<td>...</td>
+<td>1.5</td>
+<td>3.5</td>
+<td>1.5</td>
+<td>2.5</td>
+<td>3.5</td>
+<td>49</td>
+<td>25214</td>
+<td>2603</td>
+<td>0.0</td>
+<td>3.0</td>
+</tr>
+</tbody>
+</table>
+<p>5 rows × 23 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Correlations">Correlations<a class="anchor-link" href="#Correlations">¶</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [49]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="k">import</span> <span class="n">pearsonr</span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [53]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r_value</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">pearsonr</span><span class="p">(</span><span class="n">movies</span><span class="p">[</span><span class="s2">"Fandango_Stars"</span><span class="p">],</span> <span class="n">movies</span><span class="p">[</span><span class="s2">"Metacritic_norm_round"</span><span class="p">])</span>
+<span class="n">r_value</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[53]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>0.17844919073895918</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>As we can see, the r_value which give us the correlation between "Fandango_Stars" and "Metacritic_norm_round" is close to zero which means the both variables have a low correlation.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [52]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="k">import</span> <span class="n">linregress</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [57]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">,</span> <span class="n">r_value</span><span class="p">,</span> <span class="n">p_value</span><span class="p">,</span> <span class="n">stderr</span> <span class="o">=</span> <span class="n">linregress</span><span class="p">(</span><span class="n">movies</span><span class="p">[</span><span class="s2">"Metacritic_norm_round"</span><span class="p">],</span> <span class="n">movies</span><span class="p">[</span><span class="s2">"Fandango_Stars"</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [58]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r_value</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[58]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>0.17844919073895882</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Let's-try-to-predict-what-a-3.0-score-from-Metacritic-will-result-on-Fandango.">Let's try to predict what a 3.0 score from Metacritic will result on Fandango.<a class="anchor-link" href="#Let's-try-to-predict-what-a-3.0-score-from-Metacritic-will-result-on-Fandango.">¶</a></h5>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [59]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">value_to_pred</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">pred_3</span> <span class="o">=</span> <span class="n">value_to_pred</span> <span class="o">*</span> <span class="n">slope</span> <span class="o">+</span> <span class="n">intercept</span>
+<span class="n">pred_3</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[59]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>4.0917071528212041</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Finding-Residuals">Finding Residuals<a class="anchor-link" href="#Finding-Residuals">¶</a></h1><h5 id="Let's-see-if-both-variables-are-linearly-related-or-not">Let's see if both variables are linearly related or not<a class="anchor-link" href="#Let's-see-if-both-variables-are-linearly-related-or-not">¶</a></h5>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [60]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pred_1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">*</span><span class="n">slope</span> <span class="o">+</span> <span class="n">intercept</span>
+<span class="n">pred_1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[60]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>3.897084996873347</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [61]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pred_5</span> <span class="o">=</span> <span class="mi">5</span><span class="o">*</span><span class="n">slope</span> <span class="o">+</span> <span class="n">intercept</span>
+<span class="n">pred_5</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[61]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>4.2863293087690604</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [65]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">movies</span><span class="p">[</span><span class="s2">"Metacritic_norm_round"</span><span class="p">],</span> <span class="n">movies</span><span class="p">[</span><span class="s2">"Fandango_Stars"</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">],</span> <span class="p">[</span><span class="n">pred_1</span><span class="p">,</span> <span class="n">pred_5</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXkAAAEACAYAAABWLgY0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAALEgAACxIB0t1+/AAAHfJJREFUeJzt3X9M1Pf9B/Dn4c8DpXKOYoMKrLquKnhHp2RVqZuFCv6o
+Jua7WGPpZtPaamzVdEmdm7Yxa9TNpFuFMr9Lu0RFvzGLFoSVNeNoufCjFahbtV8bV6aYCletVMCv
+Ldzr+wdw5bwP3AfuuM/n3j4fyaVwnw93T97g89687/P51CIiAiIiUlKU0QGIiGjksOSJiBTGkici
+UhhLnohIYSx5IiKFseSJiBSmq+STk5Mxd+5cOBwOzJ8/3297ZWUlJk2ahPT0dKSnp2PPnj0hD0pE
+REM3Ws9OUVFRcDqdiIuLG3CfzMxMvPPOOyELRkREwdM1kxcReDyegPsQEZG56Cp5i8WCrKwszJs3
+D4cOHdLcp7q6Gna7HcuWLcO5c+dCGpKIiIbHoueyBl988QXuu+8+uN1uZGVl4Y033sDChQu929vb
+2xEVFYXo6GiUlZXhhRdewIULF0Y0OBERBaar5Pt75ZVXMHHiRGzbtm3AfVJSUnDmzBnYbDbfJ7NY
+hpeSiOguN9wl8YDLNZ2dnWhvbwcAdHR0oLy8HHPmzPHZp6WlxftxXV0dRMSv4PsHNftt165dhmdg
+TuaM1IzMGfpbMAIeXdPS0oLVq1fDYrGgq6sL69atQ3Z2NgoLC2GxWPDMM8/gxIkTKCgowJgxY2C1
+WnH8+PGgQhERUWgELPmUlBQ0Njb63f/ss896P960aRM2bdoU2mRERBQ0nvGqYfHixUZH0IU5QysS
+ckZCRoA5zWTIb7wG9WQWS9DrS0REd5tgupMzeSIihbHkiYgUxpInIlIYS56ISGEseSIihbHkiYgU
+xpInIlIYS56ISGEseSIihbHkiYgUxpInIlIYS56ISGEseSIihbHkiYgUxpInIlIYS56ISGEseSIi
+hbHkiYgUxpInIlIYS56ISGEseSIihbHkiYgUxpInIlIYS56ISGEseSIihbHkiYgUpqvkk5OTMXfu
+XDgcDsyfP19zny1btmDmzJmw2+1obGwMaUgiIhqe0Xp2ioqKgtPpRFxcnOb2srIyXLx4EZ999hlq
+a2uxceNG1NTUhDQoERENna6ZvIjA4/EMuP3UqVN48sknAQAZGRloa2tDS0uL5r5ut3sYMYlGlsvl
+wq5du+ByuYyOMqCCggJkZmaioKDA6ChKcLvd+PDDD5XvJF0lb7FYkJWVhXnz5uHQoUN+269cuYJp
+06Z5P09MTMSVK1c0Hysp6YcoKjo+zLhEoZednYuFC7Pw6qtFWLgwC489lmt0JD822xQ8//x2fPDB
+VTz//HZMnnyv0ZEiWlHRcSQl/RBZWRuV7yRdJe9yuVBfX4/S0lIcPHgQVVVVw37CW7cqsGHD88q/
+elJkcLlc+PvfnQBqAFwAUIPycqepZvQFBQX46quv0T/j9evtnNEPk9vtxoYNz+PWrQq0tZ1RvpN0
+lfx9990HAIiPj8fq1atRV1fnsz0xMRGXL1/2ft7c3IzExMQBHu2v6O4eix07dsDpdA4rNFGolJeX
+A5gKIK33njQAib33m0NRURG0MvbcT0PV1NSEsWOT0X88x4xJQlNTk3Gh7uB0OrF7927vLSgSQEdH
+h9y8eVNERNrb2+Xhhx+Wd99912ef06dPS25uroiIVFdXS0ZGhuZjARDgY7FabdLa2hroqYlGXFVV
+lQBWAT4WQHr/a5Wqqiqjo3nl5+drZszPzzc6WkRqbW0Vq9XmM55m7yQdVT3w1wba4d///rfMnTtX
+7Ha7zJkzR1577TUREXnzzTelsLDQu9+mTZvk/vvvl7S0NDlz5syAQa1Wmxw9emzYgYlCLTs7p7dE
+ZwhglezsHKMj+bHZ4n0y2mzxRkeKaEePHhOr1SaxsY6I6KRgSt7S+wBhYbFY0Nraivj4+HA9JZEu
+LpcL5eXlyM7OxoIFC4yOo6mgoABFRUVYu3YtnnvuOaPjRDy3242mpiYkJyebvpMsFguGW9VhL/kw
+Ph0RkRKC6U5e1oCISGEseSIihbHkiYgUxpInIlIYS56ISGEseSIihbHkiYgUxpInIlIYS56ISGEs
+eSIihbHkiYgUxpInIlIYS56ISGEseSIihbHkiYgUxpInIlIYS56ISGEseSIihbHkiYgUxpInIlIY
+S56ISGEseSIihbHkiYgUxpInIlIYS56ISGEseSIihbHkiYgUxpInIlKY7pL3eDxIT0/HypUr/bZV
+VlZi0qRJSE9PR3p6Ovbs2RPSkERENDy6S/7111/HrFmzBtyemZmJ+vp61NfXY+fOnSEJZ4QjR47g
+8ccfx5EjR4yOMqhIybl9+3YkJSVh+/btRkcZ1FNPPYXJkyfjqaeeMjrKgPbt2weHw4F9+/YZHWVQ
+OTk5sFqtyMnJMTrKoEpKSvD000+jpKTE6CgjS3S4fPmyPProo1JRUSErVqzw2+50OmX58uUBH0fn
+0xlm6tQUAawCzBTAKtOmJRsdSVOk5IyKGu+Tc9SosUZH0gSM8ckJjDI6kp/o6Ek+GWNiYo2OpAkY
+dcdYWoyOpGnOHIdPztRUu9GRBhVMd+qayW/duhX79++HxWIZcJ/q6mrY7XYsW7YM586dC9FLUPgc
+OXIEzc1XAdQAuACgBpcvt5huphwpObdv3w6Px4L+Obu7R5luRt8zcx+N/jmBsaaa0e/btw+dnbfR
+P2NHx7emm9H3zNzHwncsx5tuRl9SUoJ//etT9M/5z3/+r7oz+kCvAiUlJbJp0yYREamoqNCcsd+8
+eVM6OjpERKS0tFRmzpw54KvRrl27vLeKiophvzqF2sqVK3tf1aXfbYasXLnS6Gg+IiXn9OnTNXNO
+nz7d6Gg+bDabZk6bzWZ0NC+73a6Z0W431+xz/PjxmjnHjx9vdDQfGzZs0My5YcMGo6N5VVRU+HSl
+jqoeUMCvfPnll2XatGmSkpIiU6ZMkZiYGFm/fv2gX5OcnCzXrl3zfzITL9ccPny498+3j3t/6B8L
+YJXDhw8bHc1HpOTctm2bZs5t27YZHc1HXl6eZs68vDyjo3nt3btXM+PevXuNjuZj6dKlmjmXLl1q
+dDQfxcXFmjmLi4uNjjagES35/pxOp+aa/NWrV70f19bWSlJSkvaTmbjkRUSmTUvu/eHPMPVad6Tk
+HDVqrE9O867Jj/LJacY1+ZiYWJ+M5l2Tt9wxluZck09NtfvkvOvX5LUUFhbiT3/6EwDgxIkTmDNn
+DhwOB1588UUcP348BAtJ4Xfp0uc4fPgQVq6chcOHD+HSpc+NjqQpUnJ2dd3Gtm3PYfr0b7Bt23Po
+6rptdCRNIl3Iy/sv2GzXkZf3XxDpMjqSn/b2Nuzduxt2+wTs3bsb7e1tRkfSJOLB0qWPYPz4Zixd
++ghEPEZH0nT2bAOKi/8HGzY8guLi/8HZsw1GRxoxlt5XifA8mcWCMD4dEZESgulOnvFKRKQwljwR
+kcJY8kRECmPJExEpjCVPRKQwljwRkcJY8kRECmPJExEpjCVPRKQwljwRkcJGGx2AiIiA9nagtVX7
+FgyWPBHRCOjqAr788ruibmkZuMRbW3suepyQANx7r+8tKSm4HLxAGRGRDiLAzZuDl3X/bW1tgM3m
+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
+SUVORK5CYII=
+" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['$','$'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        " linebreaks: { automatic: true, width: '95% container' }, " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+
+            
+            
+            <hr/>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+            <h4>Published</h4>
+            <time pubdate="pubdate" datetime="2017-06-13T20:00:00+02:00">jun. 13, 2017</time>
+            <h4>Category</h4>
+            <a class="category-link" href="./categories.html#data-analysis-ref">Data Analysis</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="./tags.html#data-analysis-ref">data analysis
+                    <span>1</span>
+</a></li>
+                <li><a href="./tags.html#data-visualization-ref">data visualization
+                    <span>5</span>
+</a></li>
+                <li><a href="./tags.html#matplotlib-ref">matplotlib
+                    <span>5</span>
+</a></li>
+                <li><a href="./tags.html#python-ref">python
+                    <span>10</span>
+</a></li>
+                <li><a href="./tags.html#statistics-ref">Statistics
+                    <span>4</span>
+</a></li>
+            </ul>
+<h4>Stay in Touch</h4>
+    <a href="http://github.com/coderHook" title="My Github Profile" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-github sidebar-social-links"></i></a>
+    <a href="diazpedroabel@gmail.com" title="My Email Address" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-envelope sidebar-social-links"></i></a>
+<!-- Begin MailChimp Signup Form -->
+<div id="mc-embed-signup">
+<form action="empty" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<h4>Get Monthly Updates</h4>
+<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email..." required>
+<div class="clear"><input type="submit" value="Send me Free updates" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+<!--End mc_embed_signup-->
+        </div>
+        </section>
+</div>
+</article>
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+        <div id="push"></div>
+    </div>
+<footer>
+<div id="footer">
+    <ul class="footer-content">
+        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+    </ul>
+</div>
+</footer>            <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    
+    </body>
+    <!-- Theme: Elegant built for Pelican
+    License : http://oncrashreboot.com/pelican-elegant -->
+</html>

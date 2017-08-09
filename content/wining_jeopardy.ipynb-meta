@@ -1,0 +1,7 @@
+Title: How to Win at Jeopardy using Python and our knowledge in statistics.
+Slug: predicting jeopardy game questions
+Date: 2017-07-04 22:00
+Category: Statistics
+Tags: Python, Linear Regression, Statistics
+Author: coderHook
+Summary: In this project we are going to check for questions that are repeated from time to time, and look for high value questions to see what we should study. Also we are going to implement the Chi-squared model.

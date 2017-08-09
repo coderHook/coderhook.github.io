@@ -1,0 +1,7 @@
+Title: Creating Relations with SQL and Python
+Slug: proj sqlite3 and python
+Date: 2017-06-10 21:00
+Category: Databases
+Tags: Python, SQL
+Author: coderHook
+Summary: In this project we are going to create relations using Sqlite3 and python, we are going to: Creating The Ceremonies Table, Foreign Key Constraints, Setting Up One-To-Many, Deleting And Renaming Tables, Creating A Join Table
