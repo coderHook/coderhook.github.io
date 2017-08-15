@@ -1,7 +1,7 @@
-Title: Star Wars survey: What version and Who likes it more.
+Title: Encuestas estar wars. ¿Que versiones de la saga son mas populares y entre quienes?
 Slug: Lets see who and what version of star wars people tend to like more.
 Date: 2017-06-02 20:00
 Category: Data cleaning
 Tags: python, matplotlib, data visualization
 author: coderHook
-Summary: In this project we are going first to clean the data, and then get some interesting insight on the movies of Star Wars to see what version were more popular.
+Summary: En este proyecto vamos, en primer lugar a limpiar los datos para poder trabajar con ellos, despues veremos que sagas son las mas populares y por quienes.

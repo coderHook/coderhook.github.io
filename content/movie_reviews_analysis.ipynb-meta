@@ -1,7 +1,7 @@
-Title: Movie Review Analysis: Making predictions with the data.
+Title: Analizando las calificaciones de las peliculas: Analisis Estadistico, Visualizando resultados y obteniendo predicciones.
 Slug: Using Linear Regression to see how accurate are our predictions.
 Date: 2017-06-13 20:00
 Category: Data Analysis
 Tags: python, matplotlib, data visualization, Statistics, data analysis
 author: coderHook
-Summary: In this project We will continue with the analysis of the movie review, but this time we are going to use statistics to programm manually in python the linear regression and see how far away the data is from the prediction, so can see our accuracy.
+Summary: En este proyecto vamos a continuar analizando recomendaciones de peliculas, pero esta vez vamos a usar estadistica para programar manualmente con pytho la regresion linear y ver como de dispersas estan las recomendaciones de la prediccion que nosotros vamos a hacer. De esta manera podemos obtener la precision de nuestras predicciones de manera visual.

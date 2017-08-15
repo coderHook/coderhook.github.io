@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Datascience CoderHook - Statistics</title><link href="https://coderhook.github.io/" rel="alternate"></link><link href="https://coderhook.github.io/feeds/statistics.atom.xml" rel="self"></link><id>https://coderhook.github.io/</id><updated>2017-07-06T22:00:00+02:00</updated><entry><title>Predicting Board Games Reviews using Linear Regression.</title><link href="https://coderhook.github.io/predicting%20board%20games%20reviews%20lr" rel="alternate"></link><published>2017-07-06T22:00:00+02:00</published><updated>2017-07-06T22:00:00+02:00</updated><author><name>coderHook</name></author><id>tag:coderhook.github.io,2017-07-06:/predicting board games reviews lr</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Datascience para el Bien Social - Statistics</title><link href="https://coderhook.github.io/" rel="alternate"></link><link href="https://coderhook.github.io/feeds/statistics.atom.xml" rel="self"></link><id>https://coderhook.github.io/</id><updated>2017-07-06T22:00:00+02:00</updated><entry><title>Prediciendo Ratings de Juegos usando Regression Lineal.</title><link href="https://coderhook.github.io/predicting%20board%20games%20reviews%20lr" rel="alternate"></link><published>2017-07-06T22:00:00+02:00</published><updated>2017-07-06T22:00:00+02:00</updated><author><name>coderHook</name></author><id>tag:coderhook.github.io,2017-07-06:/predicting board games reviews lr</id><summary type="html">
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Predicting-Board-Games-Reviews"&gt;Predicting Board Games Reviews&lt;a class="anchor-link" href="#Predicting-Board-Games-Reviews"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="In-this-project-we-are-going-to-first,-see-how-to-pick-a-metric-error-for-our-model,-we-are-going-to-work-with-clusters-and-check-for-correlations,-and-finally-we-will-create-a-model-for-our-predictions."&gt;In this project we are going to first, see how to pick a metric error for our model, we are going to work with clusters and check for correlations, and finally we will create a model for our predictions.&lt;a class="anchor-link" href="#In-this-project-we-are-going-to-first,-see-how-to-pick-a-metric-error-for-our-model,-we-are-going-to-work-with-clusters-and-check-for-correlations,-and-finally-we-will-create-a-model-for-our-predictions."&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h1 id="Prediciendo-las-calificaciones-de-las-peliculas"&gt;Prediciendo las calificaciones de las peliculas&lt;a class="anchor-link" href="#Prediciendo-las-calificaciones-de-las-peliculas"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="En-este-proyecto-vamos-a-escoger-que-error-utilizar-para-nuestro-modelo.-Trabajaremos-con-Clusters-y-comprobaremos-su-correlacion.-Finalmente,-vamos-a-crear-un-modelo-para-realizar-nuestras-predicciones-y-ver-como-se-ajustan-estas-a-la-realidad."&gt;En este proyecto vamos a escoger que error utilizar para nuestro modelo. Trabajaremos con Clusters y comprobaremos su correlacion. Finalmente, vamos a crear un modelo para realizar nuestras predicciones y ver como se ajustan estas a la realidad.&lt;a class="anchor-link" href="#En-este-proyecto-vamos-a-escoger-que-error-utilizar-para-nuestro-modelo.-Trabajaremos-con-Clusters-y-comprobaremos-su-correlacion.-Finalmente,-vamos-a-crear-un-modelo-para-realizar-nuestras-predicciones-y-ver-como-se-ajustan-estas-a-la-realidad."&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -15,7 +15,7 @@
 * IPython notebook
 *
 */
-/* CSS font colors for translated ANSI colors. */
+/* &lt;span class="caps"&gt;CSS&lt;/span&gt; font colors for translated &lt;span class="caps"&gt;ANSI&lt;/span&gt; colors. */
 .ansibold {
   font-weight: bold;
 }
@@ -101,13 +101,13 @@ div.cell {
   background: linear-gradient(to right, transparent -40px, transparent 1px, transparent 1px, transparent 100%);
 }
 div.cell.jupyter-soft-selected {
-  border-left-color: #90CAF9;
-  border-left-color: #E3F2FD;
+  border-left-color: #&lt;span class="caps"&gt;90CAF9&lt;/span&gt;;
+  border-left-color: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
   border-left-width: 1px;
   padding-left: 5px;
-  border-right-color: #E3F2FD;
+  border-right-color: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
   border-right-width: 1px;
-  background: #E3F2FD;
+  background: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
 }
 @media print {
   div.cell.jupyter-soft-selected {
@@ -118,7 +118,7 @@ div.cell.selected {
   border-color: #ababab;
   border-left-width: 0px;
   padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 5px, transparent 5px, transparent 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; -40px, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; 5px, transparent 5px, transparent 100%);
 }
 @media print {
   div.cell.selected {
@@ -128,13 +128,13 @@ div.cell.selected {
 div.cell.selected.jupyter-soft-selected {
   border-left-width: 0;
   padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 7px, #E3F2FD 7px, #E3F2FD 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; -40px, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; 7px, #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt; 7px, #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt; 100%);
 }
 .edit_mode div.cell.selected {
-  border-color: #66BB6A;
+  border-color: #&lt;span class="caps"&gt;66BB6A&lt;/span&gt;;
   border-left-width: 0px;
   padding-left: 6px;
-  background: linear-gradient(to right, #66BB6A -40px, #66BB6A 5px, transparent 5px, transparent 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;66BB6A&lt;/span&gt; -40px, #&lt;span class="caps"&gt;66BB6A&lt;/span&gt; 5px, transparent 5px, transparent 100%);
 }
 @media print {
   .edit_mode div.cell.selected {
@@ -287,7 +287,7 @@ div.input {
 }
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_prompt {
-  color: #303F9F;
+  color: #&lt;span class="caps"&gt;303F9F&lt;/span&gt;;
   border-top: 1px solid transparent;
 }
 div.input_area &gt; div.highlight {
@@ -328,7 +328,7 @@ div.input_area &gt; div.highlight &gt; pre {
   overflow-x: auto;
 }
 .CodeMirror-lines {
-  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
+  /* In &lt;span class="caps"&gt;CM2&lt;/span&gt;, this used to be 0.4em, but in &lt;span class="caps"&gt;CM3&lt;/span&gt; it went to 4px. We need the em value because */
   /* we have set a different line-height and want this to scale with that. */
   padding: 0.4em;
 }
@@ -340,7 +340,7 @@ div.input_area &gt; div.highlight &gt; pre {
   border-top-left-radius: 2px;
 }
 .CodeMirror pre {
-  /* In CM3 this went to 4px from 0 in CM2. We need the 0 value because of how we size */
+  /* In &lt;span class="caps"&gt;CM3&lt;/span&gt; this went to 4px from 0 in &lt;span class="caps"&gt;CM2&lt;/span&gt;. We need the 0 value because of how we size */
   /* .CodeMirror-lines */
   padding: 0;
   border: 0;
@@ -365,7 +365,7 @@ Adapted from GitHub theme
   color: #333333;
 }
 .highlight-string {
-  color: #BA2121;
+  color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;;
 }
 .highlight-comment {
   color: #408080;
@@ -388,11 +388,11 @@ Adapted from GitHub theme
   color: #f00;
 }
 .highlight-operator {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
   font-weight: bold;
 }
 .highlight-meta {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
 }
 /* previously not defined, copying from default codemirror */
 .highlight-def {
@@ -440,7 +440,7 @@ Adapted from GitHub theme
   color: #000;
 }
 .cm-s-ipython span.cm-operator {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
   font-weight: bold;
 }
 .cm-s-ipython span.cm-variable-2 {
@@ -454,13 +454,13 @@ Adapted from GitHub theme
   font-style: italic;
 }
 .cm-s-ipython span.cm-string {
-  color: #BA2121;
+  color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;;
 }
 .cm-s-ipython span.cm-string-2 {
   color: #f50;
 }
 .cm-s-ipython span.cm-meta {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
 }
 .cm-s-ipython span.cm-qualifier {
   color: #555;
@@ -515,9 +515,9 @@ div.output_wrapper {
 }
 /* class for the output area when it should be height-limited */
 div.output_scroll {
-  /* ideally, this would be max-height, but FF barfs all over that */
+  /* ideally, this would be max-height, but &lt;span class="caps"&gt;FF&lt;/span&gt; barfs all over that */
   height: 24em;
-  /* FF needs this *and the wrapper* to specify full width, or it will shrinkwrap */
+  /* &lt;span class="caps"&gt;FF&lt;/span&gt; needs this *and the wrapper* to specify full width, or it will shrinkwrap */
   width: 100%;
   overflow: auto;
   border-radius: 2px;
@@ -551,7 +551,7 @@ div.out_prompt_overlay {
   border-radius: 2px;
 }
 div.out_prompt_overlay:hover {
-  /* use inner shadow to get border that is computed the same on WebKit/FF */
+  /* use inner shadow to get border that is computed the same on WebKit/&lt;span class="caps"&gt;FF&lt;/span&gt; */
   -webkit-box-shadow: inset 0 0 1px #000;
   box-shadow: inset 0 0 1px #000;
   background: rgba(240, 240, 240, 0.5);
@@ -879,25 +879,25 @@ h6:hover .anchor-link {
 &lt;style type="text/css"&gt;.highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
-.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .err { border: 1px solid #&lt;span class="caps"&gt;FF0000&lt;/span&gt; } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
 .highlight .o { color: #666666 } /* Operator */
 .highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
 .highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
-.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cp { color: #&lt;span class="caps"&gt;BC7A00&lt;/span&gt; } /* Comment.Preproc */
 .highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
 .highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
 .highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
 .highlight .gd { color: #A00000 } /* Generic.Deleted */
 .highlight .ge { font-style: italic } /* Generic.Emph */
-.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gr { color: #&lt;span class="caps"&gt;FF0000&lt;/span&gt; } /* Generic.Error */
 .highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
 .highlight .gi { color: #00A000 } /* Generic.Inserted */
 .highlight .go { color: #888888 } /* Generic.Output */
 .highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .gt { color: #&lt;span class="caps"&gt;0044DD&lt;/span&gt; } /* Generic.Traceback */
 .highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
 .highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
 .highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
@@ -905,41 +905,41 @@ h6:hover .anchor-link {
 .highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
 .highlight .kt { color: #B00040 } /* Keyword.Type */
 .highlight .m { color: #666666 } /* Literal.Number */
-.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .s { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String */
 .highlight .na { color: #7D9029 } /* Name.Attribute */
 .highlight .nb { color: #008000 } /* Name.Builtin */
-.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .nc { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt;; font-weight: bold } /* Name.Class */
 .highlight .no { color: #880000 } /* Name.Constant */
-.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .nd { color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt; } /* Name.Decorator */
 .highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
-.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
-.highlight .nf { color: #0000FF } /* Name.Function */
-.highlight .nl { color: #A0A000 } /* Name.Label */
-.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .ne { color: #&lt;span class="caps"&gt;D2413A&lt;/span&gt;; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt; } /* Name.Function */
+.highlight .nl { color: #&lt;span class="caps"&gt;A0A000&lt;/span&gt; } /* Name.Label */
+.highlight .nn { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt;; font-weight: bold } /* Name.Namespace */
 .highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
 .highlight .nv { color: #19177C } /* Name.Variable */
-.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .ow { color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;; font-weight: bold } /* Operator.Word */
 .highlight .w { color: #bbbbbb } /* Text.Whitespace */
 .highlight .mb { color: #666666 } /* Literal.Number.Bin */
 .highlight .mf { color: #666666 } /* Literal.Number.Float */
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
-.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
-.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
-.highlight .sc { color: #BA2121 } /* Literal.String.Char */
-.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
-.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
-.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
-.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
-.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
-.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sa { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Affix */
+.highlight .sb { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Backtick */
+.highlight .sc { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Char */
+.highlight .dl { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Delimiter */
+.highlight .sd { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Double */
+.highlight .se { color: #&lt;span class="caps"&gt;BB6622&lt;/span&gt;; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Heredoc */
+.highlight .si { color: #&lt;span class="caps"&gt;BB6688&lt;/span&gt;; font-weight: bold } /* Literal.String.Interpol */
 .highlight .sx { color: #008000 } /* Literal.String.Other */
-.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
-.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .sr { color: #&lt;span class="caps"&gt;BB6688&lt;/span&gt; } /* Literal.String.Regex */
+.highlight .s1 { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
-.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .fm { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt; } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
@@ -947,38 +947,38 @@ h6:hover .anchor-link {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;
 &lt;style type="text/css"&gt;
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-fg { color: #&lt;span class="caps"&gt;3E424D&lt;/span&gt;; }
+.ansi-black-bg { background-color: #&lt;span class="caps"&gt;3E424D&lt;/span&gt;; }
 .ansi-black-intense-fg { color: #282C36; }
 .ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-red-fg { color: #&lt;span class="caps"&gt;E75C58&lt;/span&gt;; }
+.ansi-red-bg { background-color: #&lt;span class="caps"&gt;E75C58&lt;/span&gt;; }
+.ansi-red-intense-fg { color: #&lt;span class="caps"&gt;B22B31&lt;/span&gt;; }
+.ansi-red-intense-bg { background-color: #&lt;span class="caps"&gt;B22B31&lt;/span&gt;; }
 .ansi-green-fg { color: #00A250; }
 .ansi-green-bg { background-color: #00A250; }
 .ansi-green-intense-fg { color: #007427; }
 .ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-yellow-fg { color: #&lt;span class="caps"&gt;DDB62B&lt;/span&gt;; }
+.ansi-yellow-bg { background-color: #&lt;span class="caps"&gt;DDB62B&lt;/span&gt;; }
+.ansi-yellow-intense-fg { color: #&lt;span class="caps"&gt;B27D12&lt;/span&gt;; }
+.ansi-yellow-intense-bg { background-color: #&lt;span class="caps"&gt;B27D12&lt;/span&gt;; }
+.ansi-blue-fg { color: #&lt;span class="caps"&gt;208FFB&lt;/span&gt;; }
+.ansi-blue-bg { background-color: #&lt;span class="caps"&gt;208FFB&lt;/span&gt;; }
+.ansi-blue-intense-fg { color: #&lt;span class="caps"&gt;0065CA&lt;/span&gt;; }
+.ansi-blue-intense-bg { background-color: #&lt;span class="caps"&gt;0065CA&lt;/span&gt;; }
+.ansi-magenta-fg { color: #&lt;span class="caps"&gt;D160C4&lt;/span&gt;; }
+.ansi-magenta-bg { background-color: #&lt;span class="caps"&gt;D160C4&lt;/span&gt;; }
 .ansi-magenta-intense-fg { color: #A03196; }
 .ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
+.ansi-cyan-fg { color: #&lt;span class="caps"&gt;60C6C8&lt;/span&gt;; }
+.ansi-cyan-bg { background-color: #&lt;span class="caps"&gt;60C6C8&lt;/span&gt;; }
+.ansi-cyan-intense-fg { color: #&lt;span class="caps"&gt;258F8F&lt;/span&gt;; }
+.ansi-cyan-intense-bg { background-color: #&lt;span class="caps"&gt;258F8F&lt;/span&gt;; }
+.ansi-white-fg { color: #&lt;span class="caps"&gt;C5C1B4&lt;/span&gt;; }
+.ansi-white-bg { background-color: #&lt;span class="caps"&gt;C5C1B4&lt;/span&gt;; }
+.ansi-white-intense-fg { color: #&lt;span class="caps"&gt;A1A6B2&lt;/span&gt;; }
+.ansi-white-intense-bg { background-color: #&lt;span class="caps"&gt;A1A6B2&lt;/span&gt;; }
 
 .ansi-bold { font-weight: bold; }
 &lt;/style&gt;
@@ -987,7 +987,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Predicting-Board-Games-Reviews"&gt;Predicting Board Games Reviews&lt;a class="anchor-link" href="#Predicting-Board-Games-Reviews"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="In-this-project-we-are-going-to-first,-see-how-to-pick-a-metric-error-for-our-model,-we-are-going-to-work-with-clusters-and-check-for-correlations,-and-finally-we-will-create-a-model-for-our-predictions."&gt;In this project we are going to first, see how to pick a metric error for our model, we are going to work with clusters and check for correlations, and finally we will create a model for our predictions.&lt;a class="anchor-link" href="#In-this-project-we-are-going-to-first,-see-how-to-pick-a-metric-error-for-our-model,-we-are-going-to-work-with-clusters-and-check-for-correlations,-and-finally-we-will-create-a-model-for-our-predictions."&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h1 id="Prediciendo-las-calificaciones-de-las-peliculas"&gt;Prediciendo las calificaciones de las peliculas&lt;a class="anchor-link" href="#Prediciendo-las-calificaciones-de-las-peliculas"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="En-este-proyecto-vamos-a-escoger-que-error-utilizar-para-nuestro-modelo.-Trabajaremos-con-Clusters-y-comprobaremos-su-correlacion.-Finalmente,-vamos-a-crear-un-modelo-para-realizar-nuestras-predicciones-y-ver-como-se-ajustan-estas-a-la-realidad."&gt;En este proyecto vamos a escoger que error utilizar para nuestro modelo. Trabajaremos con Clusters y comprobaremos su correlacion. Finalmente, vamos a crear un modelo para realizar nuestras predicciones y ver como se ajustan estas a la realidad.&lt;a class="anchor-link" href="#En-este-proyecto-vamos-a-escoger-que-error-utilizar-para-nuestro-modelo.-Trabajaremos-con-Clusters-y-comprobaremos-su-correlacion.-Finalmente,-vamos-a-crear-un-modelo-para-realizar-nuestras-predicciones-y-ver-como-se-ajustan-estas-a-la-realidad."&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1000,7 +1000,7 @@ h6:hover .anchor-link {
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;csv&lt;/span&gt;
 
 &lt;span class="n"&gt;board_games&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"board_games.csv"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;board_games&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;board_games&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1008,167 +1008,28 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[1]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div&gt;
-&lt;style&gt;
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
+&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;       id       type                       name  yearpublished  minplayers  \
+0   12333  boardgame          Twilight Struggle         2005.0         2.0   
+1  120677  boardgame              Terra Mystica         2012.0         2.0   
+2  102794  boardgame  Caverna: The Cave Farmers         2013.0         1.0   
 
-    .dataframe thead th {
-        text-align: left;
-    }
+   maxplayers  playingtime  minplaytime  maxplaytime  minage  users_rated  \
+0         2.0        180.0        180.0        180.0    13.0        20113   
+1         5.0        150.0         60.0        150.0    12.0        14383   
+2         7.0        210.0         30.0        210.0    12.0         9262   
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-&lt;/style&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;id&lt;/th&gt;
-&lt;th&gt;type&lt;/th&gt;
-&lt;th&gt;name&lt;/th&gt;
-&lt;th&gt;yearpublished&lt;/th&gt;
-&lt;th&gt;minplayers&lt;/th&gt;
-&lt;th&gt;maxplayers&lt;/th&gt;
-&lt;th&gt;playingtime&lt;/th&gt;
-&lt;th&gt;minplaytime&lt;/th&gt;
-&lt;th&gt;maxplaytime&lt;/th&gt;
-&lt;th&gt;minage&lt;/th&gt;
-&lt;th&gt;users_rated&lt;/th&gt;
-&lt;th&gt;average_rating&lt;/th&gt;
-&lt;th&gt;bayes_average_rating&lt;/th&gt;
-&lt;th&gt;total_owners&lt;/th&gt;
-&lt;th&gt;total_traders&lt;/th&gt;
-&lt;th&gt;total_wanters&lt;/th&gt;
-&lt;th&gt;total_wishers&lt;/th&gt;
-&lt;th&gt;total_comments&lt;/th&gt;
-&lt;th&gt;total_weights&lt;/th&gt;
-&lt;th&gt;average_weight&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;0&lt;/th&gt;
-&lt;td&gt;12333&lt;/td&gt;
-&lt;td&gt;boardgame&lt;/td&gt;
-&lt;td&gt;Twilight Struggle&lt;/td&gt;
-&lt;td&gt;2005.0&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;180.0&lt;/td&gt;
-&lt;td&gt;180.0&lt;/td&gt;
-&lt;td&gt;180.0&lt;/td&gt;
-&lt;td&gt;13.0&lt;/td&gt;
-&lt;td&gt;20113&lt;/td&gt;
-&lt;td&gt;8.33774&lt;/td&gt;
-&lt;td&gt;8.22186&lt;/td&gt;
-&lt;td&gt;26647&lt;/td&gt;
-&lt;td&gt;372&lt;/td&gt;
-&lt;td&gt;1219&lt;/td&gt;
-&lt;td&gt;5865&lt;/td&gt;
-&lt;td&gt;5347&lt;/td&gt;
-&lt;td&gt;2562&lt;/td&gt;
-&lt;td&gt;3.4785&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;td&gt;120677&lt;/td&gt;
-&lt;td&gt;boardgame&lt;/td&gt;
-&lt;td&gt;Terra Mystica&lt;/td&gt;
-&lt;td&gt;2012.0&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;150.0&lt;/td&gt;
-&lt;td&gt;60.0&lt;/td&gt;
-&lt;td&gt;150.0&lt;/td&gt;
-&lt;td&gt;12.0&lt;/td&gt;
-&lt;td&gt;14383&lt;/td&gt;
-&lt;td&gt;8.28798&lt;/td&gt;
-&lt;td&gt;8.14232&lt;/td&gt;
-&lt;td&gt;16519&lt;/td&gt;
-&lt;td&gt;132&lt;/td&gt;
-&lt;td&gt;1586&lt;/td&gt;
-&lt;td&gt;6277&lt;/td&gt;
-&lt;td&gt;2526&lt;/td&gt;
-&lt;td&gt;1423&lt;/td&gt;
-&lt;td&gt;3.8939&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;td&gt;102794&lt;/td&gt;
-&lt;td&gt;boardgame&lt;/td&gt;
-&lt;td&gt;Caverna: The Cave Farmers&lt;/td&gt;
-&lt;td&gt;2013.0&lt;/td&gt;
-&lt;td&gt;1.0&lt;/td&gt;
-&lt;td&gt;7.0&lt;/td&gt;
-&lt;td&gt;210.0&lt;/td&gt;
-&lt;td&gt;30.0&lt;/td&gt;
-&lt;td&gt;210.0&lt;/td&gt;
-&lt;td&gt;12.0&lt;/td&gt;
-&lt;td&gt;9262&lt;/td&gt;
-&lt;td&gt;8.28994&lt;/td&gt;
-&lt;td&gt;8.06886&lt;/td&gt;
-&lt;td&gt;12230&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;1476&lt;/td&gt;
-&lt;td&gt;5600&lt;/td&gt;
-&lt;td&gt;1700&lt;/td&gt;
-&lt;td&gt;777&lt;/td&gt;
-&lt;td&gt;3.7761&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;25613&lt;/td&gt;
-&lt;td&gt;boardgame&lt;/td&gt;
-&lt;td&gt;Through the Ages: A Story of Civilization&lt;/td&gt;
-&lt;td&gt;2006.0&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;240.0&lt;/td&gt;
-&lt;td&gt;240.0&lt;/td&gt;
-&lt;td&gt;240.0&lt;/td&gt;
-&lt;td&gt;12.0&lt;/td&gt;
-&lt;td&gt;13294&lt;/td&gt;
-&lt;td&gt;8.20407&lt;/td&gt;
-&lt;td&gt;8.05804&lt;/td&gt;
-&lt;td&gt;14343&lt;/td&gt;
-&lt;td&gt;362&lt;/td&gt;
-&lt;td&gt;1084&lt;/td&gt;
-&lt;td&gt;5075&lt;/td&gt;
-&lt;td&gt;3378&lt;/td&gt;
-&lt;td&gt;1642&lt;/td&gt;
-&lt;td&gt;4.1590&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;4&lt;/th&gt;
-&lt;td&gt;3076&lt;/td&gt;
-&lt;td&gt;boardgame&lt;/td&gt;
-&lt;td&gt;Puerto Rico&lt;/td&gt;
-&lt;td&gt;2002.0&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;150.0&lt;/td&gt;
-&lt;td&gt;90.0&lt;/td&gt;
-&lt;td&gt;150.0&lt;/td&gt;
-&lt;td&gt;12.0&lt;/td&gt;
-&lt;td&gt;39883&lt;/td&gt;
-&lt;td&gt;8.14261&lt;/td&gt;
-&lt;td&gt;8.04524&lt;/td&gt;
-&lt;td&gt;44362&lt;/td&gt;
-&lt;td&gt;795&lt;/td&gt;
-&lt;td&gt;861&lt;/td&gt;
-&lt;td&gt;5414&lt;/td&gt;
-&lt;td&gt;9173&lt;/td&gt;
-&lt;td&gt;5213&lt;/td&gt;
-&lt;td&gt;3.2943&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
+   average_rating  bayes_average_rating  total_owners  total_traders  \
+0         8.33774               8.22186         26647            372   
+1         8.28798               8.14232         16519            132   
+2         8.28994               8.06886         12230             99   
+
+   total_wanters  total_wishers  total_comments  total_weights  average_weight  
+0           1219           5865            5347           2562          3.4785  
+1           1586           6277            2526           1423          3.8939  
+2           1476           5600            1700            777          3.7761  
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1176,7 +1037,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [15]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;board_games&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;
@@ -1187,7 +1048,7 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[15]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[2]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;(81312, 20)&lt;/pre&gt;
 &lt;/div&gt;
@@ -1197,7 +1058,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [19]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [3]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;board_games&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;board_games&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dropna&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -1208,7 +1069,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [20]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [4]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;board_games&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;
@@ -1219,7 +1080,7 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[20]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[4]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;(81268, 20)&lt;/pre&gt;
 &lt;/div&gt;
@@ -1229,7 +1090,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [22]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [5]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;board_games&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;board_games&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;board_games&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'users_rated'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&gt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -1240,7 +1101,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [23]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [6]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;board_games&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;
@@ -1251,7 +1112,7 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[23]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[6]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;(56894, 20)&lt;/pre&gt;
 &lt;/div&gt;
@@ -1264,13 +1125,15 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Picking-An-Error-Metric"&gt;Picking An Error Metric&lt;a class="anchor-link" href="#Picking-An-Error-Metric"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Escogiendo-el-Error-metrico"&gt;Escogiendo el Error metrico&lt;a class="anchor-link" href="#Escogiendo-el-Error-metrico"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;El error métrico es de suma importancia ya que este nos va a decir si el modelo elegido es adecuado o no, imagenemos que obtenemos un error metrico el cual es igual a la desviación estandar de nuestros datos, eso querra decir que no estamos eligiendo un buen modelo y debemos de cambiarlo, pues deberiamos buscar siempre modelos que nos den un error por debajo de la desviacion estandar y lo mas bajo&amp;nbsp;posible.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [26]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [7]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
@@ -1287,133 +1150,95 @@ h6:hover .anchor-link {
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,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
-9f7776u6ulrStbC/5557klxV4txzzz1asGCBvvrqK01MTOjrr7/WsmXLkl1WXDZs2KAlS5bc0Nbe
-3q6qqipJUlVVldra2pJRWkJ82/yKioo0b961l/tHH31UoVDoltuZFeFwtyySO3funE6cOKFHHnkk
-2aUk1O7du3XgwIE5+VbBvr4+3Xvvvaqurta6dev00ksv6dKlS8kuK2GWLFmil19+WcuXL5fT6dTi
-xYtVVFSU7LISbmhoSHa7XdK1HbahoaEkVzR1Dh8+rKeeeuqWj5sV4XA3+PLLL1VWVqaDBw9q0aJF
-yS4nYd59913Z7Xbl5ubKGKO59v6HiYkJ9fT06Ec/+pF6enr0ne98R3V1dckuK2HOnj2r119/XefP
-n9c//vEPffnll3r77beTXdaUm4s7MpL06quvKjU1Vc8999wtHzsrwuFOFsnNRhMTEyorK9O2bdu0
-efPmZJeTUB988IE6Ojp0//33a+vWrfrDH/6gysrKZJeVMC6XS263W+vXr5cklZWVqaenJ8lVJc4n
-n3yixx9/XOnp6Zo/f75+8IMf6MMPP0x2WQlnt9s1ODgoSRoYGNDSpUuTXFHiNTY26ujRo7cd7rMi
-HPLy8nTmzBmdP39ekUhELS0tc+pdLy+88IK8Xq927dqV7FISbv/+/bpw4YLOnj2rlpYWFRYWqrm5
-OdllJYzdbpfb7VYwGJQkdXd3z6kL71lZWfroo480Pj4uY4y6u7vnxAX3m49iS0tL1djYKElqamqa
-9TtpN8/v2LFjOnDggDo6OrRw4cLb3sis0NnZaTIzM83KlSuNz+dLdjkJ86c//cnMmzfPrFmzxuTm
-5pq1a9eazs7OZJc1Jfx+v3n66aeTXUbCnThxwqxfv96sWbPGPPPMM+Y///lPsktKqF/84hfG6/Wa
-1atXm8rKShOJRJJdUly2bt1q7rvvPrNgwQLjdrvN4cOHzcWLF80TTzxhMjMzzZNPPmmGh4eTXWbM
-vm1+K1euNMuXLzdr1641a9euNTU1NbfcDovgAAAWs+K0EgBgehEOAAALwgEAYEE4AAAsCAcAgAXh
-AACwIBwAABaEAwDA4v8BnNhYP754P7IAAAAASUVORK5CYII=
+&lt;img src="data:image/png;base64,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
 " /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1422,7 +1247,7 @@ AACwIBwAABaEAwDA4v8BnNhYP754P7IAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [28]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [8]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;boxplot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;board_games&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'average_rating'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
@@ -1436,75 +1261,50 @@ AACwIBwAABaEAwDA4v8BnNhYP754P7IAAAAASUVORK5CYII=
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAW0AAAEACAYAAAB4ayemAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
-AAALEgAACxIB0t1+/AAADvpJREFUeJzt3WtsFFUfx/HflIukKZQ+AVuEItFEKJXSLRoSaGREqJcI
-iuILIWIIhJhIgoYXEHzRbTShxKC2MbxpDHjDa7wQJCCgQwwJEININCqJ1SrGcglNuSwqdfd5wUOf
-tmy77cxsd87M9/PCbJvpnv8mm5+H/5xzxkqlUikBAIyQl+sCAAD9R2gDgEEIbQAwCKENAAYhtAHA
-IIQ2ABgkY2ivWLFCxcXFqqio6PxdW1ubampqNHnyZN17771qb2/PapEAgKsyhvby5cu1Z8+ebr+r
-r6/XvHnz9NNPP2nu3LnauHFj1goEAPyf1Z/NNS0tLVqwYIGOHz8uSZoyZYoOHDig4uJitba2yrZt
-/fjjj1kvFgCizlVP+/Tp0youLpYklZSU6PTp074WBQBIz5cbkZZl+fE2AIAMhrr5o+LiYp06daqz
-PXLjjTf2ei2BDgDupOte9yu0U6lUtz9euHChtm3bpnXr1un111/XQw89NOCBgVyz7bgcJ57rMoC0
-epvwZmyPLFmyRLNmzdKJEyc0ceJEbd26VevXr9fevXs1efJk7d+/X+vXr/e9YCDbbDvXFQADl3Gm
-vX379rS/37dvn+/FAAD6xo5IRJbNVBsG6tc6bU8DWBY9bQAYoN6yk5k2ABiE0EZkxeO5rgAYONoj
-iCzLkvhqIqhojwBACBDaAGAQQhsADEJoA4BBCG1EVm1trisABo7VIwAQQKweAYAQILQBwCCENgAY
-hNAGAIMQ2ogszh6BiTyFdkNDg6ZNm6Zp06apsbHRr5qAQVFXl+sKgIFzHdrff/+9XnvtNX399dc6
-duyYdu7cqebmZj9rAwD04Dq0f/jhB82cOVM33HCDhgwZorvuuksfffSRn7UBAHpwHdq33367vvrq
-K7W1tSmRSGjXrl36/fff/awNANBDxgf79mbKlClat26d5s+fr4KCAsViMQ0ZMiTttfEud3xs2+bZ
-fADQg+M4chwn43W+bWN/7rnnVFpaqqeeeqr7AGxjR0DF46wgQXD1lp2eQvvMmTMaO3asfvvtN913
-3306dOiQRo0a1a+BAQC96y07XbdHJOnRRx/VuXPnNGzYMG3ZsuW6wAYA+ItT/gAggDjlDwBCgNAG
-AIMQ2ogsVo7ARPS0EVmWJfHVRFDR0waAECC0AcAghDYAGITQBgCDENqIrNraXFcADByrRwAggFg9
-AgAhQGgDgEEIbQAwCKENAAYhtBFZnD0CE7F6BJHF2SMIsqysHtm4caPKy8tVUVGhpUuX6p9//vHy
-dgCADFyHdktLi5qamvTNN9/o+PHj6ujo0LvvvutnbQCAHlw/I3LUqFEaPny4Ll26pLy8PCUSCd10
-001+1gYA6MH1TLuoqEhr167VxIkTNX78eI0ePVrz5s3zszYAQA+uZ9rNzc16+eWX1dLSosLCQi1e
-vFjbt2/XkiVLrrs23uU2vW3bsm3b7bCAbzh7BEHiOI4cx8l4nevVI++//7727t2rpqYmSdKbb76p
-w4cP69VXX+0+AKtHAGDAfF89MnnyZB06dEh//fWXUqmU9u/fr7KyMk9FAgD65jq0p0+frmXLlmnG
-jBmaPn26UqmUVq1a5WdtAIAe2FwDAAHE0awAEAKENiKLs0dgItojiCzOHkGQ0R4BgBAgtAHAIIQ2
-ABiE0AYAgxDaiCzOHoGJWD0CAAHE6hEACAFCGwAMQmgDgEEIbQAwCKGNyOLsEZiI1SOILM4eQZCx
-egQAQsB1aJ84cUKxWExVVVWKxWIqLCxUY2Ojn7UBAHrwpT2STCY1YcIEHT58WKWlpd0HoD2CgKI9
-giDLantk3759uvXWW68LbACAv4b68SbvvfeeHn/8cT/eCpAk/ec/Ultb9sexrOy+f1GRdO5cdsdA
-tHgO7StXrmjHjh2qr6/v9Zp4l7VVtm3Ltm2vwyLk2trC0brI9v8UEB6O48hxnIzXee5p79ixQ1u2
-bNHu3bvTD0BPGy6Epd8cls+BwZe1nvY777xDawQABomnmXYikdDNN9+s5uZmjRw5Mv0AzLThQlhm
-qGH5HBh8vWUnOyIRSGEJu7B8Dgw+dkQCQAgQ2gBgEEIbAAxCaAOAQQhtADAIoQ0ABiG0AcAghDYA
-GITQBgCDENoAYBBCGwAMQmgDgEEIbQAwCKENAAYhtAHAIJ5Cu729XY899pjKyspUXl6uw4cP+1UX
-ACANTw/2XbNmjR544AF98MEH6ujoUCKR8KsuRFxKlhSCh+KmuvwX8IPrJ9ecP39esVhMP//8c98D
-8OQauBCWJ76E5XNg8Pn+5JpffvlFY8aM0fLly1VVVaVVq1bp8uXLnooEAPTNdWh3dHTo6NGjevrp
-p3X06FHl5+ervr7ez9oAAD247mlPmDBBpaWluuOOOyRJixcv1qZNm9JeG4/HO1/bti3btt0OCwCh
-5DiOHMfJeJ2np7HPmTNHTU1Nuu2221RXV6dEInFdcNPThhth6QWH5XNg8PWWnZ5C+9tvv9XKlSt1
-5coV3XLLLdq6dasKCwv7NTDQl7CEXVg+BwZfVkLby8BAX8ISdmH5HBh8vq8eAQAMPkIbAAxCaAOA
-QQhtADAIoQ0ABiG0AcAghDYAGITQBgCDENoAYBBCGwAMQmgDgEEIbQAwCKENAAYhtAHAIIQ2ABiE
-0AYAg7h+RqQkTZo0SYWFhcrLy9OwYcN05MgRv+oCAKThKbTz8vLkOI6Kior8qgcA0AdP7ZFUKqVk
-MulXLQCADDyFtmVZmj9/vu688041NTX5VRMAoBee2iMHDx7UuHHjdObMGc2fP19lZWWqrq72qzYA
-QA+eQnvcuHGSpLFjx2rRokU6cuRI2tCOx+Odr23blm3bXoZFRFhWrivwjts96C/HceQ4TsbrrFS6
-Z7T3QyKRUDKZVEFBgS5duqSamhrV1taqpqam+wC9PAYeyDXLkvhqIqh6y07XM+1Tp05p0aJFsixL
-HR0dWrp06XWBDQDwl+uZdr8HYKaNgGKmjSDrLTvZEQkABiG0AcAghDYiq7Y21xUAA0dPGwACiJ42
-AIQAoQ0ABiG0AcAghDYAGITQRmR1ORIHMAarRxBZ7IhEkLF6BABCgNAGAIMQ2gBgEEIbAAxCaCOy
-OHsEJmL1CAAEUNZWjySTSVVVVWnhwoVe3woAkIHn0G5oaNDUqVP9qAUAkIGn0D558qR27dqllStX
-+lUPAKAPnkL72Wef1YsvvijLsvyqBwDQB9dPY//ss89UXFysyspKOY7T583GeJdDHmzblm3bbocF
-fBOPc/4IgsNxHDmOk/E616tHNmzYoLfeektDhw7V5cuXdeHCBT3yyCN64403ug/A6hEEFGePIMh6
-y05flvwdOHBAmzdv1o4dO/o9MJBrhDaCjAOjACAE2FyDyGKmjSBjpg0AIUBoI7I4ewQmoj0CAAFE
-ewQAQoDQBgCDENoAYBBCGwAMQmgjsjh3BCZi9Qgii801CDJWjwBACBDaAGAQQhsADEJoA4BBCG1E
-FmePwESsHgGAAGL1CACEgOvQ/vvvvzVz5kzFYjGVl5drw4YNftYFAEjDU3skkUgoPz9f//77r2bP
-nq3Nmzdr9uzZ3QegPQIAA5aV9kh+fr6kq7PuZDKpoqIiL28HAMjAU2gnk0nFYjGVlJTItm1NnTrV
-r7qArOPsEZjIl9Uj58+fV01NjTZt2qQ5c+Z0H8CyVNtlbZVt27Jt2+uQgGecPYIgcRxHjuN0/lxX
-V5e2PeLbkr/nn39e+fn5Wrt2bfcB6GkjoAhtBJnvPe2zZ8+qvb1dknT58mXt3btXlZWV7isEAGQ0
-1O0f/vnnn3ryySeVSqWUTCb1xBNP6J577vGzNgBAD+yIRGTRHkGQsSMS6IGzR2AiZtoAEEDMtAEg
-BAhtADAIoQ0ABiG0AcAghDYii7NHYCJWjyCyWKeNIGP1CACEAKENAAYhtAHAIIQ2ABiE0EZkcfYI
-TMTqEQAIIFaPAEAIENoAYBDXoX3y5EnNnTtX5eXlmjZtmhobG/2sCwCQhuuedmtrq1pbW1VZWamL
-Fy9qxowZ+vTTTzVlypTuA9DTBoAB872nXVJS0vkg34KCApWVlemPP/5wXyEwyDh7BCbyZfXIr7/+
-Ktu29d1336mgoKD7AMy0EVCW9YpSqWdyXQaQVm/Z6fpp7NdcvHhRixcvVkNDw3WBfU28y5TGtm3Z
-tu11WMAHr0oitBEMjuPIcZyM13maaXd0dOjBBx/U/fffrzVr1qQfgJk2BollWYMyDt9nDIbestNT
-aC9btkxjxozRSy+9NOCBgVx45ZVX9Mknn0iSDhw4oDlz5kiSHn74YT3zDLNuBIfvNyIPHjyot99+
-W1988YVisZiqqqq0e/duT0UCAPrGNnZEyqJFi/Tll19Kktrb21VYWChJuvvuu/Xxxx/nsjSgm6zd
-iARMMn78eI0ePVrS1dC+9nr8+PG5LAvoN2baiJSRI0fq4sWL1/2+oKBAFy5cyEFFQHpZuRHpZWAg
-1/huIsg45Q+QNHz4cFmW1bk88Nrr4cOH57gyoH/oaSNSPv/8884NDHV1dar935MQ2PAFUxDaiJRj
-x45123V27fXo0aMJbhiBnjYii+8mgowlf4Cu3+re9WcCHCYgtBEpXYOZmTZMxOoRRMrq1as1adIk
-TZo0SZI6X69evTq3hQH9RE8bkcV3E0HGOm0ACAFCG5FSXV2tESNGaMSIEZLU+bq6ujrHlQH9w41I
-RMoLL7zQbXPN+vXrJbG5BuYgtBEpbK6B6Ty1R1asWKHi4mJVVFT4VQ8AoA+eQnv58uXas2ePX7UA
-WVdZWdnt4dLXXldWVua2MKCfPLVHqqur1dLS4lctQNZ9+OGH2rlzZ+fP27ZtkySdPXuW9giM4Hmd
-dktLixYsWKDjx4+nH4C1sAgovpsIMs4eAXT1xmPXG5HxeFySurVMgCAblJk2AGDgsjLTTqVSff4T
-k39+AoB/PK0eWbJkiWbNmqUTJ05o4sSJ2rp1q191AQDSyPqBUQAA/3D2CCKHTWEwGaGNyGFTGExG
-aCNyqqurVVRUlOsyAFcIbQAwCKENAAYhtAHAIIQ2IinTpjAgqAhtRA6bwmAyNtcAgEGYaQOAQQht
-ADAIoQ0ABiG0AcAghDYAGITQBgCDENoAYBBCGwAM8l8NlF8JG2TecgAAAABJRU5ErkJggg==
+&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXQAAAD8CAYAAABn919SAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAALEgAACxIB0t1+/AAACV5JREFUeJzt3U+IpPldx/HP150R3WhiL9sMa7Lj5CB7mUu0D2oWD9kI
+QcV48BAhEiUwNx0kIPG08SB4ENGTMMSYgNIeloCSgxqiMSyEhZ5NwM2uEFA3uzrZ7TBDlLlkXL8e
+tv0zgzs9XU9N1/S3Xy9oqrr6qfp9Dz3vfuapeqqquwPAyfddmx4AgPUQdIAhBB1gCEEHGELQAYYQ
+dIAhBB1gCEEHGELQAYY4c5yLPfroo33hwoXjXBLgxLt69eq3unv7sO2ONegXLlzI3t7ecS4JcOJV
+1cv3sp1DLgBDCDrAEIIOMISgAwwh6ABDHBr0qvpUVb1eVS/8n9seqarPV9XXDy637u+YABzmXvbQ
+P53kA3fc9vEkX+juH07yhYPvAdigQ4Pe3V9Kcv2Omz+Y5DMH1z+T5OfXPBcAR7TqiUXnuvvawfVv
+Jjn3VhtW1aUkl5Lk/PnzKy4HR1NVx7KOz+TlQbL4SdF+8zf6LX+ru/tKd+9098729qFnrsJadPeR
+vla5j5jzoFk16K9V1WNJcnD5+vpGAmAVqwb9L5J85OD6R5L8+XrGAWBV9/Kyxd0kX07yRFW9WlUf
+TfI7SX6qqr6e5P0H3wOwQYc+Kdrdv/gWP3pqzbMAsIAzRQGGEHSAIQQdYAhBBxhC0AGGEHSAIQQd
+YAhBBxhC0AGGEHSAIQQdYAhBBxhC0AGGEHSAIQQdYAhBBxhC0AGGEHSAIQQdYAhBBxhC0AGGEHSA
+IQQdYAhBBxhC0AGGEHSAIQQdYAhBBxhC0AGGEHSAIQQdYAhBBxhC0AGGEHSAIQQdYIhFQa+qX6+q
+r1XVC1W1W1Xfs67BADialYNeVe9M8mtJdrr7YpKHknxoXYMBcDRLD7mcSfK9VXUmycNJ/nX5SACs
+YuWgd/e/JPndJN9Ici3Jt7v7r+/crqouVdVeVe3t7++vPikAd7XkkMtWkg8meXeSH0zytqr68J3b
+dfeV7t7p7p3t7e3VJwXgrpYccnl/kn/q7v3uvpXks0l+Yj1jAXBUS4L+jSQ/VlUPV1UleSrJS+sZ
+C4CjWnIM/bkkzyR5PsnfHzzWlTXNBcARnVly5+5+OsnTa5oFgAWcKQowhKADDCHoAEMIOsAQgg4w
+hKADDCHoAEMIOsAQgg4whKADDCHoAEMIOsAQgg4whKADDCHoAEMsej90OA6PPPJIbty4cd/XefOD
+t+6fra2tXL9+/b6uwekm6Dzwbty4ke7e9BiL3e8/GOCQC8AQgg4whKADDCHoAEMIOsAQgg4whKAD
+DCHoAEMIOsAQgg4whKADDCHoAEMIOsAQgg4whKADDCHoAEMIOsAQi4JeVT9QVc9U1T9U1UtV9ePr
+GgyAo1n6EXR/kOQvu/sXquq7kzy8hpngNv3025NPvGPTYyzWT7990yMw3MpBr6p3JPnJJL+cJN39
+nSTfWc9Y8L/qt/5tzGeK9ic2PQWTLTnk8u4k+0n+uKq+UlWfrKq3rWkuAI5oSdDPJPmRJH/Y3e9J
+cjPJx+/cqKouVdVeVe3t7+8vWA6Au1kS9FeTvNrdzx18/0zeDPxtuvtKd+9098729vaC5QC4m5WD
+3t3fTPJKVT1xcNNTSV5cy1QAHNnSV7n8apI/PXiFyz8m+ZXlIwGwikVB7+6vJtlZ0ywALOBMUYAh
+BB1gCEEHGELQAYYQdIAhBB1gCEEHGELQAYYQdIAhBB1gCEEHGELQAYYQdIAhBB1gCEEHGELQAYYQ
+dIAhln4EHRyLqtr0CIttbW1tegSGE3QeeN1939eoqmNZB+4nh1wAhhB0gCEEHWAIQQcYQtABhhB0
+gCEEHWAIQQcYQtABhhB0gCEEHWAIQQcYQtABhhB0gCEEHWAIQQcYYnHQq+qhqvpKVX1uHQMBsJp1
+7KFfTvLSGh4HgAUWBb2q3pXkZ5J8cj3jALCqpXvov5/kN5L85xpmAWCBlYNeVT+b5PXuvnrIdpeq
+aq+q9vb391ddDoBDLNlDf2+Sn6uqf07yZ0neV1V/cudG3X2lu3e6e2d7e3vBcgDczcpB7+7f7O53
+dfeFJB9K8jfd/eG1TQbAkXgdOsAQZ9bxIN39xSRfXMdjAbAae+gAQwg6wBCCDjCEoAMMIegAQwg6
+wBCCDjCEoAMMIegAQwg6wBCCDjCEoAMMIegAQwg6wBCCDjCEoAMMIegAQwg6wBCCDjCEoAMMIegA
+Qwg6wBCCDjCEoAMMIegAQwg6wBCCDjCEoAMMIegAQwg6wBCCDjCEoAMMIegAQwg6wBCCDjDEykGv
+qser6m+r6sWq+lpVXV7nYAAczZkF9/2PJB/r7uer6vuTXK2qz3f3i2uaDYAjWHkPvbuvdffzB9f/
+PclLSd65rsHgOOzu7ubixYtJkosXL2Z3d3fDE8Hq1nIMvaouJHlPkufW8XhwHHZ3d3P58uXcvHkz
+SXLz5s1cvnxZ1DmxqruXPUDV9yX5uyS/3d2f/X9+finJpSQ5f/78j7788suL1oN1efzxx3Pt2rW8
+8cYb/3PbQw89lMceeyyvvPLKBieD21XV1e7eOXS7JUGvqrNJPpfkr7r79w7bfmdnp/f29lZeD+5V
+VR3LOkt3iOBe3GvQV35StN78F/NHSV66l5jDcbqX0N4t+kLNSbTkGPp7k/xSkvdV1VcPvn56TXPB
+sTl79myeffbZnD17dtOjwCIr76F397NJjuf/tXAf3bp1K08++eSmx4DFnCkKMISgAwwh6ABDCDrA
+EIIOMISgAwwh6Jx6586du+0STipB59R77bXXbruEk0rQAYYQdIAhBJ1T7c73b/F+Lpxkgs6pduvW
+rWxtbSVJtra2cuvWrQ1PBKsTdE69Gzdu3HYJJ5WgAwwh6ABDCDrAEIIOMISgc+qdO3cuVeXUf048
+QefUu379ero7169f3/QosIigc+r992vPvQadk07QObW6+0i3w4PuzKYHgE0Sbyaxhw4whKADDCHo
+AEMIOsAQgg4wRB3ns/xVtZ/k5WNbEO7do0m+tekh4C38UHdvH7bRsQYdHlRVtdfdO5ueA5ZwyAVg
+CEEHGELQ4U1XNj0ALOUYOsAQ9tABhhB0TrWq+lRVvV5VL2x6FlhK0DntPp3kA5seAtZB0DnVuvtL
+SXxUESMIOsAQgg4whKADDCHoAEMIOqdaVe0m+XKSJ6rq1ar66KZnglU5UxRgCHvoAEMIOsAQgg4w
+hKADDCHoAEMIOsAQgg4whKADDPFfmY8K1MPyFBkAAAAASUVORK5CYII=
 " /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1513,7 +1313,7 @@ ADAIoQ0ABiG0AcAghDYAGITQBgCDENoAYBBCGwAM8l8NlF8JG2TecgAAAABJRU5ErkJggg==
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [30]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [9]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;board_games&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'average_rating'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
@@ -1527,8 +1327,8 @@ ADAIoQ0ABiG0AcAghDYAGITQBgCDENoAYBBCGwAM8l8NlF8JG2TecgAAAABJRU5ErkJggg==
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;1.57882993483
-6.01611284933
+&lt;pre&gt;1.5788299348332662
+6.016112849333889
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1541,12 +1341,13 @@ ADAIoQ0ABiG0AcAghDYAGITQBgCDENoAYBBCGwAM8l8NlF8JG2TecgAAAABJRU5ErkJggg==
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;AS the data is continous using mean square error makes sense.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;But it is not the only possibility, as it is a linear regression and we want to meassure the distance between the actual value and the predicted one, we can also use, mean square and mean median errors.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;DEFINETLY NOT to use AUC or any other classification error metric cause this is not the case we are going to work in.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Para este caso, en principio elegiremos &amp;#8220;Mean Square Error&amp;#8221; ya que al ser nuestros datos continuos tiene sentido elegir este&amp;nbsp;error.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Es importante tener en cuenta que &amp;#8220;Mean square error&amp;#8221; no es la unica posibilidad que tenemos, puesto que se trata un modelo de Regresion Lineal y queremos medir la distancia entre el valor real y el predecido, podemos usar &amp;#8220;mean square&amp;#8221; y &amp;#8220;la mediana del error&amp;nbsp;medio&amp;#8221;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Definitivamente no podemos usar, &lt;span class="caps"&gt;AUC&lt;/span&gt; &amp;#8220;Area bajo la curva&amp;#8221; o cualquier otro error de clasificacion ya que este lo usariamos en un problema de clasificacion binaria y este no es el&amp;nbsp;caso.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1556,13 +1357,13 @@ ADAIoQ0ABiG0AcAghDYAGITQBgCDENoAYBBCGwAM8l8NlF8JG2TecgAAAABJRU5ErkJggg==
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Plotting-Clusters"&gt;Plotting Clusters&lt;a class="anchor-link" href="#Plotting-Clusters"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id='Mostrando-los-"Clusters"'&gt;Mostrando los &amp;#8220;Clusters&amp;#8221;&lt;a class="anchor-link" href='#Mostrando-los-"Clusters"'&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h4 id="Los-clusters-ni-mas-ni-menos-son-agrupaciones-de-datos-que-presentan-unas-caracteristicas-similares.-En-este-caso-vamos-a-mostrar-como-sacarlos-y-despues-plotearlos-para-ver-su-grafica."&gt;Los clusters ni mas ni menos son agrupaciones de datos que presentan unas caracteristicas similares. En este caso vamos a mostrar como sacarlos y despues plotearlos para ver su grafica.&lt;a class="anchor-link" href="#Los-clusters-ni-mas-ni-menos-son-agrupaciones-de-datos-que-presentan-unas-caracteristicas-similares.-En-este-caso-vamos-a-mostrar-como-sacarlos-y-despues-plotearlos-para-ver-su-grafica."&gt;¶&lt;/a&gt;&lt;/h4&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [10]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn.cluster&lt;/span&gt; &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;KMeans&lt;/span&gt;
@@ -1571,7 +1372,7 @@ ADAIoQ0ABiG0AcAghDYAGITQBgCDENoAYBBCGwAM8l8NlF8JG2TecgAAAABJRU5ErkJggg==
 &lt;span class="n"&gt;kmeans&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;KMeans&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n_clusters&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="n"&gt;numeric_columns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;board_games&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iloc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;:]&lt;/span&gt;
-&lt;span class="n"&gt;numeric_columns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;numeric_columns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1579,149 +1380,28 @@ ADAIoQ0ABiG0AcAghDYAGITQBgCDENoAYBBCGwAM8l8NlF8JG2TecgAAAABJRU5ErkJggg==
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[2]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div&gt;
-&lt;style&gt;
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
+&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;   yearpublished  minplayers  maxplayers  playingtime  minplaytime  \
+0         2005.0         2.0         2.0        180.0        180.0   
+1         2012.0         2.0         5.0        150.0         60.0   
+2         2013.0         1.0         7.0        210.0         30.0   
 
-    .dataframe thead th {
-        text-align: left;
-    }
+   maxplaytime  minage  users_rated  average_rating  bayes_average_rating  \
+0        180.0    13.0        20113         8.33774               8.22186   
+1        150.0    12.0        14383         8.28798               8.14232   
+2        210.0    12.0         9262         8.28994               8.06886   
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-&lt;/style&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;yearpublished&lt;/th&gt;
-&lt;th&gt;minplayers&lt;/th&gt;
-&lt;th&gt;maxplayers&lt;/th&gt;
-&lt;th&gt;playingtime&lt;/th&gt;
-&lt;th&gt;minplaytime&lt;/th&gt;
-&lt;th&gt;maxplaytime&lt;/th&gt;
-&lt;th&gt;minage&lt;/th&gt;
-&lt;th&gt;users_rated&lt;/th&gt;
-&lt;th&gt;average_rating&lt;/th&gt;
-&lt;th&gt;bayes_average_rating&lt;/th&gt;
-&lt;th&gt;total_owners&lt;/th&gt;
-&lt;th&gt;total_traders&lt;/th&gt;
-&lt;th&gt;total_wanters&lt;/th&gt;
-&lt;th&gt;total_wishers&lt;/th&gt;
-&lt;th&gt;total_comments&lt;/th&gt;
-&lt;th&gt;total_weights&lt;/th&gt;
-&lt;th&gt;average_weight&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;0&lt;/th&gt;
-&lt;td&gt;2005.0&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;180.0&lt;/td&gt;
-&lt;td&gt;180.0&lt;/td&gt;
-&lt;td&gt;180.0&lt;/td&gt;
-&lt;td&gt;13.0&lt;/td&gt;
-&lt;td&gt;20113&lt;/td&gt;
-&lt;td&gt;8.33774&lt;/td&gt;
-&lt;td&gt;8.22186&lt;/td&gt;
-&lt;td&gt;26647&lt;/td&gt;
-&lt;td&gt;372&lt;/td&gt;
-&lt;td&gt;1219&lt;/td&gt;
-&lt;td&gt;5865&lt;/td&gt;
-&lt;td&gt;5347&lt;/td&gt;
-&lt;td&gt;2562&lt;/td&gt;
-&lt;td&gt;3.4785&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;td&gt;2012.0&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;150.0&lt;/td&gt;
-&lt;td&gt;60.0&lt;/td&gt;
-&lt;td&gt;150.0&lt;/td&gt;
-&lt;td&gt;12.0&lt;/td&gt;
-&lt;td&gt;14383&lt;/td&gt;
-&lt;td&gt;8.28798&lt;/td&gt;
-&lt;td&gt;8.14232&lt;/td&gt;
-&lt;td&gt;16519&lt;/td&gt;
-&lt;td&gt;132&lt;/td&gt;
-&lt;td&gt;1586&lt;/td&gt;
-&lt;td&gt;6277&lt;/td&gt;
-&lt;td&gt;2526&lt;/td&gt;
-&lt;td&gt;1423&lt;/td&gt;
-&lt;td&gt;3.8939&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;td&gt;2013.0&lt;/td&gt;
-&lt;td&gt;1.0&lt;/td&gt;
-&lt;td&gt;7.0&lt;/td&gt;
-&lt;td&gt;210.0&lt;/td&gt;
-&lt;td&gt;30.0&lt;/td&gt;
-&lt;td&gt;210.0&lt;/td&gt;
-&lt;td&gt;12.0&lt;/td&gt;
-&lt;td&gt;9262&lt;/td&gt;
-&lt;td&gt;8.28994&lt;/td&gt;
-&lt;td&gt;8.06886&lt;/td&gt;
-&lt;td&gt;12230&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;1476&lt;/td&gt;
-&lt;td&gt;5600&lt;/td&gt;
-&lt;td&gt;1700&lt;/td&gt;
-&lt;td&gt;777&lt;/td&gt;
-&lt;td&gt;3.7761&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;2006.0&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;240.0&lt;/td&gt;
-&lt;td&gt;240.0&lt;/td&gt;
-&lt;td&gt;240.0&lt;/td&gt;
-&lt;td&gt;12.0&lt;/td&gt;
-&lt;td&gt;13294&lt;/td&gt;
-&lt;td&gt;8.20407&lt;/td&gt;
-&lt;td&gt;8.05804&lt;/td&gt;
-&lt;td&gt;14343&lt;/td&gt;
-&lt;td&gt;362&lt;/td&gt;
-&lt;td&gt;1084&lt;/td&gt;
-&lt;td&gt;5075&lt;/td&gt;
-&lt;td&gt;3378&lt;/td&gt;
-&lt;td&gt;1642&lt;/td&gt;
-&lt;td&gt;4.1590&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;4&lt;/th&gt;
-&lt;td&gt;2002.0&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;150.0&lt;/td&gt;
-&lt;td&gt;90.0&lt;/td&gt;
-&lt;td&gt;150.0&lt;/td&gt;
-&lt;td&gt;12.0&lt;/td&gt;
-&lt;td&gt;39883&lt;/td&gt;
-&lt;td&gt;8.14261&lt;/td&gt;
-&lt;td&gt;8.04524&lt;/td&gt;
-&lt;td&gt;44362&lt;/td&gt;
-&lt;td&gt;795&lt;/td&gt;
-&lt;td&gt;861&lt;/td&gt;
-&lt;td&gt;5414&lt;/td&gt;
-&lt;td&gt;9173&lt;/td&gt;
-&lt;td&gt;5213&lt;/td&gt;
-&lt;td&gt;3.2943&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
+   total_owners  total_traders  total_wanters  total_wishers  total_comments  \
+0         26647            372           1219           5865            5347   
+1         16519            132           1586           6277            2526   
+2         12230             99           1476           5600            1700   
+
+   total_weights  average_weight  
+0           2562          3.4785  
+1           1423          3.8939  
+2            777          3.7761  
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1729,7 +1409,7 @@ ADAIoQ0ABiG0AcAghDYAGITQBgCDENoAYBBCGwAM8l8NlF8JG2TecgAAAABJRU5ErkJggg==
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [41]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [11]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;kmeans&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;numeric_columns&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -1740,11 +1420,11 @@ ADAIoQ0ABiG0AcAghDYAGITQBgCDENoAYBBCGwAM8l8NlF8JG2TecgAAAABJRU5ErkJggg==
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[41]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[11]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
-&lt;pre&gt;KMeans(copy_x=True, init='k-means++', max_iter=300, n_clusters=5, n_init=10,
-    n_jobs=1, precompute_distances='auto', random_state=None, tol=0.0001,
-    verbose=0)&lt;/pre&gt;
+&lt;pre&gt;KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+    n_clusters=5, n_init=10, n_jobs=1, precompute_distances='auto',
+    random_state=None, tol=0.0001, verbose=0)&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1752,7 +1432,7 @@ ADAIoQ0ABiG0AcAghDYAGITQBgCDENoAYBBCGwAM8l8NlF8JG2TecgAAAABJRU5ErkJggg==
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [43]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [12]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;labels&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;kmeans&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;labels_&lt;/span&gt;
@@ -1766,7 +1446,7 @@ ADAIoQ0ABiG0AcAghDYAGITQBgCDENoAYBBCGwAM8l8NlF8JG2TecgAAAABJRU5ErkJggg==
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;[1 1 1 ..., 0 0 0]
+&lt;pre&gt;[3 3 3 ..., 0 0 0]
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1775,7 +1455,7 @@ ADAIoQ0ABiG0AcAghDYAGITQBgCDENoAYBBCGwAM8l8NlF8JG2TecgAAAABJRU5ErkJggg==
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [46]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [13]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;game_mean&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;numeric_columns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;axis&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -1787,7 +1467,7 @@ ADAIoQ0ABiG0AcAghDYAGITQBgCDENoAYBBCGwAM8l8NlF8JG2TecgAAAABJRU5ErkJggg==
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[46]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[13]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;0    3806.296359
 1    2662.195541
@@ -1802,7 +1482,7 @@ dtype: float64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [47]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [14]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;game_std&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;numeric_columns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;axis&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -1818,245 +1498,192 @@ dtype: float64&lt;/pre&gt;
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,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
-YbX/BzNlRb5v/7pYAAAAAElFTkSuQmCC
+&lt;img src="data:image/png;base64,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
+gg==
 " /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2068,8 +1695,7 @@ YbX/BzNlRb5v/7pYAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="Results:"&gt;Results:&lt;a class="anchor-link" href="#Results:"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;- We can see that there are few games that are played by a lot of players. Most games dont get played that much but a few get plaed by a lot of players.&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="Resultados:"&gt;Resultados:&lt;a class="anchor-link" href="#Resultados:"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;h4 id="Podemos-ver-que-hay-unos-pocos-juegos-que-son-jugados-por-muchos-jugadores,-mientras-que-otros-muchos-son-jugados-por-pocos.-La-mayoria-tienen-poco-publico."&gt;Podemos ver que hay unos pocos juegos que son jugados por muchos jugadores, mientras que otros muchos son jugados por pocos. La mayoria tienen poco publico.&lt;a class="anchor-link" href="#Podemos-ver-que-hay-unos-pocos-juegos-que-son-jugados-por-muchos-jugadores,-mientras-que-otros-muchos-son-jugados-por-pocos.-La-mayoria-tienen-poco-publico."&gt;¶&lt;/a&gt;&lt;/h4&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2078,13 +1704,14 @@ YbX/BzNlRb5v/7pYAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Finding-Correlations"&gt;Finding Correlations&lt;a class="anchor-link" href="#Finding-Correlations"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Encontrando-Correlaciones."&gt;Encontrando Correlaciones.&lt;a class="anchor-link" href="#Encontrando-Correlaciones."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;blockquote&gt;&lt;p&gt;La correlación es la forma numérica en la que la estadística ha podido evaluar la relación de dos o más variables, es decir, mide la dependencia de una variable con respecto de otra variable&amp;nbsp;independiente.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [49]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [15]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;correlations&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;numeric_columns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;corr&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -2097,7 +1724,7 @@ YbX/BzNlRb5v/7pYAAAAAElFTkSuQmCC
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[49]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[15]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;yearpublished           0.108461
 minplayers             -0.032701
@@ -2128,14 +1755,17 @@ Name: average_rating, dtype: float64&lt;/pre&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;ul&gt;
-&lt;li&gt;We can see that average_weight is highly correlated with average_rating, also, yearspublished has a good correlation which indicates that new games get better ratings. Another example is minage, as it is bigger has more rating.&lt;/li&gt;
+&lt;li&gt;Podemos ver como &amp;#8220;average_weight&amp;#8221; esta altamente correlacionado con &amp;#8220;average_rating&amp;#8221;, tambien &amp;#8220;yearpublished&amp;#8221; presenta una buena correlacion lo cual nos da una idea de que los juegos nuevos obtienen mejores ratings. Otro ejemplo es &amp;#8220;minage&amp;#8221; cuanto mas alto tiene mejor&amp;nbsp;rating.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Otro insigth que podemos obtener de la correlacion es, ¿Que columnas no estan correlacionadas entre si y por tanto podemos eliminar? En este caso &amp;#8216;bayes_average_rating&amp;#8217;, &amp;#8216;average_rating&amp;#8217; pueden ser&amp;nbsp;eliminadas.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [62]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [16]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;cols_dont_corr&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;numeric_columns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -2154,7 +1784,7 @@ Name: average_rating, dtype: float64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Creating-A-Model"&gt;Creating A Model&lt;a class="anchor-link" href="#Creating-A-Model"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Creando-un-Modelo."&gt;Creando un Modelo.&lt;a class="anchor-link" href="#Creando-un-Modelo."&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2164,14 +1794,14 @@ Name: average_rating, dtype: float64&lt;/pre&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;ul&gt;
-&lt;li&gt;Lets create a linear regression model and make some predictions about the  data.&lt;/li&gt;
+&lt;li&gt;Vamos a crear un Modelo de Regresion linean y hagamos algunos prediciones sobre los datos&amp;nbsp;dados.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [66]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [17]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn.linear_model&lt;/span&gt; &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;LinearRegression&lt;/span&gt;
@@ -2188,7 +1818,7 @@ Name: average_rating, dtype: float64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [67]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [18]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mse&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -2201,7 +1831,7 @@ Name: average_rating, dtype: float64&lt;/pre&gt;
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;2.09339697583
+&lt;pre&gt;2.093396975833943
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2214,8 +1844,19 @@ Name: average_rating, dtype: float64&lt;/pre&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;ul&gt;
-&lt;li&gt;Our ERROR here is very close to the standard deviation, which means that our model does not predict well.&lt;/li&gt;
+&lt;li&gt;Nuestro Error aqui podemos ver que es muy similar a nuestra desviacion estandar, esto quiere decir como ya adelantamos que deberiamos de escoger otro modelo pues este no nos esta dando nueva informacion, o aportando valor a las&amp;nbsp;predicciones.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2248,18 +1889,18 @@ Name: average_rating, dtype: float64&lt;/pre&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="Python"></category><category term="Linear Regression"></category><category term="Statistics"></category></entry><entry><title>How to Win at Jeopardy using Python and our knowledge in statistics.</title><link href="https://coderhook.github.io/predicting%20jeopardy%20game%20questions" rel="alternate"></link><published>2017-07-04T22:00:00+02:00</published><updated>2017-07-04T22:00:00+02:00</updated><author><name>coderHook</name></author><id>tag:coderhook.github.io,2017-07-04:/predicting jeopardy game questions</id><summary type="html">
+</content><category term="Python"></category><category term="Linear Regression"></category><category term="Statistics"></category></entry><entry><title>Aprendiendo a ganar al juego de preguntas “Jeopardy” usando Python y Analisis de datos. (part 1/2)</title><link href="https://coderhook.github.io/predicting%20jeopardy%20game%20questions" rel="alternate"></link><published>2017-07-04T22:00:00+02:00</published><updated>2017-07-04T22:00:00+02:00</updated><author><name>coderHook</name></author><id>tag:coderhook.github.io,2017-07-04:/predicting jeopardy game questions</id><summary type="html">
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Winning-at-Jeopardy-Game-(part-1/2)"&gt;Winning at Jeopardy Game (part 1/2)&lt;a class="anchor-link" href="#Winning-at-Jeopardy-Game-(part-1/2)"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h4 id="Jeopardy!-es-un-concurso-de-televisión-estadounidense-creado-por-Merv-Griffin.-Es-un-concurso-de-conocimientos-con-preguntas-sobre-numerosos-temas-como-historia,-idiomas,-literatura,-cultura-popular,-bellas-artes,-ciencia,-geografía,-y-deportes.-Consiste-en-que-uno-de-los-tres-concursantes-elige-uno-de-los-paneles-del-tablero-de-juego,-el-cual,-al-ser-descubierto,-revela-una-pista-en-forma-de-respuesta;-los-concursantes-entonces-tienen-que-dar-sus-respuestas-en-forma-de-una-pregunta."&gt;Jeopardy! es un concurso de televisión estadounidense creado por Merv Griffin. Es un concurso de conocimientos con preguntas sobre numerosos temas como historia, idiomas, literatura, cultura popular, bellas artes, ciencia, geografía, y deportes. Consiste en que uno de los tres concursantes elige uno de los paneles del tablero de juego, el cual, al ser descubierto, revela una pista en forma de respuesta; los concursantes entonces tienen que dar sus respuestas en forma de una pregunta.&lt;a class="anchor-link" href="#Jeopardy!-es-un-concurso-de-televisión-estadounidense-creado-por-Merv-Griffin.-Es-un-concurso-de-conocimientos-con-preguntas-sobre-numerosos-temas-como-historia,-idiomas,-literatura,-cultura-popular,-bellas-artes,-ciencia,-geografía,-y-deportes.-Consiste-en-que-uno-de-los-tres-concursantes-elige-uno-de-los-paneles-del-tablero-de-juego,-el-cual,-al-ser-descubierto,-revela-una-pista-en-forma-de-respuesta;-los-concursantes-entonces-tienen-que-dar-sus-respuestas-en-forma-de-una-pregunta."&gt;¶&lt;/a&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+&lt;h1 id='Aprendiendo-a-ganar-al-juego-de-preguntas-"Jeopardy"-usando-Python-y-Analisis-de-datos.-(part-1/2)'&gt;Aprendiendo a ganar al juego de preguntas &amp;#8220;Jeopardy&amp;#8221; usando Python y Analisis de datos. (part 1/2)&lt;a class="anchor-link" href='#Aprendiendo-a-ganar-al-juego-de-preguntas-"Jeopardy"-usando-Python-y-Analisis-de-datos.-(part-1/2)'&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h4 id="Jeopardy!-es-un-concurso-de-televisión-estadounidense-creado-por-Merv-Griffin.-Es-un-concurso-de-conocimientos-con-preguntas-sobre-numerosos-temas-como-historia,-idiomas,-literatura,-cultura-popular,-bellas-artes,-ciencia,-geografía,-y-deportes.-Consiste-en-que-uno-de-los-tres-concursantes-elige-uno-de-los-paneles-del-tablero-de-juego,-el-cual,-al-ser-descubierto,-revela-una-pista-en-forma-de-respuesta;-los-concursantes-entonces-tienen-que-dar-sus-respuestas-en-forma-de-una-pregunta."&gt;Jeopardy! es un concurso de televisión estadounidense creado por Merv Griffin. Es un concurso de conocimientos con preguntas sobre numerosos temas como historia, idiomas, literatura, cultura popular, bellas artes, ciencia, geografía, y deportes. Consiste en que uno de los tres concursantes elige uno de los paneles del tablero de juego, el cual, al ser descubierto, revela una pista en forma de respuesta; los concursantes entonces tienen que dar sus respuestas en forma de una pregunta.&lt;a class="anchor-link" href="#Jeopardy!-es-un-concurso-de-televisión-estadounidense-creado-por-Merv-Griffin.-Es-un-concurso-de-conocimientos-con-preguntas-sobre-numerosos-temas-como-historia,-idiomas,-literatura,-cultura-popular,-bellas-artes,-ciencia,-geografía,-y-deportes.-Consiste-en-que-uno-de-los-tres-concursantes-elige-uno-de-los-paneles-del-tablero-de-juego,-el-cual,-al-ser-descubierto,-revela-una-pista-en-forma-de-respuesta;-los-concursantes-entonces-tienen-que-dar-sus-respuestas-en-forma-de-una-pregunta."&gt;¶&lt;/a&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
 */
-/* CSS font colors for translated ANSI colors. */
+/* &lt;span class="caps"&gt;CSS&lt;/span&gt; font colors for translated &lt;span class="caps"&gt;ANSI&lt;/span&gt; colors. */
 .ansibold {
   font-weight: bold;
 }
@@ -2345,13 +1986,13 @@ div.cell {
   background: linear-gradient(to right, transparent -40px, transparent 1px, transparent 1px, transparent 100%);
 }
 div.cell.jupyter-soft-selected {
-  border-left-color: #90CAF9;
-  border-left-color: #E3F2FD;
+  border-left-color: #&lt;span class="caps"&gt;90CAF9&lt;/span&gt;;
+  border-left-color: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
   border-left-width: 1px;
   padding-left: 5px;
-  border-right-color: #E3F2FD;
+  border-right-color: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
   border-right-width: 1px;
-  background: #E3F2FD;
+  background: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
 }
 @media print {
   div.cell.jupyter-soft-selected {
@@ -2362,7 +2003,7 @@ div.cell.selected {
   border-color: #ababab;
   border-left-width: 0px;
   padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 5px, transparent 5px, transparent 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; -40px, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; 5px, transparent 5px, transparent 100%);
 }
 @media print {
   div.cell.selected {
@@ -2372,13 +2013,13 @@ div.cell.selected {
 div.cell.selected.jupyter-soft-selected {
   border-left-width: 0;
   padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 7px, #E3F2FD 7px, #E3F2FD 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; -40px, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; 7px, #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt; 7px, #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt; 100%);
 }
 .edit_mode div.cell.selected {
-  border-color: #66BB6A;
+  border-color: #&lt;span class="caps"&gt;66BB6A&lt;/span&gt;;
   border-left-width: 0px;
   padding-left: 6px;
-  background: linear-gradient(to right, #66BB6A -40px, #66BB6A 5px, transparent 5px, transparent 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;66BB6A&lt;/span&gt; -40px, #&lt;span class="caps"&gt;66BB6A&lt;/span&gt; 5px, transparent 5px, transparent 100%);
 }
 @media print {
   .edit_mode div.cell.selected {
@@ -2531,7 +2172,7 @@ div.input {
 }
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_prompt {
-  color: #303F9F;
+  color: #&lt;span class="caps"&gt;303F9F&lt;/span&gt;;
   border-top: 1px solid transparent;
 }
 div.input_area &gt; div.highlight {
@@ -2572,7 +2213,7 @@ div.input_area &gt; div.highlight &gt; pre {
   overflow-x: auto;
 }
 .CodeMirror-lines {
-  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
+  /* In &lt;span class="caps"&gt;CM2&lt;/span&gt;, this used to be 0.4em, but in &lt;span class="caps"&gt;CM3&lt;/span&gt; it went to 4px. We need the em value because */
   /* we have set a different line-height and want this to scale with that. */
   padding: 0.4em;
 }
@@ -2584,7 +2225,7 @@ div.input_area &gt; div.highlight &gt; pre {
   border-top-left-radius: 2px;
 }
 .CodeMirror pre {
-  /* In CM3 this went to 4px from 0 in CM2. We need the 0 value because of how we size */
+  /* In &lt;span class="caps"&gt;CM3&lt;/span&gt; this went to 4px from 0 in &lt;span class="caps"&gt;CM2&lt;/span&gt;. We need the 0 value because of how we size */
   /* .CodeMirror-lines */
   padding: 0;
   border: 0;
@@ -2609,7 +2250,7 @@ Adapted from GitHub theme
   color: #333333;
 }
 .highlight-string {
-  color: #BA2121;
+  color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;;
 }
 .highlight-comment {
   color: #408080;
@@ -2632,11 +2273,11 @@ Adapted from GitHub theme
   color: #f00;
 }
 .highlight-operator {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
   font-weight: bold;
 }
 .highlight-meta {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
 }
 /* previously not defined, copying from default codemirror */
 .highlight-def {
@@ -2684,7 +2325,7 @@ Adapted from GitHub theme
   color: #000;
 }
 .cm-s-ipython span.cm-operator {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
   font-weight: bold;
 }
 .cm-s-ipython span.cm-variable-2 {
@@ -2698,13 +2339,13 @@ Adapted from GitHub theme
   font-style: italic;
 }
 .cm-s-ipython span.cm-string {
-  color: #BA2121;
+  color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;;
 }
 .cm-s-ipython span.cm-string-2 {
   color: #f50;
 }
 .cm-s-ipython span.cm-meta {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
 }
 .cm-s-ipython span.cm-qualifier {
   color: #555;
@@ -2759,9 +2400,9 @@ div.output_wrapper {
 }
 /* class for the output area when it should be height-limited */
 div.output_scroll {
-  /* ideally, this would be max-height, but FF barfs all over that */
+  /* ideally, this would be max-height, but &lt;span class="caps"&gt;FF&lt;/span&gt; barfs all over that */
   height: 24em;
-  /* FF needs this *and the wrapper* to specify full width, or it will shrinkwrap */
+  /* &lt;span class="caps"&gt;FF&lt;/span&gt; needs this *and the wrapper* to specify full width, or it will shrinkwrap */
   width: 100%;
   overflow: auto;
   border-radius: 2px;
@@ -2795,7 +2436,7 @@ div.out_prompt_overlay {
   border-radius: 2px;
 }
 div.out_prompt_overlay:hover {
-  /* use inner shadow to get border that is computed the same on WebKit/FF */
+  /* use inner shadow to get border that is computed the same on WebKit/&lt;span class="caps"&gt;FF&lt;/span&gt; */
   -webkit-box-shadow: inset 0 0 1px #000;
   box-shadow: inset 0 0 1px #000;
   background: rgba(240, 240, 240, 0.5);
@@ -3123,25 +2764,25 @@ h6:hover .anchor-link {
 &lt;style type="text/css"&gt;.highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
-.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .err { border: 1px solid #&lt;span class="caps"&gt;FF0000&lt;/span&gt; } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
 .highlight .o { color: #666666 } /* Operator */
 .highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
 .highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
-.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cp { color: #&lt;span class="caps"&gt;BC7A00&lt;/span&gt; } /* Comment.Preproc */
 .highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
 .highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
 .highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
 .highlight .gd { color: #A00000 } /* Generic.Deleted */
 .highlight .ge { font-style: italic } /* Generic.Emph */
-.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gr { color: #&lt;span class="caps"&gt;FF0000&lt;/span&gt; } /* Generic.Error */
 .highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
 .highlight .gi { color: #00A000 } /* Generic.Inserted */
 .highlight .go { color: #888888 } /* Generic.Output */
 .highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .gt { color: #&lt;span class="caps"&gt;0044DD&lt;/span&gt; } /* Generic.Traceback */
 .highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
 .highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
 .highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
@@ -3149,41 +2790,41 @@ h6:hover .anchor-link {
 .highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
 .highlight .kt { color: #B00040 } /* Keyword.Type */
 .highlight .m { color: #666666 } /* Literal.Number */
-.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .s { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String */
 .highlight .na { color: #7D9029 } /* Name.Attribute */
 .highlight .nb { color: #008000 } /* Name.Builtin */
-.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .nc { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt;; font-weight: bold } /* Name.Class */
 .highlight .no { color: #880000 } /* Name.Constant */
-.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .nd { color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt; } /* Name.Decorator */
 .highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
-.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
-.highlight .nf { color: #0000FF } /* Name.Function */
-.highlight .nl { color: #A0A000 } /* Name.Label */
-.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .ne { color: #&lt;span class="caps"&gt;D2413A&lt;/span&gt;; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt; } /* Name.Function */
+.highlight .nl { color: #&lt;span class="caps"&gt;A0A000&lt;/span&gt; } /* Name.Label */
+.highlight .nn { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt;; font-weight: bold } /* Name.Namespace */
 .highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
 .highlight .nv { color: #19177C } /* Name.Variable */
-.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .ow { color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;; font-weight: bold } /* Operator.Word */
 .highlight .w { color: #bbbbbb } /* Text.Whitespace */
 .highlight .mb { color: #666666 } /* Literal.Number.Bin */
 .highlight .mf { color: #666666 } /* Literal.Number.Float */
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
-.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
-.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
-.highlight .sc { color: #BA2121 } /* Literal.String.Char */
-.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
-.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
-.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
-.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
-.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
-.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sa { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Affix */
+.highlight .sb { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Backtick */
+.highlight .sc { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Char */
+.highlight .dl { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Delimiter */
+.highlight .sd { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Double */
+.highlight .se { color: #&lt;span class="caps"&gt;BB6622&lt;/span&gt;; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Heredoc */
+.highlight .si { color: #&lt;span class="caps"&gt;BB6688&lt;/span&gt;; font-weight: bold } /* Literal.String.Interpol */
 .highlight .sx { color: #008000 } /* Literal.String.Other */
-.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
-.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .sr { color: #&lt;span class="caps"&gt;BB6688&lt;/span&gt; } /* Literal.String.Regex */
+.highlight .s1 { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
-.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .fm { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt; } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
@@ -3191,38 +2832,38 @@ h6:hover .anchor-link {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;
 &lt;style type="text/css"&gt;
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-fg { color: #&lt;span class="caps"&gt;3E424D&lt;/span&gt;; }
+.ansi-black-bg { background-color: #&lt;span class="caps"&gt;3E424D&lt;/span&gt;; }
 .ansi-black-intense-fg { color: #282C36; }
 .ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-red-fg { color: #&lt;span class="caps"&gt;E75C58&lt;/span&gt;; }
+.ansi-red-bg { background-color: #&lt;span class="caps"&gt;E75C58&lt;/span&gt;; }
+.ansi-red-intense-fg { color: #&lt;span class="caps"&gt;B22B31&lt;/span&gt;; }
+.ansi-red-intense-bg { background-color: #&lt;span class="caps"&gt;B22B31&lt;/span&gt;; }
 .ansi-green-fg { color: #00A250; }
 .ansi-green-bg { background-color: #00A250; }
 .ansi-green-intense-fg { color: #007427; }
 .ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-yellow-fg { color: #&lt;span class="caps"&gt;DDB62B&lt;/span&gt;; }
+.ansi-yellow-bg { background-color: #&lt;span class="caps"&gt;DDB62B&lt;/span&gt;; }
+.ansi-yellow-intense-fg { color: #&lt;span class="caps"&gt;B27D12&lt;/span&gt;; }
+.ansi-yellow-intense-bg { background-color: #&lt;span class="caps"&gt;B27D12&lt;/span&gt;; }
+.ansi-blue-fg { color: #&lt;span class="caps"&gt;208FFB&lt;/span&gt;; }
+.ansi-blue-bg { background-color: #&lt;span class="caps"&gt;208FFB&lt;/span&gt;; }
+.ansi-blue-intense-fg { color: #&lt;span class="caps"&gt;0065CA&lt;/span&gt;; }
+.ansi-blue-intense-bg { background-color: #&lt;span class="caps"&gt;0065CA&lt;/span&gt;; }
+.ansi-magenta-fg { color: #&lt;span class="caps"&gt;D160C4&lt;/span&gt;; }
+.ansi-magenta-bg { background-color: #&lt;span class="caps"&gt;D160C4&lt;/span&gt;; }
 .ansi-magenta-intense-fg { color: #A03196; }
 .ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
+.ansi-cyan-fg { color: #&lt;span class="caps"&gt;60C6C8&lt;/span&gt;; }
+.ansi-cyan-bg { background-color: #&lt;span class="caps"&gt;60C6C8&lt;/span&gt;; }
+.ansi-cyan-intense-fg { color: #&lt;span class="caps"&gt;258F8F&lt;/span&gt;; }
+.ansi-cyan-intense-bg { background-color: #&lt;span class="caps"&gt;258F8F&lt;/span&gt;; }
+.ansi-white-fg { color: #&lt;span class="caps"&gt;C5C1B4&lt;/span&gt;; }
+.ansi-white-bg { background-color: #&lt;span class="caps"&gt;C5C1B4&lt;/span&gt;; }
+.ansi-white-intense-fg { color: #&lt;span class="caps"&gt;A1A6B2&lt;/span&gt;; }
+.ansi-white-intense-bg { background-color: #&lt;span class="caps"&gt;A1A6B2&lt;/span&gt;; }
 
 .ansi-bold { font-weight: bold; }
 &lt;/style&gt;
@@ -3231,13 +2872,13 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Winning-at-Jeopardy-Game-(part-1/2)"&gt;Winning at Jeopardy Game (part 1/2)&lt;a class="anchor-link" href="#Winning-at-Jeopardy-Game-(part-1/2)"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h4 id="Jeopardy!-es-un-concurso-de-televisión-estadounidense-creado-por-Merv-Griffin.-Es-un-concurso-de-conocimientos-con-preguntas-sobre-numerosos-temas-como-historia,-idiomas,-literatura,-cultura-popular,-bellas-artes,-ciencia,-geografía,-y-deportes.-Consiste-en-que-uno-de-los-tres-concursantes-elige-uno-de-los-paneles-del-tablero-de-juego,-el-cual,-al-ser-descubierto,-revela-una-pista-en-forma-de-respuesta;-los-concursantes-entonces-tienen-que-dar-sus-respuestas-en-forma-de-una-pregunta."&gt;Jeopardy! es un concurso de televisión estadounidense creado por Merv Griffin. Es un concurso de conocimientos con preguntas sobre numerosos temas como historia, idiomas, literatura, cultura popular, bellas artes, ciencia, geografía, y deportes. Consiste en que uno de los tres concursantes elige uno de los paneles del tablero de juego, el cual, al ser descubierto, revela una pista en forma de respuesta; los concursantes entonces tienen que dar sus respuestas en forma de una pregunta.&lt;a class="anchor-link" href="#Jeopardy!-es-un-concurso-de-televisión-estadounidense-creado-por-Merv-Griffin.-Es-un-concurso-de-conocimientos-con-preguntas-sobre-numerosos-temas-como-historia,-idiomas,-literatura,-cultura-popular,-bellas-artes,-ciencia,-geografía,-y-deportes.-Consiste-en-que-uno-de-los-tres-concursantes-elige-uno-de-los-paneles-del-tablero-de-juego,-el-cual,-al-ser-descubierto,-revela-una-pista-en-forma-de-respuesta;-los-concursantes-entonces-tienen-que-dar-sus-respuestas-en-forma-de-una-pregunta."&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;In this project we are going to first: &lt;ul&gt;
-&lt;li&gt;Normalize tthe text.&lt;/li&gt;
-&lt;li&gt;Look for the answers in questions.&lt;/li&gt;
-&lt;li&gt;Look for question that are repeated from time to time. (Trying to win easy :)&lt;/li&gt;
-&lt;li&gt;Low Value &amp; high Value Question. How to get more points.&lt;/li&gt;
-&lt;li&gt;Applying the Chi-Squared Test. &lt;/li&gt;
+&lt;h1 id='Aprendiendo-a-ganar-al-juego-de-preguntas-"Jeopardy"-usando-Python-y-Analisis-de-datos.-(part-1/2)'&gt;Aprendiendo a ganar al juego de preguntas &amp;#8220;Jeopardy&amp;#8221; usando Python y Analisis de datos. (part 1/2)&lt;a class="anchor-link" href='#Aprendiendo-a-ganar-al-juego-de-preguntas-"Jeopardy"-usando-Python-y-Analisis-de-datos.-(part-1/2)'&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h4 id="Jeopardy!-es-un-concurso-de-televisión-estadounidense-creado-por-Merv-Griffin.-Es-un-concurso-de-conocimientos-con-preguntas-sobre-numerosos-temas-como-historia,-idiomas,-literatura,-cultura-popular,-bellas-artes,-ciencia,-geografía,-y-deportes.-Consiste-en-que-uno-de-los-tres-concursantes-elige-uno-de-los-paneles-del-tablero-de-juego,-el-cual,-al-ser-descubierto,-revela-una-pista-en-forma-de-respuesta;-los-concursantes-entonces-tienen-que-dar-sus-respuestas-en-forma-de-una-pregunta."&gt;Jeopardy! es un concurso de televisión estadounidense creado por Merv Griffin. Es un concurso de conocimientos con preguntas sobre numerosos temas como historia, idiomas, literatura, cultura popular, bellas artes, ciencia, geografía, y deportes. Consiste en que uno de los tres concursantes elige uno de los paneles del tablero de juego, el cual, al ser descubierto, revela una pista en forma de respuesta; los concursantes entonces tienen que dar sus respuestas en forma de una pregunta.&lt;a class="anchor-link" href="#Jeopardy!-es-un-concurso-de-televisión-estadounidense-creado-por-Merv-Griffin.-Es-un-concurso-de-conocimientos-con-preguntas-sobre-numerosos-temas-como-historia,-idiomas,-literatura,-cultura-popular,-bellas-artes,-ciencia,-geografía,-y-deportes.-Consiste-en-que-uno-de-los-tres-concursantes-elige-uno-de-los-paneles-del-tablero-de-juego,-el-cual,-al-ser-descubierto,-revela-una-pista-en-forma-de-respuesta;-los-concursantes-entonces-tienen-que-dar-sus-respuestas-en-forma-de-una-pregunta."&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;En este proyecto vamos a ver como:&lt;ul&gt;
+&lt;li&gt;Normalizar el&amp;nbsp;texto.&lt;/li&gt;
+&lt;li&gt;Buscar respuestas en las propias&amp;nbsp;preguntas.&lt;/li&gt;
+&lt;li&gt;Buscar preguntas que se suelen repetir. (Intentando ganar de forma facil&amp;nbsp;:)&lt;/li&gt;
+&lt;li&gt;Preguntas con alto y bajo valor. Maximizando los puntos que&amp;nbsp;obtenemos.&lt;/li&gt;
+&lt;li&gt;Aplicando &amp;#8220;Chi-squared&amp;nbsp;test&amp;#8221;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -3246,7 +2887,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [10]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
@@ -3285,10 +2926,10 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [11]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [3]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3296,76 +2937,22 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[11]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;Show Number&lt;/th&gt;
-&lt;th&gt;Air Date&lt;/th&gt;
-&lt;th&gt;Round&lt;/th&gt;
-&lt;th&gt;Category&lt;/th&gt;
-&lt;th&gt;Value&lt;/th&gt;
-&lt;th&gt;Question&lt;/th&gt;
-&lt;th&gt;Answer&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;0&lt;/th&gt;
-&lt;td&gt;4680&lt;/td&gt;
-&lt;td&gt;2004-12-31&lt;/td&gt;
-&lt;td&gt;Jeopardy!&lt;/td&gt;
-&lt;td&gt;HISTORY&lt;/td&gt;
-&lt;td&gt;$200&lt;/td&gt;
-&lt;td&gt;For the last 8 years of his life, Galileo was ...&lt;/td&gt;
-&lt;td&gt;Copernicus&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;td&gt;4680&lt;/td&gt;
-&lt;td&gt;2004-12-31&lt;/td&gt;
-&lt;td&gt;Jeopardy!&lt;/td&gt;
-&lt;td&gt;ESPN's TOP 10 ALL-TIME ATHLETES&lt;/td&gt;
-&lt;td&gt;$200&lt;/td&gt;
-&lt;td&gt;No. 2: 1912 Olympian; football star at Carlisl...&lt;/td&gt;
-&lt;td&gt;Jim Thorpe&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;td&gt;4680&lt;/td&gt;
-&lt;td&gt;2004-12-31&lt;/td&gt;
-&lt;td&gt;Jeopardy!&lt;/td&gt;
-&lt;td&gt;EVERYBODY TALKS ABOUT IT...&lt;/td&gt;
-&lt;td&gt;$200&lt;/td&gt;
-&lt;td&gt;The city of Yuma in this state has a record av...&lt;/td&gt;
-&lt;td&gt;Arizona&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;4680&lt;/td&gt;
-&lt;td&gt;2004-12-31&lt;/td&gt;
-&lt;td&gt;Jeopardy!&lt;/td&gt;
-&lt;td&gt;THE COMPANY LINE&lt;/td&gt;
-&lt;td&gt;$200&lt;/td&gt;
-&lt;td&gt;In 1963, live on "The Art Linkletter Show", th...&lt;/td&gt;
-&lt;td&gt;McDonald's&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;4&lt;/th&gt;
-&lt;td&gt;4680&lt;/td&gt;
-&lt;td&gt;2004-12-31&lt;/td&gt;
-&lt;td&gt;Jeopardy!&lt;/td&gt;
-&lt;td&gt;EPITAPHS &amp; TRIBUTES&lt;/td&gt;
-&lt;td&gt;$200&lt;/td&gt;
-&lt;td&gt;Signer of the Dec. of Indep., framer of the Co...&lt;/td&gt;
-&lt;td&gt;John Adams&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
+&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;   Show Number    Air Date      Round                         Category  Value  \
+0         4680  2004-12-31  Jeopardy!                          HISTORY   $200   
+1         4680  2004-12-31  Jeopardy!  ESPN's TOP 10 ALL-TIME ATHLETES   $200   
+2         4680  2004-12-31  Jeopardy!      EVERYBODY TALKS ABOUT IT...   $200   
+3         4680  2004-12-31  Jeopardy!                 THE COMPANY LINE   $200   
+4         4680  2004-12-31  Jeopardy!              EPITAPHS &amp; TRIBUTES   $200   
+
+                                            Question      Answer  
+0  For the last 8 years of his life, Galileo was ...  Copernicus  
+1  No. 2: 1912 Olympian; football star at Carlisl...  Jim Thorpe  
+2  The city of Yuma in this state has a record av...     Arizona  
+3  In 1963, live on "The Art Linkletter Show", th...  McDonald's  
+4  Signer of the Dec. of Indep., framer of the Co...  John Adams  
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3373,7 +2960,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [12]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [4]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;
@@ -3384,7 +2971,7 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[12]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[4]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;Index(['Show Number', ' Air Date', ' Round', ' Category', ' Value',
        ' Question', ' Answer'],
@@ -3396,7 +2983,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [13]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [5]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Show Number'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Air Date'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Round'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Category'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Value'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Question'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Answer'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -3408,7 +2995,7 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[13]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[5]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;Index(['Show Number', 'Air Date', 'Round', 'Category', 'Value', 'Question',
        'Answer'],
@@ -3423,13 +3010,13 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Normalizing-Text"&gt;Normalizing Text&lt;a class="anchor-link" href="#Normalizing-Text"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Normalizando-el-texto."&gt;Normalizando el texto.&lt;a class="anchor-link" href="#Normalizando-el-texto."&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [20]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [6]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;re&lt;/span&gt;
@@ -3455,7 +3042,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [21]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [7]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"clean_question"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Question"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;normalize_text&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -3468,10 +3055,10 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [22]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [8]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3479,94 +3066,29 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[22]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;Show Number&lt;/th&gt;
-&lt;th&gt;Air Date&lt;/th&gt;
-&lt;th&gt;Round&lt;/th&gt;
-&lt;th&gt;Category&lt;/th&gt;
-&lt;th&gt;Value&lt;/th&gt;
-&lt;th&gt;Question&lt;/th&gt;
-&lt;th&gt;Answer&lt;/th&gt;
-&lt;th&gt;clean_question&lt;/th&gt;
-&lt;th&gt;clean_answer&lt;/th&gt;
-&lt;th&gt;clean_value&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;0&lt;/th&gt;
-&lt;td&gt;4680&lt;/td&gt;
-&lt;td&gt;2004-12-31&lt;/td&gt;
-&lt;td&gt;Jeopardy!&lt;/td&gt;
-&lt;td&gt;HISTORY&lt;/td&gt;
-&lt;td&gt;$200&lt;/td&gt;
-&lt;td&gt;For the last 8 years of his life, Galileo was ...&lt;/td&gt;
-&lt;td&gt;Copernicus&lt;/td&gt;
-&lt;td&gt;for the last 8 years of his life galileo was u...&lt;/td&gt;
-&lt;td&gt;copernicus&lt;/td&gt;
-&lt;td&gt;200&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;td&gt;4680&lt;/td&gt;
-&lt;td&gt;2004-12-31&lt;/td&gt;
-&lt;td&gt;Jeopardy!&lt;/td&gt;
-&lt;td&gt;ESPN's TOP 10 ALL-TIME ATHLETES&lt;/td&gt;
-&lt;td&gt;$200&lt;/td&gt;
-&lt;td&gt;No. 2: 1912 Olympian; football star at Carlisl...&lt;/td&gt;
-&lt;td&gt;Jim Thorpe&lt;/td&gt;
-&lt;td&gt;no 2 1912 olympian football star at carlisle i...&lt;/td&gt;
-&lt;td&gt;jim thorpe&lt;/td&gt;
-&lt;td&gt;200&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;td&gt;4680&lt;/td&gt;
-&lt;td&gt;2004-12-31&lt;/td&gt;
-&lt;td&gt;Jeopardy!&lt;/td&gt;
-&lt;td&gt;EVERYBODY TALKS ABOUT IT...&lt;/td&gt;
-&lt;td&gt;$200&lt;/td&gt;
-&lt;td&gt;The city of Yuma in this state has a record av...&lt;/td&gt;
-&lt;td&gt;Arizona&lt;/td&gt;
-&lt;td&gt;the city of yuma in this state has a record av...&lt;/td&gt;
-&lt;td&gt;arizona&lt;/td&gt;
-&lt;td&gt;200&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;4680&lt;/td&gt;
-&lt;td&gt;2004-12-31&lt;/td&gt;
-&lt;td&gt;Jeopardy!&lt;/td&gt;
-&lt;td&gt;THE COMPANY LINE&lt;/td&gt;
-&lt;td&gt;$200&lt;/td&gt;
-&lt;td&gt;In 1963, live on "The Art Linkletter Show", th...&lt;/td&gt;
-&lt;td&gt;McDonald's&lt;/td&gt;
-&lt;td&gt;in 1963 live on the art linkletter show this c...&lt;/td&gt;
-&lt;td&gt;mcdonalds&lt;/td&gt;
-&lt;td&gt;200&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;4&lt;/th&gt;
-&lt;td&gt;4680&lt;/td&gt;
-&lt;td&gt;2004-12-31&lt;/td&gt;
-&lt;td&gt;Jeopardy!&lt;/td&gt;
-&lt;td&gt;EPITAPHS &amp; TRIBUTES&lt;/td&gt;
-&lt;td&gt;$200&lt;/td&gt;
-&lt;td&gt;Signer of the Dec. of Indep., framer of the Co...&lt;/td&gt;
-&lt;td&gt;John Adams&lt;/td&gt;
-&lt;td&gt;signer of the dec of indep framer of the const...&lt;/td&gt;
-&lt;td&gt;john adams&lt;/td&gt;
-&lt;td&gt;200&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
+&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;   Show Number    Air Date      Round                         Category Value  \
+0         4680  2004-12-31  Jeopardy!                          HISTORY  $200   
+1         4680  2004-12-31  Jeopardy!  ESPN's TOP 10 ALL-TIME ATHLETES  $200   
+2         4680  2004-12-31  Jeopardy!      EVERYBODY TALKS ABOUT IT...  $200   
+3         4680  2004-12-31  Jeopardy!                 THE COMPANY LINE  $200   
+4         4680  2004-12-31  Jeopardy!              EPITAPHS &amp; TRIBUTES  $200   
+
+                                            Question      Answer  \
+0  For the last 8 years of his life, Galileo was ...  Copernicus   
+1  No. 2: 1912 Olympian; football star at Carlisl...  Jim Thorpe   
+2  The city of Yuma in this state has a record av...     Arizona   
+3  In 1963, live on "The Art Linkletter Show", th...  McDonald's   
+4  Signer of the Dec. of Indep., framer of the Co...  John Adams   
+
+                                      clean_question clean_answer  clean_value  
+0  for the last 8 years of his life galileo was u...   copernicus          200  
+1  no 2 1912 olympian football star at carlisle i...   jim thorpe          200  
+2  the city of yuma in this state has a record av...      arizona          200  
+3  in 1963 live on the art linkletter show this c...    mcdonalds          200  
+4  signer of the dec of indep framer of the const...   john adams          200  
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3574,7 +3096,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [23]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [9]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Air Date"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to_datetime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Air Date"&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
@@ -3585,7 +3107,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [25]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [10]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dtypes&lt;/span&gt;
@@ -3596,7 +3118,7 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[25]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[10]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;Show Number                int64
 Air Date          datetime64[ns]
@@ -3619,13 +3141,13 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Looking-for-Answers-in-Questions"&gt;Looking for Answers in Questions&lt;a class="anchor-link" href="#Looking-for-Answers-in-Questions"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Buscando-respuestas-en-las-preguntas."&gt;Buscando respuestas en las preguntas.&lt;a class="anchor-link" href="#Buscando-respuestas-en-las-preguntas."&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [30]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [11]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;answ_in_quest&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;row&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -3654,7 +3176,7 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [33]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [12]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"answer_in_question"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -3665,9 +3187,9 @@ dtype: object&lt;/pre&gt;
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[33]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[12]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
-&lt;pre&gt;0.060493257069335872&lt;/pre&gt;
+&lt;pre&gt;0.060493257069335914&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3678,7 +3200,7 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="The-percentage-of-finding-the-answer-in-the-question-is-around-6%,-as-it-is-a-small-quantity-in-order-to-win-at-this-game-we-cannot-expect-to-get-a-los-of-answers-just-looking-at-the-question."&gt;The percentage of finding the answer in the question is around 6%, as it is a small quantity in order to win at this game we cannot expect to get a los of answers just looking at the question.&lt;a class="anchor-link" href="#The-percentage-of-finding-the-answer-in-the-question-is-around-6%,-as-it-is-a-small-quantity-in-order-to-win-at-this-game-we-cannot-expect-to-get-a-los-of-answers-just-looking-at-the-question."&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="El-porcentaje-de-encontrar-una-respuesta-en-la-propia-pregunta-es-del-6%,-es-un-porcentaje-pequeño-para-ganar-a-este-juego-pero-si-algo-a-tener-en-cuenta."&gt;El porcentaje de encontrar una respuesta en la propia pregunta es del 6%, es un porcentaje pequeño para ganar a este juego pero si algo a tener en cuenta.&lt;a class="anchor-link" href="#El-porcentaje-de-encontrar-una-respuesta-en-la-propia-pregunta-es-del-6%,-es-un-porcentaje-pequeño-para-ganar-a-este-juego-pero-si-algo-a-tener-en-cuenta."&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3687,13 +3209,13 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Looking-for-Questions-that-are-repeated-from-time-to-time"&gt;Looking for Questions that are repeated from time to time&lt;a class="anchor-link" href="#Looking-for-Questions-that-are-repeated-from-time-to-time"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Buscar-preguntas-que-se-suelen-repetir.-(Intentando-ganar-de-forma-facil-:)"&gt;Buscar preguntas que se suelen repetir. (Intentando ganar de forma facil :)&lt;a class="anchor-link" href="#Buscar-preguntas-que-se-suelen-repetir.-(Intentando-ganar-de-forma-facil-:)"&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [42]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [13]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;question_overlap&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
@@ -3725,9 +3247,9 @@ dtype: object&lt;/pre&gt;
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[42]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[13]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
-&lt;pre&gt;0.69259600573386471&lt;/pre&gt;
+&lt;pre&gt;0.6925960057338565&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3738,7 +3260,7 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="Here-we-have-a-mean-of-70%-which-means-that-it-can-be-relevant-to-look-at-past-question-because-is-probably-that-it-would-be-repeated-in-other-games,-but-here-we-hav-to-be-careful-because-we-look-at-it-by-word-per-word-which-cna-be-tricky,-but-definetly,-the-70%-is-significant-and-we-should-keep-working-in-this-part-of-the-game."&gt;Here we have a mean of 70% which means that it can be relevant to look at past question because is probably that it would be repeated in other games, but here we hav to be careful because we look at it by word per word which cna be tricky, but definetly, the 70% is significant and we should keep working in this part of the game.&lt;a class="anchor-link" href="#Here-we-have-a-mean-of-70%-which-means-that-it-can-be-relevant-to-look-at-past-question-because-is-probably-that-it-would-be-repeated-in-other-games,-but-here-we-hav-to-be-careful-because-we-look-at-it-by-word-per-word-which-cna-be-tricky,-but-definetly,-the-70%-is-significant-and-we-should-keep-working-in-this-part-of-the-game."&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id="Aqui-tenemos-una-media-del-70%,-o-cual-significa-que-es-bastante-ventajoso-mirar-preguntas-pasadas-ya-que-de-cada-10-preguntas-7-seran-pasadas,-es-un-alto-porcentaje-.-Debemos-de-ser-cuidadoso-aqui,-ya-que-lo-que-hemos-hecho-es-mirar-palabra-por-palabra-y-ver-las-coincidencias-para-decidir-si-esa-misma-pregunta-estaba-realizada-anteriormente,-es-decir,-que-una-variacion-de-la-pregunta-que-implique-otra-respuesta-puede-haberse-dado.-De-cualquier-forma,-trabajar-con-las-preguntas-ya-realizadas-con-anterioridad-es-una-ventaja-importante."&gt;Aqui tenemos una media del 70%, o cual significa que es bastante ventajoso mirar preguntas pasadas ya que de cada 10 preguntas 7 seran pasadas, es un alto porcentaje . Debemos de ser cuidadoso aqui, ya que lo que hemos hecho es mirar palabra por palabra y ver las coincidencias para decidir si esa misma pregunta estaba realizada anteriormente, es decir, que una variacion de la pregunta que implique otra respuesta puede haberse dado. De cualquier forma, trabajar con las preguntas ya realizadas con anterioridad es una ventaja importante.&lt;a class="anchor-link" href="#Aqui-tenemos-una-media-del-70%,-o-cual-significa-que-es-bastante-ventajoso-mirar-preguntas-pasadas-ya-que-de-cada-10-preguntas-7-seran-pasadas,-es-un-alto-porcentaje-.-Debemos-de-ser-cuidadoso-aqui,-ya-que-lo-que-hemos-hecho-es-mirar-palabra-por-palabra-y-ver-las-coincidencias-para-decidir-si-esa-misma-pregunta-estaba-realizada-anteriormente,-es-decir,-que-una-variacion-de-la-pregunta-que-implique-otra-respuesta-puede-haberse-dado.-De-cualquier-forma,-trabajar-con-las-preguntas-ya-realizadas-con-anterioridad-es-una-ventaja-importante."&gt;¶&lt;/a&gt;&lt;/h4&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3747,13 +3269,13 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Low-Value-Vs-High-Value-Questions"&gt;Low Value Vs High Value Questions&lt;a class="anchor-link" href="#Low-Value-Vs-High-Value-Questions"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Preguntas-con-Alto-valor-vs-Bajo-valor."&gt;Preguntas con Alto valor vs Bajo valor.&lt;a class="anchor-link" href="#Preguntas-con-Alto-valor-vs-Bajo-valor."&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [44]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [14]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;assign_values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;row&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -3770,7 +3292,7 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [49]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [15]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;takes_a_word&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;word&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -3793,7 +3315,7 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [52]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [16]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;observed_expected&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
@@ -3806,7 +3328,7 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [53]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [17]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;comparison_terms&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -3819,7 +3341,7 @@ dtype: object&lt;/pre&gt;
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;['glamourous', 'handsomest', 'sutherland', 'laptopa', 'absorbed']
+&lt;pre&gt;['targetblankpierced', 'fingers', 'potawatomi', 'mid1984', 'merged']
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3828,7 +3350,7 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [54]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [18]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;term&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;comparison_terms&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
@@ -3840,7 +3362,7 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [56]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [19]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;observed_expected&lt;/span&gt;
@@ -3851,9 +3373,9 @@ dtype: object&lt;/pre&gt;
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[56]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[19]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
-&lt;pre&gt;[(1, 0), (1, 1), (0, 1), (0, 1), (2, 0)]&lt;/pre&gt;
+&lt;pre&gt;[(1, 0), (5, 5), (1, 1), (0, 1), (5, 3)]&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3864,13 +3386,13 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Applying-The-Chi-Squared-Test"&gt;Applying The Chi-Squared Test&lt;a class="anchor-link" href="#Applying-The-Chi-Squared-Test"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id='Apicando-"The-Chi-Squared-Test"'&gt;Apicando &amp;#8220;The Chi-Squared Test&amp;#8221;&lt;a class="anchor-link" href='#Apicando-"The-Chi-Squared-Test"'&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [59]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [20]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;high_value_count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"high_value"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -3893,7 +3415,7 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [60]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [21]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;low_value_count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;jeopardy&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"high_value"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -3904,7 +3426,7 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [64]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [22]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;chi_squared&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
@@ -3918,7 +3440,7 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [70]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [23]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;obs&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;observed_expected&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
@@ -3935,7 +3457,7 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [71]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [24]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;chi_squared&lt;/span&gt;
@@ -3946,18 +3468,13 @@ dtype: object&lt;/pre&gt;
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[71]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[24]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;[Power_divergenceResult(statistic=2.4877921171956752, pvalue=0.11473257634454047),
+ Power_divergenceResult(statistic=2.2243874083063973, pvalue=0.13584652879916373),
  Power_divergenceResult(statistic=0.44487748166127949, pvalue=0.50477764875459963),
  Power_divergenceResult(statistic=0.40196284612688399, pvalue=0.52607729857054686),
- Power_divergenceResult(statistic=0.40196284612688399, pvalue=0.52607729857054686),
- Power_divergenceResult(statistic=4.9755842343913503, pvalue=0.025707519787911092),
- Power_divergenceResult(statistic=2.4877921171956752, pvalue=0.11473257634454047),
- Power_divergenceResult(statistic=0.44487748166127949, pvalue=0.50477764875459963),
- Power_divergenceResult(statistic=0.40196284612688399, pvalue=0.52607729857054686),
- Power_divergenceResult(statistic=0.40196284612688399, pvalue=0.52607729857054686),
- Power_divergenceResult(statistic=4.9755842343913503, pvalue=0.025707519787911092)]&lt;/pre&gt;
+ Power_divergenceResult(statistic=4.4765585681292279, pvalue=0.034362848042873227)]&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3968,7 +3485,7 @@ dtype: object&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="We-will-continue-in-part-2-trying-different-model-to-get-some-more-insights-and-se-if-they-can-work-better-than-chi-Squared."&gt;We will continue in part 2 trying different model to get some more insights and se if they can work better than chi-Squared.&lt;a class="anchor-link" href="#We-will-continue-in-part-2-trying-different-model-to-get-some-more-insights-and-se-if-they-can-work-better-than-chi-Squared."&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id="We-will-continue-in-part-2-trying-different-model-to-get-some-more-insights-and-se-if-they-can-work-better-than-chi-Squared."&gt;We will continue in part 2 trying different model to get some more insights and se if they can work better than chi-Squared.&lt;a class="anchor-link" href="#We-will-continue-in-part-2-trying-different-model-to-get-some-more-insights-and-se-if-they-can-work-better-than-chi-Squared."&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="Continuaremos-con--una-segunda-parte-donde-intentaremos-diferentes-modelos-para-obtener-mas-conclusiones-y-trabajar-en-profundidad-con-los-distintos-modelos-de-predicción."&gt;Continuaremos con  una segunda parte donde intentaremos diferentes modelos para obtener mas conclusiones y trabajar en profundidad con los distintos modelos de predicción.&lt;a class="anchor-link" href="#Continuaremos-con--una-segunda-parte-donde-intentaremos-diferentes-modelos-para-obtener-mas-conclusiones-y-trabajar-en-profundidad-con-los-distintos-modelos-de-predicción."&gt;¶&lt;/a&gt;&lt;/h4&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

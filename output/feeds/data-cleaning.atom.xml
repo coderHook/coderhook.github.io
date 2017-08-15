@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Datascience CoderHook - Data cleaning</title><link href="https://coderhook.github.io/" rel="alternate"></link><link href="https://coderhook.github.io/feeds/data-cleaning.atom.xml" rel="self"></link><id>https://coderhook.github.io/</id><updated>2017-06-02T20:00:00+02:00</updated><entry><title>Star Wars survey: What version and Who likes it more.</title><link href="https://coderhook.github.io/Lets%20see%20who%20and%20what%20version%20of%20star%20wars%20people%20tend%20to%20like%20more." rel="alternate"></link><published>2017-06-02T20:00:00+02:00</published><updated>2017-06-02T20:00:00+02:00</updated><author><name>coderHook</name></author><id>tag:coderhook.github.io,2017-06-02:/Lets see who and what version of star wars people tend to like more.</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Datascience para el Bien Social - Data cleaning</title><link href="https://coderhook.github.io/" rel="alternate"></link><link href="https://coderhook.github.io/feeds/data-cleaning.atom.xml" rel="self"></link><id>https://coderhook.github.io/</id><updated>2017-06-02T20:00:00+02:00</updated><entry><title>Encuestas estar wars. ¿Que versiones de la saga son mas populares y entre quienes?</title><link href="https://coderhook.github.io/Lets%20see%20who%20and%20what%20version%20of%20star%20wars%20people%20tend%20to%20like%20more." rel="alternate"></link><published>2017-06-02T20:00:00+02:00</published><updated>2017-06-02T20:00:00+02:00</updated><author><name>coderHook</name></author><id>tag:coderhook.github.io,2017-06-02:/Lets see who and what version of star wars people tend to like more.</id><summary type="html">
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Star-Wars-Survey"&gt;Star Wars Survey&lt;a class="anchor-link" href="#Star-Wars-Survey"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="In-this-project-we-are-going-first-to-clean-the-data,-and-then-get-some-interesting-insight-on-the-movies-of-Star-Wars-to-see-what-version-were-more-popular."&gt;In this project we are going first to clean the data, and then get some interesting insight on the movies of Star Wars to see what version were more popular.&lt;a class="anchor-link" href="#In-this-project-we-are-going-first-to-clean-the-data,-and-then-get-some-interesting-insight-on-the-movies-of-Star-Wars-to-see-what-version-were-more-popular."&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h1 id="Encuestas-estar-wars.-¿Que-versiones-de-la-saga-son-mas-populares-y-entre-quienes?"&gt;Encuestas estar wars. ¿Que versiones de la saga son mas populares y entre quienes?&lt;a class="anchor-link" href="#Encuestas-estar-wars.-¿Que-versiones-de-la-saga-son-mas-populares-y-entre-quienes?"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="En-este-proyecto-vamos,-en-primer-lugar-a-limpiar-los-datos-para-poder-trabajar-con-ellos,-despues-veremos-que-sagas-son-las-mas-populares--y-por-quienes."&gt;En este proyecto vamos, en primer lugar a limpiar los datos para poder trabajar con ellos, despues veremos que sagas son las mas populares  y por quienes.&lt;a class="anchor-link" href="#En-este-proyecto-vamos,-en-primer-lugar-a-limpiar-los-datos-para-poder-trabajar-con-ellos,-despues-veremos-que-sagas-son-las-mas-populares--y-por-quienes."&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -15,7 +15,7 @@
 * IPython notebook
 *
 */
-/* CSS font colors for translated ANSI colors. */
+/* &lt;span class="caps"&gt;CSS&lt;/span&gt; font colors for translated &lt;span class="caps"&gt;ANSI&lt;/span&gt; colors. */
 .ansibold {
   font-weight: bold;
 }
@@ -101,13 +101,13 @@ div.cell {
   background: linear-gradient(to right, transparent -40px, transparent 1px, transparent 1px, transparent 100%);
 }
 div.cell.jupyter-soft-selected {
-  border-left-color: #90CAF9;
-  border-left-color: #E3F2FD;
+  border-left-color: #&lt;span class="caps"&gt;90CAF9&lt;/span&gt;;
+  border-left-color: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
   border-left-width: 1px;
   padding-left: 5px;
-  border-right-color: #E3F2FD;
+  border-right-color: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
   border-right-width: 1px;
-  background: #E3F2FD;
+  background: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
 }
 @media print {
   div.cell.jupyter-soft-selected {
@@ -118,7 +118,7 @@ div.cell.selected {
   border-color: #ababab;
   border-left-width: 0px;
   padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 5px, transparent 5px, transparent 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; -40px, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; 5px, transparent 5px, transparent 100%);
 }
 @media print {
   div.cell.selected {
@@ -128,13 +128,13 @@ div.cell.selected {
 div.cell.selected.jupyter-soft-selected {
   border-left-width: 0;
   padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 7px, #E3F2FD 7px, #E3F2FD 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; -40px, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; 7px, #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt; 7px, #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt; 100%);
 }
 .edit_mode div.cell.selected {
-  border-color: #66BB6A;
+  border-color: #&lt;span class="caps"&gt;66BB6A&lt;/span&gt;;
   border-left-width: 0px;
   padding-left: 6px;
-  background: linear-gradient(to right, #66BB6A -40px, #66BB6A 5px, transparent 5px, transparent 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;66BB6A&lt;/span&gt; -40px, #&lt;span class="caps"&gt;66BB6A&lt;/span&gt; 5px, transparent 5px, transparent 100%);
 }
 @media print {
   .edit_mode div.cell.selected {
@@ -287,7 +287,7 @@ div.input {
 }
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_prompt {
-  color: #303F9F;
+  color: #&lt;span class="caps"&gt;303F9F&lt;/span&gt;;
   border-top: 1px solid transparent;
 }
 div.input_area &gt; div.highlight {
@@ -328,7 +328,7 @@ div.input_area &gt; div.highlight &gt; pre {
   overflow-x: auto;
 }
 .CodeMirror-lines {
-  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
+  /* In &lt;span class="caps"&gt;CM2&lt;/span&gt;, this used to be 0.4em, but in &lt;span class="caps"&gt;CM3&lt;/span&gt; it went to 4px. We need the em value because */
   /* we have set a different line-height and want this to scale with that. */
   padding: 0.4em;
 }
@@ -340,7 +340,7 @@ div.input_area &gt; div.highlight &gt; pre {
   border-top-left-radius: 2px;
 }
 .CodeMirror pre {
-  /* In CM3 this went to 4px from 0 in CM2. We need the 0 value because of how we size */
+  /* In &lt;span class="caps"&gt;CM3&lt;/span&gt; this went to 4px from 0 in &lt;span class="caps"&gt;CM2&lt;/span&gt;. We need the 0 value because of how we size */
   /* .CodeMirror-lines */
   padding: 0;
   border: 0;
@@ -365,7 +365,7 @@ Adapted from GitHub theme
   color: #333333;
 }
 .highlight-string {
-  color: #BA2121;
+  color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;;
 }
 .highlight-comment {
   color: #408080;
@@ -388,11 +388,11 @@ Adapted from GitHub theme
   color: #f00;
 }
 .highlight-operator {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
   font-weight: bold;
 }
 .highlight-meta {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
 }
 /* previously not defined, copying from default codemirror */
 .highlight-def {
@@ -440,7 +440,7 @@ Adapted from GitHub theme
   color: #000;
 }
 .cm-s-ipython span.cm-operator {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
   font-weight: bold;
 }
 .cm-s-ipython span.cm-variable-2 {
@@ -454,13 +454,13 @@ Adapted from GitHub theme
   font-style: italic;
 }
 .cm-s-ipython span.cm-string {
-  color: #BA2121;
+  color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;;
 }
 .cm-s-ipython span.cm-string-2 {
   color: #f50;
 }
 .cm-s-ipython span.cm-meta {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
 }
 .cm-s-ipython span.cm-qualifier {
   color: #555;
@@ -515,9 +515,9 @@ div.output_wrapper {
 }
 /* class for the output area when it should be height-limited */
 div.output_scroll {
-  /* ideally, this would be max-height, but FF barfs all over that */
+  /* ideally, this would be max-height, but &lt;span class="caps"&gt;FF&lt;/span&gt; barfs all over that */
   height: 24em;
-  /* FF needs this *and the wrapper* to specify full width, or it will shrinkwrap */
+  /* &lt;span class="caps"&gt;FF&lt;/span&gt; needs this *and the wrapper* to specify full width, or it will shrinkwrap */
   width: 100%;
   overflow: auto;
   border-radius: 2px;
@@ -551,7 +551,7 @@ div.out_prompt_overlay {
   border-radius: 2px;
 }
 div.out_prompt_overlay:hover {
-  /* use inner shadow to get border that is computed the same on WebKit/FF */
+  /* use inner shadow to get border that is computed the same on WebKit/&lt;span class="caps"&gt;FF&lt;/span&gt; */
   -webkit-box-shadow: inset 0 0 1px #000;
   box-shadow: inset 0 0 1px #000;
   background: rgba(240, 240, 240, 0.5);
@@ -879,25 +879,25 @@ h6:hover .anchor-link {
 &lt;style type="text/css"&gt;.highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
-.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .err { border: 1px solid #&lt;span class="caps"&gt;FF0000&lt;/span&gt; } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
 .highlight .o { color: #666666 } /* Operator */
 .highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
 .highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
-.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cp { color: #&lt;span class="caps"&gt;BC7A00&lt;/span&gt; } /* Comment.Preproc */
 .highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
 .highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
 .highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
 .highlight .gd { color: #A00000 } /* Generic.Deleted */
 .highlight .ge { font-style: italic } /* Generic.Emph */
-.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gr { color: #&lt;span class="caps"&gt;FF0000&lt;/span&gt; } /* Generic.Error */
 .highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
 .highlight .gi { color: #00A000 } /* Generic.Inserted */
 .highlight .go { color: #888888 } /* Generic.Output */
 .highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .gt { color: #&lt;span class="caps"&gt;0044DD&lt;/span&gt; } /* Generic.Traceback */
 .highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
 .highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
 .highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
@@ -905,41 +905,41 @@ h6:hover .anchor-link {
 .highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
 .highlight .kt { color: #B00040 } /* Keyword.Type */
 .highlight .m { color: #666666 } /* Literal.Number */
-.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .s { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String */
 .highlight .na { color: #7D9029 } /* Name.Attribute */
 .highlight .nb { color: #008000 } /* Name.Builtin */
-.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .nc { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt;; font-weight: bold } /* Name.Class */
 .highlight .no { color: #880000 } /* Name.Constant */
-.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .nd { color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt; } /* Name.Decorator */
 .highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
-.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
-.highlight .nf { color: #0000FF } /* Name.Function */
-.highlight .nl { color: #A0A000 } /* Name.Label */
-.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .ne { color: #&lt;span class="caps"&gt;D2413A&lt;/span&gt;; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt; } /* Name.Function */
+.highlight .nl { color: #&lt;span class="caps"&gt;A0A000&lt;/span&gt; } /* Name.Label */
+.highlight .nn { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt;; font-weight: bold } /* Name.Namespace */
 .highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
 .highlight .nv { color: #19177C } /* Name.Variable */
-.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .ow { color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;; font-weight: bold } /* Operator.Word */
 .highlight .w { color: #bbbbbb } /* Text.Whitespace */
 .highlight .mb { color: #666666 } /* Literal.Number.Bin */
 .highlight .mf { color: #666666 } /* Literal.Number.Float */
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
-.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
-.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
-.highlight .sc { color: #BA2121 } /* Literal.String.Char */
-.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
-.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
-.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
-.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
-.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
-.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sa { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Affix */
+.highlight .sb { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Backtick */
+.highlight .sc { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Char */
+.highlight .dl { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Delimiter */
+.highlight .sd { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Double */
+.highlight .se { color: #&lt;span class="caps"&gt;BB6622&lt;/span&gt;; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Heredoc */
+.highlight .si { color: #&lt;span class="caps"&gt;BB6688&lt;/span&gt;; font-weight: bold } /* Literal.String.Interpol */
 .highlight .sx { color: #008000 } /* Literal.String.Other */
-.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
-.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .sr { color: #&lt;span class="caps"&gt;BB6688&lt;/span&gt; } /* Literal.String.Regex */
+.highlight .s1 { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
-.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .fm { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt; } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
@@ -947,38 +947,38 @@ h6:hover .anchor-link {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;
 &lt;style type="text/css"&gt;
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-fg { color: #&lt;span class="caps"&gt;3E424D&lt;/span&gt;; }
+.ansi-black-bg { background-color: #&lt;span class="caps"&gt;3E424D&lt;/span&gt;; }
 .ansi-black-intense-fg { color: #282C36; }
 .ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-red-fg { color: #&lt;span class="caps"&gt;E75C58&lt;/span&gt;; }
+.ansi-red-bg { background-color: #&lt;span class="caps"&gt;E75C58&lt;/span&gt;; }
+.ansi-red-intense-fg { color: #&lt;span class="caps"&gt;B22B31&lt;/span&gt;; }
+.ansi-red-intense-bg { background-color: #&lt;span class="caps"&gt;B22B31&lt;/span&gt;; }
 .ansi-green-fg { color: #00A250; }
 .ansi-green-bg { background-color: #00A250; }
 .ansi-green-intense-fg { color: #007427; }
 .ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-yellow-fg { color: #&lt;span class="caps"&gt;DDB62B&lt;/span&gt;; }
+.ansi-yellow-bg { background-color: #&lt;span class="caps"&gt;DDB62B&lt;/span&gt;; }
+.ansi-yellow-intense-fg { color: #&lt;span class="caps"&gt;B27D12&lt;/span&gt;; }
+.ansi-yellow-intense-bg { background-color: #&lt;span class="caps"&gt;B27D12&lt;/span&gt;; }
+.ansi-blue-fg { color: #&lt;span class="caps"&gt;208FFB&lt;/span&gt;; }
+.ansi-blue-bg { background-color: #&lt;span class="caps"&gt;208FFB&lt;/span&gt;; }
+.ansi-blue-intense-fg { color: #&lt;span class="caps"&gt;0065CA&lt;/span&gt;; }
+.ansi-blue-intense-bg { background-color: #&lt;span class="caps"&gt;0065CA&lt;/span&gt;; }
+.ansi-magenta-fg { color: #&lt;span class="caps"&gt;D160C4&lt;/span&gt;; }
+.ansi-magenta-bg { background-color: #&lt;span class="caps"&gt;D160C4&lt;/span&gt;; }
 .ansi-magenta-intense-fg { color: #A03196; }
 .ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
+.ansi-cyan-fg { color: #&lt;span class="caps"&gt;60C6C8&lt;/span&gt;; }
+.ansi-cyan-bg { background-color: #&lt;span class="caps"&gt;60C6C8&lt;/span&gt;; }
+.ansi-cyan-intense-fg { color: #&lt;span class="caps"&gt;258F8F&lt;/span&gt;; }
+.ansi-cyan-intense-bg { background-color: #&lt;span class="caps"&gt;258F8F&lt;/span&gt;; }
+.ansi-white-fg { color: #&lt;span class="caps"&gt;C5C1B4&lt;/span&gt;; }
+.ansi-white-bg { background-color: #&lt;span class="caps"&gt;C5C1B4&lt;/span&gt;; }
+.ansi-white-intense-fg { color: #&lt;span class="caps"&gt;A1A6B2&lt;/span&gt;; }
+.ansi-white-intense-bg { background-color: #&lt;span class="caps"&gt;A1A6B2&lt;/span&gt;; }
 
 .ansi-bold { font-weight: bold; }
 &lt;/style&gt;
@@ -987,17 +987,17 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Star-Wars-Survey"&gt;Star Wars Survey&lt;a class="anchor-link" href="#Star-Wars-Survey"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="In-this-project-we-are-going-first-to-clean-the-data,-and-then-get-some-interesting-insight-on-the-movies-of-Star-Wars-to-see-what-version-were-more-popular."&gt;In this project we are going first to clean the data, and then get some interesting insight on the movies of Star Wars to see what version were more popular.&lt;a class="anchor-link" href="#In-this-project-we-are-going-first-to-clean-the-data,-and-then-get-some-interesting-insight-on-the-movies-of-Star-Wars-to-see-what-version-were-more-popular."&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h1 id="Encuestas-estar-wars.-¿Que-versiones-de-la-saga-son-mas-populares-y-entre-quienes?"&gt;Encuestas estar wars. ¿Que versiones de la saga son mas populares y entre quienes?&lt;a class="anchor-link" href="#Encuestas-estar-wars.-¿Que-versiones-de-la-saga-son-mas-populares-y-entre-quienes?"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="En-este-proyecto-vamos,-en-primer-lugar-a-limpiar-los-datos-para-poder-trabajar-con-ellos,-despues-veremos-que-sagas-son-las-mas-populares--y-por-quienes."&gt;En este proyecto vamos, en primer lugar a limpiar los datos para poder trabajar con ellos, despues veremos que sagas son las mas populares  y por quienes.&lt;a class="anchor-link" href="#En-este-proyecto-vamos,-en-primer-lugar-a-limpiar-los-datos-para-poder-trabajar-con-ellos,-despues-veremos-que-sagas-son-las-mas-populares--y-por-quienes."&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [5]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
-&lt;span class="n"&gt;star_wars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"star_wars.csv"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;encoding&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"ISO-8859-1"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;star_wars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"https://raw.githubusercontent.com/fivethirtyeight/data/master/star-wars-survey/StarWars.csv"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;encoding&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"ISO-8859-1"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1005,10 +1005,10 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [6]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1016,281 +1016,80 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[2]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;RespondentID&lt;/th&gt;
-&lt;th&gt;Have you seen any of the 6 films in the Star Wars franchise?&lt;/th&gt;
-&lt;th&gt;Do you consider yourself to be a fan of the Star Wars film franchise?&lt;/th&gt;
-&lt;th&gt;Which of the following Star Wars films have you seen? Please select all that apply.&lt;/th&gt;
-&lt;th&gt;Unnamed: 4&lt;/th&gt;
-&lt;th&gt;Unnamed: 5&lt;/th&gt;
-&lt;th&gt;Unnamed: 6&lt;/th&gt;
-&lt;th&gt;Unnamed: 7&lt;/th&gt;
-&lt;th&gt;Unnamed: 8&lt;/th&gt;
-&lt;th&gt;Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.&lt;/th&gt;
-&lt;th&gt;...&lt;/th&gt;
-&lt;th&gt;Unnamed: 28&lt;/th&gt;
-&lt;th&gt;Which character shot first?&lt;/th&gt;
-&lt;th&gt;Are you familiar with the Expanded Universe?&lt;/th&gt;
-&lt;th&gt;Do you consider yourself to be a fan of the Expanded Universe?ÂÃ¦&lt;/th&gt;
-&lt;th&gt;Do you consider yourself to be a fan of the Star Trek franchise?&lt;/th&gt;
-&lt;th&gt;Gender&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
-&lt;th&gt;Household Income&lt;/th&gt;
-&lt;th&gt;Education&lt;/th&gt;
-&lt;th&gt;Location (Census Region)&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;0&lt;/th&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Response&lt;/td&gt;
-&lt;td&gt;Response&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode I  The Phantom Menace&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode II  Attack of the Clones&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode III  Revenge of the Sith&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode IV  A New Hope&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode V The Empire Strikes Back&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode VI Return of the Jedi&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode I  The Phantom Menace&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Yoda&lt;/td&gt;
-&lt;td&gt;Response&lt;/td&gt;
-&lt;td&gt;Response&lt;/td&gt;
-&lt;td&gt;Response&lt;/td&gt;
-&lt;td&gt;Response&lt;/td&gt;
-&lt;td&gt;Response&lt;/td&gt;
-&lt;td&gt;Response&lt;/td&gt;
-&lt;td&gt;Response&lt;/td&gt;
-&lt;td&gt;Response&lt;/td&gt;
-&lt;td&gt;Response&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;td&gt;3.292880e+09&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode I  The Phantom Menace&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode II  Attack of the Clones&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode III  Revenge of the Sith&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode IV  A New Hope&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode V The Empire Strikes Back&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode VI Return of the Jedi&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Very favorably&lt;/td&gt;
-&lt;td&gt;I don't understand this question&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;High school degree&lt;/td&gt;
-&lt;td&gt;South Atlantic&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;td&gt;3.292880e+09&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$0 - $24,999&lt;/td&gt;
-&lt;td&gt;Bachelor degree&lt;/td&gt;
-&lt;td&gt;West South Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;3.292765e+09&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode I  The Phantom Menace&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode II  Attack of the Clones&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode III  Revenge of the Sith&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Unfamiliar (N/A)&lt;/td&gt;
-&lt;td&gt;I don't understand this question&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$0 - $24,999&lt;/td&gt;
-&lt;td&gt;High school degree&lt;/td&gt;
-&lt;td&gt;West North Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;4&lt;/th&gt;
-&lt;td&gt;3.292763e+09&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode I  The Phantom Menace&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode II  Attack of the Clones&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode III  Revenge of the Sith&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode IV  A New Hope&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode V The Empire Strikes Back&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode VI Return of the Jedi&lt;/td&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Very favorably&lt;/td&gt;
-&lt;td&gt;I don't understand this question&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$100,000 - $149,999&lt;/td&gt;
-&lt;td&gt;Some college or Associate degree&lt;/td&gt;
-&lt;td&gt;West North Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;5&lt;/th&gt;
-&lt;td&gt;3.292731e+09&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode I  The Phantom Menace&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode II  Attack of the Clones&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode III  Revenge of the Sith&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode IV  A New Hope&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode V The Empire Strikes Back&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode VI Return of the Jedi&lt;/td&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Somewhat favorably&lt;/td&gt;
-&lt;td&gt;Greedo&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$100,000 - $149,999&lt;/td&gt;
-&lt;td&gt;Some college or Associate degree&lt;/td&gt;
-&lt;td&gt;West North Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;6&lt;/th&gt;
-&lt;td&gt;3.292719e+09&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode I  The Phantom Menace&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode II  Attack of the Clones&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode III  Revenge of the Sith&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode IV  A New Hope&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode V The Empire Strikes Back&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode VI Return of the Jedi&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Very favorably&lt;/td&gt;
-&lt;td&gt;Han&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$25,000 - $49,999&lt;/td&gt;
-&lt;td&gt;Bachelor degree&lt;/td&gt;
-&lt;td&gt;Middle Atlantic&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;7&lt;/th&gt;
-&lt;td&gt;3.292685e+09&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode I  The Phantom Menace&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode II  Attack of the Clones&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode III  Revenge of the Sith&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode IV  A New Hope&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode V The Empire Strikes Back&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode VI Return of the Jedi&lt;/td&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Very favorably&lt;/td&gt;
-&lt;td&gt;Han&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;High school degree&lt;/td&gt;
-&lt;td&gt;East North Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;8&lt;/th&gt;
-&lt;td&gt;3.292664e+09&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode I  The Phantom Menace&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode II  Attack of the Clones&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode III  Revenge of the Sith&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode IV  A New Hope&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode V The Empire Strikes Back&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode VI Return of the Jedi&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Very favorably&lt;/td&gt;
-&lt;td&gt;Han&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;High school degree&lt;/td&gt;
-&lt;td&gt;South Atlantic&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;9&lt;/th&gt;
-&lt;td&gt;3.292654e+09&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode I  The Phantom Menace&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode II  Attack of the Clones&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode III  Revenge of the Sith&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode IV  A New Hope&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode V The Empire Strikes Back&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode VI Return of the Jedi&lt;/td&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Somewhat favorably&lt;/td&gt;
-&lt;td&gt;Han&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$0 - $24,999&lt;/td&gt;
-&lt;td&gt;Some college or Associate degree&lt;/td&gt;
-&lt;td&gt;South Atlantic&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;10 rows × 38 columns&lt;/p&gt;
-&lt;/div&gt;
+&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;   RespondentID Have you seen any of the 6 films in the Star Wars franchise?  \
+0           NaN                                           Response             
+1  3.292880e+09                                                Yes             
+2  3.292880e+09                                                 No             
+
+  Do you consider yourself to be a fan of the Star Wars film franchise?  \
+0                                           Response                      
+1                                                Yes                      
+2                                                NaN                      
+
+  Which of the following Star Wars films have you seen? Please select all that apply.  \
+0           Star Wars: Episode I  The Phantom Menace                                    
+1           Star Wars: Episode I  The Phantom Menace                                    
+2                                                NaN                                    
+
+                                    Unnamed: 4  \
+0  Star Wars: Episode II  Attack of the Clones   
+1  Star Wars: Episode II  Attack of the Clones   
+2                                          NaN   
+
+                                    Unnamed: 5  \
+0  Star Wars: Episode III  Revenge of the Sith   
+1  Star Wars: Episode III  Revenge of the Sith   
+2                                          NaN   
+
+                          Unnamed: 6  \
+0  Star Wars: Episode IV  A New Hope   
+1  Star Wars: Episode IV  A New Hope   
+2                                NaN   
+
+                                     Unnamed: 7  \
+0  Star Wars: Episode V The Empire Strikes Back   
+1  Star Wars: Episode V The Empire Strikes Back   
+2                                           NaN   
+
+                                 Unnamed: 8  \
+0  Star Wars: Episode VI Return of the Jedi   
+1  Star Wars: Episode VI Return of the Jedi   
+2                                       NaN   
+
+  Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.  \
+0           Star Wars: Episode I  The Phantom Menace                                                                                              
+1                                                  3                                                                                              
+2                                                NaN                                                                                              
+
+            ...                Unnamed: 28       Which character shot first?  \
+0           ...                       Yoda                          Response   
+1           ...             Very favorably  I don't understand this question   
+2           ...                        NaN                               NaN   
+
+  Are you familiar with the Expanded Universe?  \
+0                                     Response   
+1                                          Yes   
+2                                          NaN   
+
+  Do you consider yourself to be a fan of the Expanded Universe?æ  \
+0                                           Response                 
+1                                                 No                 
+2                                                NaN                 
+
+  Do you consider yourself to be a fan of the Star Trek franchise?    Gender  \
+0                                           Response                Response   
+1                                                 No                    Male   
+2                                                Yes                    Male   
+
+        Age Household Income           Education Location (Census Region)  
+0  Response         Response            Response                 Response  
+1     18-29              NaN  High school degree           South Atlantic  
+2     18-29     $0 - $24,999     Bachelor degree       West South Central  
+
+[3 rows x 38 columns]
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1337,11 +1136,11 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [4]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [7]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;star_wars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;notnull&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'RespondentID'&lt;/span&gt;&lt;span class="p"&gt;])]&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1355,115 +1154,78 @@ h6:hover .anchor-link {
 1  3.292880e+09                                                Yes             
 2  3.292880e+09                                                 No             
 3  3.292765e+09                                                Yes             
-4  3.292763e+09                                                Yes             
-5  3.292731e+09                                                Yes             
 
   Do you consider yourself to be a fan of the Star Wars film franchise?  \
 1                                                Yes                      
 2                                                NaN                      
 3                                                 No                      
-4                                                Yes                      
-5                                                Yes                      
 
   Which of the following Star Wars films have you seen? Please select all that apply.  \
 1           Star Wars: Episode I  The Phantom Menace                                    
 2                                                NaN                                    
 3           Star Wars: Episode I  The Phantom Menace                                    
-4           Star Wars: Episode I  The Phantom Menace                                    
-5           Star Wars: Episode I  The Phantom Menace                                    
 
                                     Unnamed: 4  \
 1  Star Wars: Episode II  Attack of the Clones   
 2                                          NaN   
 3  Star Wars: Episode II  Attack of the Clones   
-4  Star Wars: Episode II  Attack of the Clones   
-5  Star Wars: Episode II  Attack of the Clones   
 
                                     Unnamed: 5  \
 1  Star Wars: Episode III  Revenge of the Sith   
 2                                          NaN   
 3  Star Wars: Episode III  Revenge of the Sith   
-4  Star Wars: Episode III  Revenge of the Sith   
-5  Star Wars: Episode III  Revenge of the Sith   
 
                           Unnamed: 6  \
 1  Star Wars: Episode IV  A New Hope   
 2                                NaN   
 3                                NaN   
-4  Star Wars: Episode IV  A New Hope   
-5  Star Wars: Episode IV  A New Hope   
 
                                      Unnamed: 7  \
 1  Star Wars: Episode V The Empire Strikes Back   
 2                                           NaN   
 3                                           NaN   
-4  Star Wars: Episode V The Empire Strikes Back   
-5  Star Wars: Episode V The Empire Strikes Back   
 
                                  Unnamed: 8  \
 1  Star Wars: Episode VI Return of the Jedi   
 2                                       NaN   
 3                                       NaN   
-4  Star Wars: Episode VI Return of the Jedi   
-5  Star Wars: Episode VI Return of the Jedi   
 
   Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.  \
 1                                                  3                                                                                              
 2                                                NaN                                                                                              
 3                                                  1                                                                                              
-4                                                  5                                                                                              
-5                                                  5                                                                                              
 
-            ...                    Unnamed: 28  \
-1           ...                 Very favorably   
-2           ...                            NaN   
-3           ...               Unfamiliar (N/A)   
-4           ...                 Very favorably   
-5           ...             Somewhat favorably   
+            ...                  Unnamed: 28  \
+1           ...               Very favorably   
+2           ...                          NaN   
+3           ...             Unfamiliar (N/A)   
 
         Which character shot first?  \
 1  I don't understand this question   
 2                               NaN   
 3  I don't understand this question   
-4  I don't understand this question   
-5                            Greedo   
 
   Are you familiar with the Expanded Universe?  \
 1                                          Yes   
 2                                          NaN   
 3                                           No   
-4                                           No   
-5                                          Yes   
 
-  Do you consider yourself to be a fan of the Expanded Universe?ÂÃ¦  \
-1                                                 No                   
-2                                                NaN                   
-3                                                NaN                   
-4                                                NaN                   
-5                                                 No                   
+  Do you consider yourself to be a fan of the Expanded Universe?æ  \
+1                                                 No                 
+2                                                NaN                 
+3                                                NaN                 
 
   Do you consider yourself to be a fan of the Star Trek franchise? Gender  \
 1                                                 No                 Male   
 2                                                Yes                 Male   
 3                                                 No                 Male   
-4                                                Yes                 Male   
-5                                                 No                 Male   
 
-     Age     Household Income                         Education  \
-1  18-29                  NaN                High school degree   
-2  18-29         $0 - $24,999                   Bachelor degree   
-3  18-29         $0 - $24,999                High school degree   
-4  18-29  $100,000 - $149,999  Some college or Associate degree   
-5  18-29  $100,000 - $149,999  Some college or Associate degree   
+     Age Household Income           Education Location (Census Region)  
+1  18-29              NaN  High school degree           South Atlantic  
+2  18-29     $0 - $24,999     Bachelor degree       West South Central  
+3  18-29     $0 - $24,999  High school degree       West North Central  
 
-  Location (Census Region)  
-1           South Atlantic  
-2       West South Central  
-3       West North Central  
-4       West North Central  
-5       West North Central  
-
-[5 rows x 38 columns]
+[3 rows x 38 columns]
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1476,7 +1238,7 @@ h6:hover .anchor-link {
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;ul&gt;
-&lt;li&gt;Now we have all our dataframe with only rows with a valid ResponseID&lt;/li&gt;
+&lt;li&gt;Now we have all our dataframe with only rows with a valid&amp;nbsp;ResponseID&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1486,7 +1248,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Cleaning-And-Mapping-Yes/No-Columns"&gt;Cleaning And Mapping Yes/No Columns&lt;a class="anchor-link" href="#Cleaning-And-Mapping-Yes/No-Columns"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Limpiando-y-mapeando-una-columna-binaria-Si/No-(-Yes/No)"&gt;Limpiando y mapeando una columna binaria Si/No ( Yes/No)&lt;a class="anchor-link" href="#Limpiando-y-mapeando-una-columna-binaria-Si/No-(-Yes/No)"&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1509,10 +1271,10 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [6]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [8]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1520,161 +1282,85 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[6]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;RespondentID&lt;/th&gt;
-&lt;th&gt;Have you seen any of the 6 films in the Star Wars franchise?&lt;/th&gt;
-&lt;th&gt;Do you consider yourself to be a fan of the Star Wars film franchise?&lt;/th&gt;
-&lt;th&gt;Which of the following Star Wars films have you seen? Please select all that apply.&lt;/th&gt;
-&lt;th&gt;Unnamed: 4&lt;/th&gt;
-&lt;th&gt;Unnamed: 5&lt;/th&gt;
-&lt;th&gt;Unnamed: 6&lt;/th&gt;
-&lt;th&gt;Unnamed: 7&lt;/th&gt;
-&lt;th&gt;Unnamed: 8&lt;/th&gt;
-&lt;th&gt;Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.&lt;/th&gt;
-&lt;th&gt;...&lt;/th&gt;
-&lt;th&gt;Unnamed: 28&lt;/th&gt;
-&lt;th&gt;Which character shot first?&lt;/th&gt;
-&lt;th&gt;Are you familiar with the Expanded Universe?&lt;/th&gt;
-&lt;th&gt;Do you consider yourself to be a fan of the Expanded Universe?ÂÃ¦&lt;/th&gt;
-&lt;th&gt;Do you consider yourself to be a fan of the Star Trek franchise?&lt;/th&gt;
-&lt;th&gt;Gender&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
-&lt;th&gt;Household Income&lt;/th&gt;
-&lt;th&gt;Education&lt;/th&gt;
-&lt;th&gt;Location (Census Region)&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;td&gt;3.292880e+09&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode I  The Phantom Menace&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode II  Attack of the Clones&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode III  Revenge of the Sith&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode IV  A New Hope&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode V The Empire Strikes Back&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode VI Return of the Jedi&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Very favorably&lt;/td&gt;
-&lt;td&gt;I don't understand this question&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;High school degree&lt;/td&gt;
-&lt;td&gt;South Atlantic&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;td&gt;3.292880e+09&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$0 - $24,999&lt;/td&gt;
-&lt;td&gt;Bachelor degree&lt;/td&gt;
-&lt;td&gt;West South Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;3.292765e+09&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode I  The Phantom Menace&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode II  Attack of the Clones&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode III  Revenge of the Sith&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Unfamiliar (N/A)&lt;/td&gt;
-&lt;td&gt;I don't understand this question&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$0 - $24,999&lt;/td&gt;
-&lt;td&gt;High school degree&lt;/td&gt;
-&lt;td&gt;West North Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;4&lt;/th&gt;
-&lt;td&gt;3.292763e+09&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode I  The Phantom Menace&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode II  Attack of the Clones&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode III  Revenge of the Sith&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode IV  A New Hope&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode V The Empire Strikes Back&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode VI Return of the Jedi&lt;/td&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Very favorably&lt;/td&gt;
-&lt;td&gt;I don't understand this question&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$100,000 - $149,999&lt;/td&gt;
-&lt;td&gt;Some college or Associate degree&lt;/td&gt;
-&lt;td&gt;West North Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;5&lt;/th&gt;
-&lt;td&gt;3.292731e+09&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode I  The Phantom Menace&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode II  Attack of the Clones&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode III  Revenge of the Sith&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode IV  A New Hope&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode V The Empire Strikes Back&lt;/td&gt;
-&lt;td&gt;Star Wars: Episode VI Return of the Jedi&lt;/td&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Somewhat favorably&lt;/td&gt;
-&lt;td&gt;Greedo&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$100,000 - $149,999&lt;/td&gt;
-&lt;td&gt;Some college or Associate degree&lt;/td&gt;
-&lt;td&gt;West North Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;5 rows × 38 columns&lt;/p&gt;
-&lt;/div&gt;
+&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;   RespondentID Have you seen any of the 6 films in the Star Wars franchise?  \
+1  3.292880e+09                                                Yes             
+2  3.292880e+09                                                 No             
+3  3.292765e+09                                                Yes             
+
+  Do you consider yourself to be a fan of the Star Wars film franchise?  \
+1                                                Yes                      
+2                                                NaN                      
+3                                                 No                      
+
+  Which of the following Star Wars films have you seen? Please select all that apply.  \
+1           Star Wars: Episode I  The Phantom Menace                                    
+2                                                NaN                                    
+3           Star Wars: Episode I  The Phantom Menace                                    
+
+                                    Unnamed: 4  \
+1  Star Wars: Episode II  Attack of the Clones   
+2                                          NaN   
+3  Star Wars: Episode II  Attack of the Clones   
+
+                                    Unnamed: 5  \
+1  Star Wars: Episode III  Revenge of the Sith   
+2                                          NaN   
+3  Star Wars: Episode III  Revenge of the Sith   
+
+                          Unnamed: 6  \
+1  Star Wars: Episode IV  A New Hope   
+2                                NaN   
+3                                NaN   
+
+                                     Unnamed: 7  \
+1  Star Wars: Episode V The Empire Strikes Back   
+2                                           NaN   
+3                                           NaN   
+
+                                 Unnamed: 8  \
+1  Star Wars: Episode VI Return of the Jedi   
+2                                       NaN   
+3                                       NaN   
+
+  Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.  \
+1                                                  3                                                                                              
+2                                                NaN                                                                                              
+3                                                  1                                                                                              
+
+            ...                  Unnamed: 28  \
+1           ...               Very favorably   
+2           ...                          NaN   
+3           ...             Unfamiliar (N/A)   
+
+        Which character shot first?  \
+1  I don't understand this question   
+2                               NaN   
+3  I don't understand this question   
+
+  Are you familiar with the Expanded Universe?  \
+1                                          Yes   
+2                                          NaN   
+3                                           No   
+
+  Do you consider yourself to be a fan of the Expanded Universe?æ  \
+1                                                 No                 
+2                                                NaN                 
+3                                                NaN                 
+
+  Do you consider yourself to be a fan of the Star Trek franchise? Gender  \
+1                                                 No                 Male   
+2                                                Yes                 Male   
+3                                                 No                 Male   
+
+     Age Household Income           Education Location (Census Region)  
+1  18-29              NaN  High school degree           South Atlantic  
+2  18-29     $0 - $24,999     Bachelor degree       West South Central  
+3  18-29     $0 - $24,999  High school degree       West North Central  
+
+[3 rows x 38 columns]
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1685,13 +1371,13 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Cleaning-And-Mapping-Checkbox-Columns"&gt;Cleaning And Mapping Checkbox Columns&lt;a class="anchor-link" href="#Cleaning-And-Mapping-Checkbox-Columns"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Limpiado-y-mapeando-una-columna-multiopción."&gt;Limpiado y mapeando una columna multiopción.&lt;a class="anchor-link" href="#Limpiado-y-mapeando-una-columna-multiopción."&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [7]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [9]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
@@ -1718,7 +1404,7 @@ h6:hover .anchor-link {
 &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;col&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
     &lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;col&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;col&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;map&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;yes_no_episodes&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-&lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1726,161 +1412,60 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[7]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;RespondentID&lt;/th&gt;
-&lt;th&gt;Have you seen any of the 6 films in the Star Wars franchise?&lt;/th&gt;
-&lt;th&gt;Do you consider yourself to be a fan of the Star Wars film franchise?&lt;/th&gt;
-&lt;th&gt;Seen 1&lt;/th&gt;
-&lt;th&gt;Seen 2&lt;/th&gt;
-&lt;th&gt;Seen 3&lt;/th&gt;
-&lt;th&gt;Seen 4&lt;/th&gt;
-&lt;th&gt;Seen 5&lt;/th&gt;
-&lt;th&gt;Seen 6&lt;/th&gt;
-&lt;th&gt;Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.&lt;/th&gt;
-&lt;th&gt;...&lt;/th&gt;
-&lt;th&gt;Unnamed: 28&lt;/th&gt;
-&lt;th&gt;Which character shot first?&lt;/th&gt;
-&lt;th&gt;Are you familiar with the Expanded Universe?&lt;/th&gt;
-&lt;th&gt;Do you consider yourself to be a fan of the Expanded Universe?ÂÃ¦&lt;/th&gt;
-&lt;th&gt;Do you consider yourself to be a fan of the Star Trek franchise?&lt;/th&gt;
-&lt;th&gt;Gender&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
-&lt;th&gt;Household Income&lt;/th&gt;
-&lt;th&gt;Education&lt;/th&gt;
-&lt;th&gt;Location (Census Region)&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;td&gt;3.292880e+09&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Very favorably&lt;/td&gt;
-&lt;td&gt;I don't understand this question&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;High school degree&lt;/td&gt;
-&lt;td&gt;South Atlantic&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;td&gt;3.292880e+09&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$0 - $24,999&lt;/td&gt;
-&lt;td&gt;Bachelor degree&lt;/td&gt;
-&lt;td&gt;West South Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;3.292765e+09&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Unfamiliar (N/A)&lt;/td&gt;
-&lt;td&gt;I don't understand this question&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$0 - $24,999&lt;/td&gt;
-&lt;td&gt;High school degree&lt;/td&gt;
-&lt;td&gt;West North Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;4&lt;/th&gt;
-&lt;td&gt;3.292763e+09&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Very favorably&lt;/td&gt;
-&lt;td&gt;I don't understand this question&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$100,000 - $149,999&lt;/td&gt;
-&lt;td&gt;Some college or Associate degree&lt;/td&gt;
-&lt;td&gt;West North Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;5&lt;/th&gt;
-&lt;td&gt;3.292731e+09&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Somewhat favorably&lt;/td&gt;
-&lt;td&gt;Greedo&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$100,000 - $149,999&lt;/td&gt;
-&lt;td&gt;Some college or Associate degree&lt;/td&gt;
-&lt;td&gt;West North Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;5 rows × 38 columns&lt;/p&gt;
-&lt;/div&gt;
+&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;   RespondentID Have you seen any of the 6 films in the Star Wars franchise?  \
+1  3.292880e+09                                                Yes             
+2  3.292880e+09                                                 No             
+3  3.292765e+09                                                Yes             
+
+  Do you consider yourself to be a fan of the Star Wars film franchise?  \
+1                                                Yes                      
+2                                                NaN                      
+3                                                 No                      
+
+   Seen 1  Seen 2  Seen 3  Seen 4  Seen 5  Seen 6  \
+1    True    True    True    True    True    True   
+2   False   False   False   False   False   False   
+3    True    True    True   False   False   False   
+
+  Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.  \
+1                                                  3                                                                                              
+2                                                NaN                                                                                              
+3                                                  1                                                                                              
+
+            ...                  Unnamed: 28  \
+1           ...               Very favorably   
+2           ...                          NaN   
+3           ...             Unfamiliar (N/A)   
+
+        Which character shot first?  \
+1  I don't understand this question   
+2                               NaN   
+3  I don't understand this question   
+
+  Are you familiar with the Expanded Universe?  \
+1                                          Yes   
+2                                          NaN   
+3                                           No   
+
+  Do you consider yourself to be a fan of the Expanded Universe?æ  \
+1                                                 No                 
+2                                                NaN                 
+3                                                NaN                 
+
+  Do you consider yourself to be a fan of the Star Trek franchise? Gender  \
+1                                                 No                 Male   
+2                                                Yes                 Male   
+3                                                 No                 Male   
+
+     Age Household Income           Education Location (Census Region)  
+1  18-29              NaN  High school degree           South Atlantic  
+2  18-29     $0 - $24,999     Bachelor degree       West South Central  
+3  18-29     $0 - $24,999  High school degree       West North Central  
+
+[3 rows x 38 columns]
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1891,7 +1476,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Now as you can see we have substitute the names of the films by True or False so we can count how many views that movie had.&lt;/p&gt;
+&lt;h4 id='Ahora-como-se-puede-apreciar-tenemso-que-substituir-los-nombre-de-las-peliculas-por-"True"-o-"False"-(Verdadero-o-falso)-asi-podremos-contar-cuantas-visualizaciones-tuvo-cada-pelicula.'&gt;Ahora como se puede apreciar tenemso que substituir los nombre de las peliculas por &amp;#8220;True&amp;#8221; o &amp;#8220;False&amp;#8221; (Verdadero o falso) asi podremos contar cuantas visualizaciones tuvo cada pelicula.&lt;a class="anchor-link" href='#Ahora-como-se-puede-apreciar-tenemso-que-substituir-los-nombre-de-las-peliculas-por-"True"-o-"False"-(Verdadero-o-falso)-asi-podremos-contar-cuantas-visualizaciones-tuvo-cada-pelicula.'&gt;¶&lt;/a&gt;&lt;/h4&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1900,13 +1485,13 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Cleaning-The-Ranking-Columns"&gt;Cleaning The Ranking Columns&lt;a class="anchor-link" href="#Cleaning-The-Ranking-Columns"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id='Limpiando-la-columna-"Rankings"'&gt;Limpiando la columna &amp;#8220;Rankings&amp;#8221;&lt;a class="anchor-link" href='#Limpiando-la-columna-"Rankings"'&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [8]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [10]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;star_wars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rename&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -1918,7 +1503,7 @@ h6:hover .anchor-link {
     &lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="s2"&gt;"Ranking 6"&lt;/span&gt;
 &lt;span class="p"&gt;})&lt;/span&gt;
 
-&lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;star_wars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1926,161 +1511,55 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[8]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;RespondentID&lt;/th&gt;
-&lt;th&gt;Have you seen any of the 6 films in the Star Wars franchise?&lt;/th&gt;
-&lt;th&gt;Do you consider yourself to be a fan of the Star Wars film franchise?&lt;/th&gt;
-&lt;th&gt;Seen 1&lt;/th&gt;
-&lt;th&gt;Seen 2&lt;/th&gt;
-&lt;th&gt;Seen 3&lt;/th&gt;
-&lt;th&gt;Seen 4&lt;/th&gt;
-&lt;th&gt;Seen 5&lt;/th&gt;
-&lt;th&gt;Seen 6&lt;/th&gt;
-&lt;th&gt;Ranking 1&lt;/th&gt;
-&lt;th&gt;...&lt;/th&gt;
-&lt;th&gt;Unnamed: 28&lt;/th&gt;
-&lt;th&gt;Which character shot first?&lt;/th&gt;
-&lt;th&gt;Are you familiar with the Expanded Universe?&lt;/th&gt;
-&lt;th&gt;Do you consider yourself to be a fan of the Expanded Universe?ÂÃ¦&lt;/th&gt;
-&lt;th&gt;Do you consider yourself to be a fan of the Star Trek franchise?&lt;/th&gt;
-&lt;th&gt;Gender&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
-&lt;th&gt;Household Income&lt;/th&gt;
-&lt;th&gt;Education&lt;/th&gt;
-&lt;th&gt;Location (Census Region)&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;td&gt;3.292880e+09&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Very favorably&lt;/td&gt;
-&lt;td&gt;I don't understand this question&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;High school degree&lt;/td&gt;
-&lt;td&gt;South Atlantic&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;td&gt;3.292880e+09&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$0 - $24,999&lt;/td&gt;
-&lt;td&gt;Bachelor degree&lt;/td&gt;
-&lt;td&gt;West South Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;3.292765e+09&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;False&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Unfamiliar (N/A)&lt;/td&gt;
-&lt;td&gt;I don't understand this question&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$0 - $24,999&lt;/td&gt;
-&lt;td&gt;High school degree&lt;/td&gt;
-&lt;td&gt;West North Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;4&lt;/th&gt;
-&lt;td&gt;3.292763e+09&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Very favorably&lt;/td&gt;
-&lt;td&gt;I don't understand this question&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$100,000 - $149,999&lt;/td&gt;
-&lt;td&gt;Some college or Associate degree&lt;/td&gt;
-&lt;td&gt;West North Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;5&lt;/th&gt;
-&lt;td&gt;3.292731e+09&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;True&lt;/td&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Somewhat favorably&lt;/td&gt;
-&lt;td&gt;Greedo&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;18-29&lt;/td&gt;
-&lt;td&gt;$100,000 - $149,999&lt;/td&gt;
-&lt;td&gt;Some college or Associate degree&lt;/td&gt;
-&lt;td&gt;West North Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;5 rows × 38 columns&lt;/p&gt;
-&lt;/div&gt;
+&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;   RespondentID Have you seen any of the 6 films in the Star Wars franchise?  \
+1  3.292880e+09                                                Yes             
+2  3.292880e+09                                                 No             
+3  3.292765e+09                                                Yes             
+
+  Do you consider yourself to be a fan of the Star Wars film franchise?  \
+1                                                Yes                      
+2                                                NaN                      
+3                                                 No                      
+
+   Seen 1  Seen 2  Seen 3  Seen 4  Seen 5  Seen 6 Ranking 1  \
+1    True    True    True    True    True    True         3   
+2   False   False   False   False   False   False       NaN   
+3    True    True    True   False   False   False         1   
+
+            ...                  Unnamed: 28  \
+1           ...               Very favorably   
+2           ...                          NaN   
+3           ...             Unfamiliar (N/A)   
+
+        Which character shot first?  \
+1  I don't understand this question   
+2                               NaN   
+3  I don't understand this question   
+
+  Are you familiar with the Expanded Universe?  \
+1                                          Yes   
+2                                          NaN   
+3                                           No   
+
+  Do you consider yourself to be a fan of the Expanded Universe?æ  \
+1                                                 No                 
+2                                                NaN                 
+3                                                NaN                 
+
+  Do you consider yourself to be a fan of the Star Trek franchise? Gender  \
+1                                                 No                 Male   
+2                                                Yes                 Male   
+3                                                 No                 Male   
+
+     Age Household Income           Education Location (Census Region)  
+1  18-29              NaN  High school degree           South Atlantic  
+2  18-29     $0 - $24,999     Bachelor degree       West South Central  
+3  18-29     $0 - $24,999  High school degree       West North Central  
+
+[3 rows x 38 columns]
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2102,7 +1581,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Finding-The-Highest-Ranked-Movie"&gt;Finding The Highest-Ranked Movie&lt;a class="anchor-link" href="#Finding-The-Highest-Ranked-Movie"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Encontrando-la-pelicula-con-un-Ranking-mayor."&gt;Encontrando la pelicula con un Ranking mayor.&lt;a class="anchor-link" href="#Encontrando-la-pelicula-con-un-Ranking-mayor."&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2269,7 +1748,9 @@ MASBDgCGINABwBAEOgAYgkAHAEP8H5rpjlPTK23XAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;At this moment we have the data cleaned and also the rankings with the means, thanks to that we can also check which movie has a higher rank, as we can appreciate the old movies, 4, 5 and 6 are ranked better that the new ones.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;En este momento, tenemos los datos limpios y tambien los rankings con sus medias. Gracias a esto podremos averiguar que pelicula tiene un ranking mas alto. Como podemos apreciar las peliculas mas viejas, 4 5 y 6 tienen una mejor clasificacion que llas&amp;nbsp;primeras.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2278,7 +1759,7 @@ MASBDgCGINABwBAEOgAYgkAHAEP8H5rpjlPTK23XAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Finding-The-Most-Viewed-Movie"&gt;Finding The Most Viewed Movie&lt;a class="anchor-link" href="#Finding-The-Most-Viewed-Movie"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Encontrando-la-pelicula-mas-vista."&gt;Encontrando la pelicula mas vista.&lt;a class="anchor-link" href="#Encontrando-la-pelicula-mas-vista."&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2455,7 +1936,7 @@ AElFTkSuQmCC
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;ul&gt;
-&lt;li&gt;We can appreciate that the most seen movies are the old ones, also remember that are the ones that people liked the most.&lt;/li&gt;
+&lt;li&gt;Podemos apreciar que las pelicuas mas vistas son las mas viejas, tambien recordemos que las primeras fueron las que mas gustaron, como vimos&amp;nbsp;previamente.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2465,7 +1946,7 @@ AElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Exploring-The-Data-By-Binary-Segments"&gt;Exploring The Data By Binary Segments&lt;a class="anchor-link" href="#Exploring-The-Data-By-Binary-Segments"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Explorando-los-datos-por-segmentos-binarios."&gt;Explorando los datos por segmentos binarios.&lt;a class="anchor-link" href="#Explorando-los-datos-por-segmentos-binarios."&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2961,7 +2442,7 @@ SUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Conclusion"&gt;Conclusion&lt;a class="anchor-link" href="#Conclusion"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;We can say that both genders equally have seen the same movies the most and also ranked in the same manner, so there is no difference between gender in this case.&lt;/p&gt;
+&lt;h1 id="Conclusión."&gt;Conclusión.&lt;a class="anchor-link" href="#Conclusión."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Podemos decir que tanto mujeres como hombres igualmente han visto las mismas peliculas por igual, es decir, no existe un sexo que se decante por una de las peliculas que por&amp;nbsp;otra.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
