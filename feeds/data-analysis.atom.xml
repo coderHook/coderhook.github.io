@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Datascience CoderHook - Data Analysis</title><link href="https://coderhook.github.io/" rel="alternate"></link><link href="https://coderhook.github.io/feeds/data-analysis.atom.xml" rel="self"></link><id>https://coderhook.github.io/</id><updated>2017-06-13T20:00:00+02:00</updated><entry><title>Movie Review Analysis: Making predictions with the data.</title><link href="https://coderhook.github.io/Using%20Linear%20Regression%20to%20see%20how%20accurate%20are%20our%20predictions." rel="alternate"></link><published>2017-06-13T20:00:00+02:00</published><updated>2017-06-13T20:00:00+02:00</updated><author><name>coderHook</name></author><id>tag:coderhook.github.io,2017-06-13:/Using Linear Regression to see how accurate are our predictions.</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Datascience para el Bien Social - Data Analysis</title><link href="https://coderhook.github.io/" rel="alternate"></link><link href="https://coderhook.github.io/feeds/data-analysis.atom.xml" rel="self"></link><id>https://coderhook.github.io/</id><updated>2017-06-13T20:00:00+02:00</updated><entry><title>Analizando las calificaciones de las peliculas: Analisis Estadistico, Visualizando resultados y obteniendo predicciones.</title><link href="https://coderhook.github.io/Using%20Linear%20Regression%20to%20see%20how%20accurate%20are%20our%20predictions." rel="alternate"></link><published>2017-06-13T20:00:00+02:00</published><updated>2017-06-13T20:00:00+02:00</updated><author><name>coderHook</name></author><id>tag:coderhook.github.io,2017-06-13:/Using Linear Regression to see how accurate are our predictions.</id><summary type="html">
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Movie-Reviews-Analysis:-Statistics-analisis,-Visualising-results-and-getting-Predictions."&gt;Movie Reviews Analysis: Statistics analisis, Visualising results and getting Predictions.&lt;a class="anchor-link" href="#Movie-Reviews-Analysis:-Statistics-analisis,-Visualising-results-and-getting-Predictions."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="In-this-project-We-will-continue-with-the-analysis-of-the-movie-review,-but-this-time-we-are-going-to-use-statistics-to-programm-manually-in-python-the-linear-regression-and-see-how-far-away-the-data-is-from-the-prediction,-so-can-see-our-accuracy."&gt;In this project We will continue with the analysis of the movie review, but this time we are going to use statistics to programm manually in python the linear regression and see how far away the data is from the prediction, so can see our accuracy.&lt;a class="anchor-link" href="#In-this-project-We-will-continue-with-the-analysis-of-the-movie-review,-but-this-time-we-are-going-to-use-statistics-to-programm-manually-in-python-the-linear-regression-and-see-how-far-away-the-data-is-from-the-prediction,-so-can-see-our-accuracy."&gt;¶&lt;/a&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+&lt;h1 id="Analizando-las-calificaciones-de-las-peliculas:-Analisis-Estadistico,-Visualizando-resultados-y-obteniendo-predicciones."&gt;Analizando las calificaciones de las peliculas: Analisis Estadistico, Visualizando resultados y obteniendo predicciones.&lt;a class="anchor-link" href="#Analizando-las-calificaciones-de-las-peliculas:-Analisis-Estadistico,-Visualizando-resultados-y-obteniendo-predicciones."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="En-este-proyecto-vamos-a-continuar-analizando-recomendaciones-de-peliculas,-pero-esta-vez-vamos-a-usar-estadistica-para-programar-manualmente-con-pytho-la-regresion-linear-y-ver-como-de-dispersas-estan-las-recomendaciones-de-la-prediccion-que-nosotros-vamos-a-hacer.-De-esta-manera-podemos-obtener-la-precision-de-nuestras-predicciones-de-manera-visual."&gt;En este proyecto vamos a continuar analizando recomendaciones de peliculas, pero esta vez vamos a usar estadistica para programar manualmente con pytho la regresion linear y ver como de dispersas estan las recomendaciones de la prediccion que nosotros vamos a hacer. De esta manera podemos obtener la precision de nuestras predicciones de manera visual.&lt;a class="anchor-link" href="#En-este-proyecto-vamos-a-continuar-analizando-recomendaciones-de-peliculas,-pero-esta-vez-vamos-a-usar-estadistica-para-programar-manualmente-con-pytho-la-regresion-linear-y-ver-como-de-dispersas-estan-las-recomendaciones-de-la-prediccion-que-nosotros-vamos-a-hacer.-De-esta-manera-podemos-obtener-la-precision-de-nuestras-predicciones-de-manera-visual."&gt;¶&lt;/a&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
 */
-/* CSS font colors for translated ANSI colors. */
+/* &lt;span class="caps"&gt;CSS&lt;/span&gt; font colors for translated &lt;span class="caps"&gt;ANSI&lt;/span&gt; colors. */
 .ansibold {
   font-weight: bold;
 }
@@ -96,13 +96,13 @@ div.cell {
   background: linear-gradient(to right, transparent -40px, transparent 1px, transparent 1px, transparent 100%);
 }
 div.cell.jupyter-soft-selected {
-  border-left-color: #90CAF9;
-  border-left-color: #E3F2FD;
+  border-left-color: #&lt;span class="caps"&gt;90CAF9&lt;/span&gt;;
+  border-left-color: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
   border-left-width: 1px;
   padding-left: 5px;
-  border-right-color: #E3F2FD;
+  border-right-color: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
   border-right-width: 1px;
-  background: #E3F2FD;
+  background: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
 }
 @media print {
   div.cell.jupyter-soft-selected {
@@ -113,7 +113,7 @@ div.cell.selected {
   border-color: #ababab;
   border-left-width: 0px;
   padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 5px, transparent 5px, transparent 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; -40px, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; 5px, transparent 5px, transparent 100%);
 }
 @media print {
   div.cell.selected {
@@ -123,13 +123,13 @@ div.cell.selected {
 div.cell.selected.jupyter-soft-selected {
   border-left-width: 0;
   padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 7px, #E3F2FD 7px, #E3F2FD 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; -40px, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; 7px, #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt; 7px, #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt; 100%);
 }
 .edit_mode div.cell.selected {
-  border-color: #66BB6A;
+  border-color: #&lt;span class="caps"&gt;66BB6A&lt;/span&gt;;
   border-left-width: 0px;
   padding-left: 6px;
-  background: linear-gradient(to right, #66BB6A -40px, #66BB6A 5px, transparent 5px, transparent 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;66BB6A&lt;/span&gt; -40px, #&lt;span class="caps"&gt;66BB6A&lt;/span&gt; 5px, transparent 5px, transparent 100%);
 }
 @media print {
   .edit_mode div.cell.selected {
@@ -282,7 +282,7 @@ div.input {
 }
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_prompt {
-  color: #303F9F;
+  color: #&lt;span class="caps"&gt;303F9F&lt;/span&gt;;
   border-top: 1px solid transparent;
 }
 div.input_area &gt; div.highlight {
@@ -323,7 +323,7 @@ div.input_area &gt; div.highlight &gt; pre {
   overflow-x: auto;
 }
 .CodeMirror-lines {
-  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
+  /* In &lt;span class="caps"&gt;CM2&lt;/span&gt;, this used to be 0.4em, but in &lt;span class="caps"&gt;CM3&lt;/span&gt; it went to 4px. We need the em value because */
   /* we have set a different line-height and want this to scale with that. */
   padding: 0.4em;
 }
@@ -335,7 +335,7 @@ div.input_area &gt; div.highlight &gt; pre {
   border-top-left-radius: 2px;
 }
 .CodeMirror pre {
-  /* In CM3 this went to 4px from 0 in CM2. We need the 0 value because of how we size */
+  /* In &lt;span class="caps"&gt;CM3&lt;/span&gt; this went to 4px from 0 in &lt;span class="caps"&gt;CM2&lt;/span&gt;. We need the 0 value because of how we size */
   /* .CodeMirror-lines */
   padding: 0;
   border: 0;
@@ -360,7 +360,7 @@ Adapted from GitHub theme
   color: #333333;
 }
 .highlight-string {
-  color: #BA2121;
+  color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;;
 }
 .highlight-comment {
   color: #408080;
@@ -383,11 +383,11 @@ Adapted from GitHub theme
   color: #f00;
 }
 .highlight-operator {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
   font-weight: bold;
 }
 .highlight-meta {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
 }
 /* previously not defined, copying from default codemirror */
 .highlight-def {
@@ -435,7 +435,7 @@ Adapted from GitHub theme
   color: #000;
 }
 .cm-s-ipython span.cm-operator {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
   font-weight: bold;
 }
 .cm-s-ipython span.cm-variable-2 {
@@ -449,13 +449,13 @@ Adapted from GitHub theme
   font-style: italic;
 }
 .cm-s-ipython span.cm-string {
-  color: #BA2121;
+  color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;;
 }
 .cm-s-ipython span.cm-string-2 {
   color: #f50;
 }
 .cm-s-ipython span.cm-meta {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
 }
 .cm-s-ipython span.cm-qualifier {
   color: #555;
@@ -510,9 +510,9 @@ div.output_wrapper {
 }
 /* class for the output area when it should be height-limited */
 div.output_scroll {
-  /* ideally, this would be max-height, but FF barfs all over that */
+  /* ideally, this would be max-height, but &lt;span class="caps"&gt;FF&lt;/span&gt; barfs all over that */
   height: 24em;
-  /* FF needs this *and the wrapper* to specify full width, or it will shrinkwrap */
+  /* &lt;span class="caps"&gt;FF&lt;/span&gt; needs this *and the wrapper* to specify full width, or it will shrinkwrap */
   width: 100%;
   overflow: auto;
   border-radius: 2px;
@@ -546,7 +546,7 @@ div.out_prompt_overlay {
   border-radius: 2px;
 }
 div.out_prompt_overlay:hover {
-  /* use inner shadow to get border that is computed the same on WebKit/FF */
+  /* use inner shadow to get border that is computed the same on WebKit/&lt;span class="caps"&gt;FF&lt;/span&gt; */
   -webkit-box-shadow: inset 0 0 1px #000;
   box-shadow: inset 0 0 1px #000;
   background: rgba(240, 240, 240, 0.5);
@@ -874,25 +874,25 @@ h6:hover .anchor-link {
 &lt;style type="text/css"&gt;.highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
-.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .err { border: 1px solid #&lt;span class="caps"&gt;FF0000&lt;/span&gt; } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
 .highlight .o { color: #666666 } /* Operator */
 .highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
 .highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
-.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cp { color: #&lt;span class="caps"&gt;BC7A00&lt;/span&gt; } /* Comment.Preproc */
 .highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
 .highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
 .highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
 .highlight .gd { color: #A00000 } /* Generic.Deleted */
 .highlight .ge { font-style: italic } /* Generic.Emph */
-.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gr { color: #&lt;span class="caps"&gt;FF0000&lt;/span&gt; } /* Generic.Error */
 .highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
 .highlight .gi { color: #00A000 } /* Generic.Inserted */
 .highlight .go { color: #888888 } /* Generic.Output */
 .highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .gt { color: #&lt;span class="caps"&gt;0044DD&lt;/span&gt; } /* Generic.Traceback */
 .highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
 .highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
 .highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
@@ -900,41 +900,41 @@ h6:hover .anchor-link {
 .highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
 .highlight .kt { color: #B00040 } /* Keyword.Type */
 .highlight .m { color: #666666 } /* Literal.Number */
-.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .s { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String */
 .highlight .na { color: #7D9029 } /* Name.Attribute */
 .highlight .nb { color: #008000 } /* Name.Builtin */
-.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .nc { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt;; font-weight: bold } /* Name.Class */
 .highlight .no { color: #880000 } /* Name.Constant */
-.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .nd { color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt; } /* Name.Decorator */
 .highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
-.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
-.highlight .nf { color: #0000FF } /* Name.Function */
-.highlight .nl { color: #A0A000 } /* Name.Label */
-.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .ne { color: #&lt;span class="caps"&gt;D2413A&lt;/span&gt;; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt; } /* Name.Function */
+.highlight .nl { color: #&lt;span class="caps"&gt;A0A000&lt;/span&gt; } /* Name.Label */
+.highlight .nn { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt;; font-weight: bold } /* Name.Namespace */
 .highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
 .highlight .nv { color: #19177C } /* Name.Variable */
-.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .ow { color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;; font-weight: bold } /* Operator.Word */
 .highlight .w { color: #bbbbbb } /* Text.Whitespace */
 .highlight .mb { color: #666666 } /* Literal.Number.Bin */
 .highlight .mf { color: #666666 } /* Literal.Number.Float */
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
-.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
-.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
-.highlight .sc { color: #BA2121 } /* Literal.String.Char */
-.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
-.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
-.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
-.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
-.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
-.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sa { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Affix */
+.highlight .sb { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Backtick */
+.highlight .sc { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Char */
+.highlight .dl { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Delimiter */
+.highlight .sd { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Double */
+.highlight .se { color: #&lt;span class="caps"&gt;BB6622&lt;/span&gt;; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Heredoc */
+.highlight .si { color: #&lt;span class="caps"&gt;BB6688&lt;/span&gt;; font-weight: bold } /* Literal.String.Interpol */
 .highlight .sx { color: #008000 } /* Literal.String.Other */
-.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
-.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .sr { color: #&lt;span class="caps"&gt;BB6688&lt;/span&gt; } /* Literal.String.Regex */
+.highlight .s1 { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
-.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .fm { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt; } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
@@ -942,38 +942,38 @@ h6:hover .anchor-link {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;
 &lt;style type="text/css"&gt;
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-fg { color: #&lt;span class="caps"&gt;3E424D&lt;/span&gt;; }
+.ansi-black-bg { background-color: #&lt;span class="caps"&gt;3E424D&lt;/span&gt;; }
 .ansi-black-intense-fg { color: #282C36; }
 .ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-red-fg { color: #&lt;span class="caps"&gt;E75C58&lt;/span&gt;; }
+.ansi-red-bg { background-color: #&lt;span class="caps"&gt;E75C58&lt;/span&gt;; }
+.ansi-red-intense-fg { color: #&lt;span class="caps"&gt;B22B31&lt;/span&gt;; }
+.ansi-red-intense-bg { background-color: #&lt;span class="caps"&gt;B22B31&lt;/span&gt;; }
 .ansi-green-fg { color: #00A250; }
 .ansi-green-bg { background-color: #00A250; }
 .ansi-green-intense-fg { color: #007427; }
 .ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-yellow-fg { color: #&lt;span class="caps"&gt;DDB62B&lt;/span&gt;; }
+.ansi-yellow-bg { background-color: #&lt;span class="caps"&gt;DDB62B&lt;/span&gt;; }
+.ansi-yellow-intense-fg { color: #&lt;span class="caps"&gt;B27D12&lt;/span&gt;; }
+.ansi-yellow-intense-bg { background-color: #&lt;span class="caps"&gt;B27D12&lt;/span&gt;; }
+.ansi-blue-fg { color: #&lt;span class="caps"&gt;208FFB&lt;/span&gt;; }
+.ansi-blue-bg { background-color: #&lt;span class="caps"&gt;208FFB&lt;/span&gt;; }
+.ansi-blue-intense-fg { color: #&lt;span class="caps"&gt;0065CA&lt;/span&gt;; }
+.ansi-blue-intense-bg { background-color: #&lt;span class="caps"&gt;0065CA&lt;/span&gt;; }
+.ansi-magenta-fg { color: #&lt;span class="caps"&gt;D160C4&lt;/span&gt;; }
+.ansi-magenta-bg { background-color: #&lt;span class="caps"&gt;D160C4&lt;/span&gt;; }
 .ansi-magenta-intense-fg { color: #A03196; }
 .ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
+.ansi-cyan-fg { color: #&lt;span class="caps"&gt;60C6C8&lt;/span&gt;; }
+.ansi-cyan-bg { background-color: #&lt;span class="caps"&gt;60C6C8&lt;/span&gt;; }
+.ansi-cyan-intense-fg { color: #&lt;span class="caps"&gt;258F8F&lt;/span&gt;; }
+.ansi-cyan-intense-bg { background-color: #&lt;span class="caps"&gt;258F8F&lt;/span&gt;; }
+.ansi-white-fg { color: #&lt;span class="caps"&gt;C5C1B4&lt;/span&gt;; }
+.ansi-white-bg { background-color: #&lt;span class="caps"&gt;C5C1B4&lt;/span&gt;; }
+.ansi-white-intense-fg { color: #&lt;span class="caps"&gt;A1A6B2&lt;/span&gt;; }
+.ansi-white-intense-bg { background-color: #&lt;span class="caps"&gt;A1A6B2&lt;/span&gt;; }
 
 .ansi-bold { font-weight: bold; }
 &lt;/style&gt;
@@ -982,21 +982,21 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Movie-Reviews-Analysis:-Statistics-analisis,-Visualising-results-and-getting-Predictions."&gt;Movie Reviews Analysis: Statistics analisis, Visualising results and getting Predictions.&lt;a class="anchor-link" href="#Movie-Reviews-Analysis:-Statistics-analisis,-Visualising-results-and-getting-Predictions."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="In-this-project-We-will-continue-with-the-analysis-of-the-movie-review,-but-this-time-we-are-going-to-use-statistics-to-programm-manually-in-python-the-linear-regression-and-see-how-far-away-the-data-is-from-the-prediction,-so-can-see-our-accuracy."&gt;In this project We will continue with the analysis of the movie review, but this time we are going to use statistics to programm manually in python the linear regression and see how far away the data is from the prediction, so can see our accuracy.&lt;a class="anchor-link" href="#In-this-project-We-will-continue-with-the-analysis-of-the-movie-review,-but-this-time-we-are-going-to-use-statistics-to-programm-manually-in-python-the-linear-regression-and-see-how-far-away-the-data-is-from-the-prediction,-so-can-see-our-accuracy."&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;slope, intercept, r_value, p_value, stderr&lt;/li&gt;
+&lt;h1 id="Analizando-las-calificaciones-de-las-peliculas:-Analisis-Estadistico,-Visualizando-resultados-y-obteniendo-predicciones."&gt;Analizando las calificaciones de las peliculas: Analisis Estadistico, Visualizando resultados y obteniendo predicciones.&lt;a class="anchor-link" href="#Analizando-las-calificaciones-de-las-peliculas:-Analisis-Estadistico,-Visualizando-resultados-y-obteniendo-predicciones."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="En-este-proyecto-vamos-a-continuar-analizando-recomendaciones-de-peliculas,-pero-esta-vez-vamos-a-usar-estadistica-para-programar-manualmente-con-pytho-la-regresion-linear-y-ver-como-de-dispersas-estan-las-recomendaciones-de-la-prediccion-que-nosotros-vamos-a-hacer.-De-esta-manera-podemos-obtener-la-precision-de-nuestras-predicciones-de-manera-visual."&gt;En este proyecto vamos a continuar analizando recomendaciones de peliculas, pero esta vez vamos a usar estadistica para programar manualmente con pytho la regresion linear y ver como de dispersas estan las recomendaciones de la prediccion que nosotros vamos a hacer. De esta manera podemos obtener la precision de nuestras predicciones de manera visual.&lt;a class="anchor-link" href="#En-este-proyecto-vamos-a-continuar-analizando-recomendaciones-de-peliculas,-pero-esta-vez-vamos-a-usar-estadistica-para-programar-manualmente-con-pytho-la-regresion-linear-y-ver-como-de-dispersas-estan-las-recomendaciones-de-la-prediccion-que-nosotros-vamos-a-hacer.-De-esta-manera-podemos-obtener-la-precision-de-nuestras-predicciones-de-manera-visual."&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;slope, intercept, r_value, p_value,&amp;nbsp;stderr&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [26]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
 
 &lt;span class="n"&gt;movies&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"fandango_score_comparison.csv"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;movies&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1004,1505 +1004,40 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[26]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;FILM&lt;/th&gt;
-&lt;th&gt;RottenTomatoes&lt;/th&gt;
-&lt;th&gt;RottenTomatoes_User&lt;/th&gt;
-&lt;th&gt;Metacritic&lt;/th&gt;
-&lt;th&gt;Metacritic_User&lt;/th&gt;
-&lt;th&gt;IMDB&lt;/th&gt;
-&lt;th&gt;Fandango_Stars&lt;/th&gt;
-&lt;th&gt;Fandango_Ratingvalue&lt;/th&gt;
-&lt;th&gt;RT_norm&lt;/th&gt;
-&lt;th&gt;RT_user_norm&lt;/th&gt;
-&lt;th&gt;...&lt;/th&gt;
-&lt;th&gt;IMDB_norm&lt;/th&gt;
-&lt;th&gt;RT_norm_round&lt;/th&gt;
-&lt;th&gt;RT_user_norm_round&lt;/th&gt;
-&lt;th&gt;Metacritic_norm_round&lt;/th&gt;
-&lt;th&gt;Metacritic_user_norm_round&lt;/th&gt;
-&lt;th&gt;IMDB_norm_round&lt;/th&gt;
-&lt;th&gt;Metacritic_user_vote_count&lt;/th&gt;
-&lt;th&gt;IMDB_user_vote_count&lt;/th&gt;
-&lt;th&gt;Fandango_votes&lt;/th&gt;
-&lt;th&gt;Fandango_Difference&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;0&lt;/th&gt;
-&lt;td&gt;Avengers: Age of Ultron (2015)&lt;/td&gt;
-&lt;td&gt;74&lt;/td&gt;
-&lt;td&gt;86&lt;/td&gt;
-&lt;td&gt;66&lt;/td&gt;
-&lt;td&gt;7.1&lt;/td&gt;
-&lt;td&gt;7.8&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.70&lt;/td&gt;
-&lt;td&gt;4.30&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.90&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;1330&lt;/td&gt;
-&lt;td&gt;271107&lt;/td&gt;
-&lt;td&gt;14846&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;td&gt;Cinderella (2015)&lt;/td&gt;
-&lt;td&gt;85&lt;/td&gt;
-&lt;td&gt;80&lt;/td&gt;
-&lt;td&gt;67&lt;/td&gt;
-&lt;td&gt;7.5&lt;/td&gt;
-&lt;td&gt;7.1&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.25&lt;/td&gt;
-&lt;td&gt;4.00&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.55&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;249&lt;/td&gt;
-&lt;td&gt;65709&lt;/td&gt;
-&lt;td&gt;12640&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;td&gt;Ant-Man (2015)&lt;/td&gt;
-&lt;td&gt;80&lt;/td&gt;
-&lt;td&gt;90&lt;/td&gt;
-&lt;td&gt;64&lt;/td&gt;
-&lt;td&gt;8.1&lt;/td&gt;
-&lt;td&gt;7.8&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.00&lt;/td&gt;
-&lt;td&gt;4.50&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.90&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;627&lt;/td&gt;
-&lt;td&gt;103660&lt;/td&gt;
-&lt;td&gt;12055&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;Do You Believe? (2015)&lt;/td&gt;
-&lt;td&gt;18&lt;/td&gt;
-&lt;td&gt;84&lt;/td&gt;
-&lt;td&gt;22&lt;/td&gt;
-&lt;td&gt;4.7&lt;/td&gt;
-&lt;td&gt;5.4&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;0.90&lt;/td&gt;
-&lt;td&gt;4.20&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;2.70&lt;/td&gt;
-&lt;td&gt;1.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;1.0&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;31&lt;/td&gt;
-&lt;td&gt;3136&lt;/td&gt;
-&lt;td&gt;1793&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;4&lt;/th&gt;
-&lt;td&gt;Hot Tub Time Machine 2 (2015)&lt;/td&gt;
-&lt;td&gt;14&lt;/td&gt;
-&lt;td&gt;28&lt;/td&gt;
-&lt;td&gt;29&lt;/td&gt;
-&lt;td&gt;3.4&lt;/td&gt;
-&lt;td&gt;5.1&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;0.70&lt;/td&gt;
-&lt;td&gt;1.40&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;2.55&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;88&lt;/td&gt;
-&lt;td&gt;19560&lt;/td&gt;
-&lt;td&gt;1021&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;5&lt;/th&gt;
-&lt;td&gt;The Water Diviner (2015)&lt;/td&gt;
-&lt;td&gt;63&lt;/td&gt;
-&lt;td&gt;62&lt;/td&gt;
-&lt;td&gt;50&lt;/td&gt;
-&lt;td&gt;6.8&lt;/td&gt;
-&lt;td&gt;7.2&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.15&lt;/td&gt;
-&lt;td&gt;3.10&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.60&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;34&lt;/td&gt;
-&lt;td&gt;39373&lt;/td&gt;
-&lt;td&gt;397&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;6&lt;/th&gt;
-&lt;td&gt;Irrational Man (2015)&lt;/td&gt;
-&lt;td&gt;42&lt;/td&gt;
-&lt;td&gt;53&lt;/td&gt;
-&lt;td&gt;53&lt;/td&gt;
-&lt;td&gt;7.6&lt;/td&gt;
-&lt;td&gt;6.9&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;2.10&lt;/td&gt;
-&lt;td&gt;2.65&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.45&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;17&lt;/td&gt;
-&lt;td&gt;2680&lt;/td&gt;
-&lt;td&gt;252&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;7&lt;/th&gt;
-&lt;td&gt;Top Five (2014)&lt;/td&gt;
-&lt;td&gt;86&lt;/td&gt;
-&lt;td&gt;64&lt;/td&gt;
-&lt;td&gt;81&lt;/td&gt;
-&lt;td&gt;6.8&lt;/td&gt;
-&lt;td&gt;6.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.30&lt;/td&gt;
-&lt;td&gt;3.20&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.25&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;124&lt;/td&gt;
-&lt;td&gt;16876&lt;/td&gt;
-&lt;td&gt;3223&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;8&lt;/th&gt;
-&lt;td&gt;Shaun the Sheep Movie (2015)&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;82&lt;/td&gt;
-&lt;td&gt;81&lt;/td&gt;
-&lt;td&gt;8.8&lt;/td&gt;
-&lt;td&gt;7.4&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.95&lt;/td&gt;
-&lt;td&gt;4.10&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.70&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;62&lt;/td&gt;
-&lt;td&gt;12227&lt;/td&gt;
-&lt;td&gt;896&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;9&lt;/th&gt;
-&lt;td&gt;Love &amp; Mercy (2015)&lt;/td&gt;
-&lt;td&gt;89&lt;/td&gt;
-&lt;td&gt;87&lt;/td&gt;
-&lt;td&gt;80&lt;/td&gt;
-&lt;td&gt;8.5&lt;/td&gt;
-&lt;td&gt;7.8&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.45&lt;/td&gt;
-&lt;td&gt;4.35&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.90&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;54&lt;/td&gt;
-&lt;td&gt;5367&lt;/td&gt;
-&lt;td&gt;864&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;10&lt;/th&gt;
-&lt;td&gt;Far From The Madding Crowd (2015)&lt;/td&gt;
-&lt;td&gt;84&lt;/td&gt;
-&lt;td&gt;77&lt;/td&gt;
-&lt;td&gt;71&lt;/td&gt;
-&lt;td&gt;7.5&lt;/td&gt;
-&lt;td&gt;7.2&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.20&lt;/td&gt;
-&lt;td&gt;3.85&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.60&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;35&lt;/td&gt;
-&lt;td&gt;12129&lt;/td&gt;
-&lt;td&gt;804&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;11&lt;/th&gt;
-&lt;td&gt;Black Sea (2015)&lt;/td&gt;
-&lt;td&gt;82&lt;/td&gt;
-&lt;td&gt;60&lt;/td&gt;
-&lt;td&gt;62&lt;/td&gt;
-&lt;td&gt;6.6&lt;/td&gt;
-&lt;td&gt;6.4&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.10&lt;/td&gt;
-&lt;td&gt;3.00&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.20&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;37&lt;/td&gt;
-&lt;td&gt;16547&lt;/td&gt;
-&lt;td&gt;218&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;12&lt;/th&gt;
-&lt;td&gt;Leviathan (2014)&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;79&lt;/td&gt;
-&lt;td&gt;92&lt;/td&gt;
-&lt;td&gt;7.2&lt;/td&gt;
-&lt;td&gt;7.7&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.95&lt;/td&gt;
-&lt;td&gt;3.95&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.85&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;145&lt;/td&gt;
-&lt;td&gt;22521&lt;/td&gt;
-&lt;td&gt;64&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;13&lt;/th&gt;
-&lt;td&gt;Unbroken (2014)&lt;/td&gt;
-&lt;td&gt;51&lt;/td&gt;
-&lt;td&gt;70&lt;/td&gt;
-&lt;td&gt;59&lt;/td&gt;
-&lt;td&gt;6.5&lt;/td&gt;
-&lt;td&gt;7.2&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.1&lt;/td&gt;
-&lt;td&gt;2.55&lt;/td&gt;
-&lt;td&gt;3.50&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.60&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;218&lt;/td&gt;
-&lt;td&gt;77518&lt;/td&gt;
-&lt;td&gt;9443&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;14&lt;/th&gt;
-&lt;td&gt;The Imitation Game (2014)&lt;/td&gt;
-&lt;td&gt;90&lt;/td&gt;
-&lt;td&gt;92&lt;/td&gt;
-&lt;td&gt;73&lt;/td&gt;
-&lt;td&gt;8.2&lt;/td&gt;
-&lt;td&gt;8.1&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.6&lt;/td&gt;
-&lt;td&gt;4.50&lt;/td&gt;
-&lt;td&gt;4.60&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;4.05&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;566&lt;/td&gt;
-&lt;td&gt;334164&lt;/td&gt;
-&lt;td&gt;8055&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;15&lt;/th&gt;
-&lt;td&gt;Taken 3 (2015)&lt;/td&gt;
-&lt;td&gt;9&lt;/td&gt;
-&lt;td&gt;46&lt;/td&gt;
-&lt;td&gt;26&lt;/td&gt;
-&lt;td&gt;4.6&lt;/td&gt;
-&lt;td&gt;6.1&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.1&lt;/td&gt;
-&lt;td&gt;0.45&lt;/td&gt;
-&lt;td&gt;2.30&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.05&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;240&lt;/td&gt;
-&lt;td&gt;104235&lt;/td&gt;
-&lt;td&gt;6757&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;16&lt;/th&gt;
-&lt;td&gt;Ted 2 (2015)&lt;/td&gt;
-&lt;td&gt;46&lt;/td&gt;
-&lt;td&gt;58&lt;/td&gt;
-&lt;td&gt;48&lt;/td&gt;
-&lt;td&gt;6.5&lt;/td&gt;
-&lt;td&gt;6.6&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.1&lt;/td&gt;
-&lt;td&gt;2.30&lt;/td&gt;
-&lt;td&gt;2.90&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.30&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;197&lt;/td&gt;
-&lt;td&gt;49102&lt;/td&gt;
-&lt;td&gt;6437&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;17&lt;/th&gt;
-&lt;td&gt;Southpaw (2015)&lt;/td&gt;
-&lt;td&gt;59&lt;/td&gt;
-&lt;td&gt;80&lt;/td&gt;
-&lt;td&gt;57&lt;/td&gt;
-&lt;td&gt;8.2&lt;/td&gt;
-&lt;td&gt;7.8&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.6&lt;/td&gt;
-&lt;td&gt;2.95&lt;/td&gt;
-&lt;td&gt;4.00&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.90&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;128&lt;/td&gt;
-&lt;td&gt;23561&lt;/td&gt;
-&lt;td&gt;5597&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;18&lt;/th&gt;
-&lt;td&gt;Night at the Museum: Secret of the Tomb (2014)&lt;/td&gt;
-&lt;td&gt;50&lt;/td&gt;
-&lt;td&gt;58&lt;/td&gt;
-&lt;td&gt;47&lt;/td&gt;
-&lt;td&gt;5.8&lt;/td&gt;
-&lt;td&gt;6.3&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.1&lt;/td&gt;
-&lt;td&gt;2.50&lt;/td&gt;
-&lt;td&gt;2.90&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.15&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;103&lt;/td&gt;
-&lt;td&gt;50291&lt;/td&gt;
-&lt;td&gt;5445&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;19&lt;/th&gt;
-&lt;td&gt;Pixels (2015)&lt;/td&gt;
-&lt;td&gt;17&lt;/td&gt;
-&lt;td&gt;54&lt;/td&gt;
-&lt;td&gt;27&lt;/td&gt;
-&lt;td&gt;5.3&lt;/td&gt;
-&lt;td&gt;5.6&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.1&lt;/td&gt;
-&lt;td&gt;0.85&lt;/td&gt;
-&lt;td&gt;2.70&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;2.80&lt;/td&gt;
-&lt;td&gt;1.0&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;246&lt;/td&gt;
-&lt;td&gt;19521&lt;/td&gt;
-&lt;td&gt;3886&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;20&lt;/th&gt;
-&lt;td&gt;McFarland, USA (2015)&lt;/td&gt;
-&lt;td&gt;79&lt;/td&gt;
-&lt;td&gt;89&lt;/td&gt;
-&lt;td&gt;60&lt;/td&gt;
-&lt;td&gt;7.2&lt;/td&gt;
-&lt;td&gt;7.5&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.6&lt;/td&gt;
-&lt;td&gt;3.95&lt;/td&gt;
-&lt;td&gt;4.45&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.75&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;59&lt;/td&gt;
-&lt;td&gt;13769&lt;/td&gt;
-&lt;td&gt;3364&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;21&lt;/th&gt;
-&lt;td&gt;Insidious: Chapter 3 (2015)&lt;/td&gt;
-&lt;td&gt;59&lt;/td&gt;
-&lt;td&gt;56&lt;/td&gt;
-&lt;td&gt;52&lt;/td&gt;
-&lt;td&gt;6.9&lt;/td&gt;
-&lt;td&gt;6.3&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.1&lt;/td&gt;
-&lt;td&gt;2.95&lt;/td&gt;
-&lt;td&gt;2.80&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.15&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;115&lt;/td&gt;
-&lt;td&gt;25134&lt;/td&gt;
-&lt;td&gt;3276&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;22&lt;/th&gt;
-&lt;td&gt;The Man From U.N.C.L.E. (2015)&lt;/td&gt;
-&lt;td&gt;68&lt;/td&gt;
-&lt;td&gt;80&lt;/td&gt;
-&lt;td&gt;55&lt;/td&gt;
-&lt;td&gt;7.9&lt;/td&gt;
-&lt;td&gt;7.6&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.1&lt;/td&gt;
-&lt;td&gt;3.40&lt;/td&gt;
-&lt;td&gt;4.00&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.80&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;144&lt;/td&gt;
-&lt;td&gt;22104&lt;/td&gt;
-&lt;td&gt;2686&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;23&lt;/th&gt;
-&lt;td&gt;Run All Night (2015)&lt;/td&gt;
-&lt;td&gt;60&lt;/td&gt;
-&lt;td&gt;59&lt;/td&gt;
-&lt;td&gt;59&lt;/td&gt;
-&lt;td&gt;7.3&lt;/td&gt;
-&lt;td&gt;6.6&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.1&lt;/td&gt;
-&lt;td&gt;3.00&lt;/td&gt;
-&lt;td&gt;2.95&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.30&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;141&lt;/td&gt;
-&lt;td&gt;50438&lt;/td&gt;
-&lt;td&gt;2066&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;24&lt;/th&gt;
-&lt;td&gt;Trainwreck (2015)&lt;/td&gt;
-&lt;td&gt;85&lt;/td&gt;
-&lt;td&gt;74&lt;/td&gt;
-&lt;td&gt;75&lt;/td&gt;
-&lt;td&gt;6.0&lt;/td&gt;
-&lt;td&gt;6.7&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.1&lt;/td&gt;
-&lt;td&gt;4.25&lt;/td&gt;
-&lt;td&gt;3.70&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.35&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;169&lt;/td&gt;
-&lt;td&gt;27380&lt;/td&gt;
-&lt;td&gt;8381&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;25&lt;/th&gt;
-&lt;td&gt;Selma (2014)&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;86&lt;/td&gt;
-&lt;td&gt;89&lt;/td&gt;
-&lt;td&gt;7.1&lt;/td&gt;
-&lt;td&gt;7.5&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.6&lt;/td&gt;
-&lt;td&gt;4.95&lt;/td&gt;
-&lt;td&gt;4.30&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.75&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;316&lt;/td&gt;
-&lt;td&gt;45344&lt;/td&gt;
-&lt;td&gt;7025&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;26&lt;/th&gt;
-&lt;td&gt;Ex Machina (2015)&lt;/td&gt;
-&lt;td&gt;92&lt;/td&gt;
-&lt;td&gt;86&lt;/td&gt;
-&lt;td&gt;78&lt;/td&gt;
-&lt;td&gt;7.9&lt;/td&gt;
-&lt;td&gt;7.7&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.1&lt;/td&gt;
-&lt;td&gt;4.60&lt;/td&gt;
-&lt;td&gt;4.30&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.85&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;672&lt;/td&gt;
-&lt;td&gt;154499&lt;/td&gt;
-&lt;td&gt;3458&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;27&lt;/th&gt;
-&lt;td&gt;Still Alice (2015)&lt;/td&gt;
-&lt;td&gt;88&lt;/td&gt;
-&lt;td&gt;85&lt;/td&gt;
-&lt;td&gt;72&lt;/td&gt;
-&lt;td&gt;7.8&lt;/td&gt;
-&lt;td&gt;7.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.1&lt;/td&gt;
-&lt;td&gt;4.40&lt;/td&gt;
-&lt;td&gt;4.25&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.75&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;153&lt;/td&gt;
-&lt;td&gt;57123&lt;/td&gt;
-&lt;td&gt;1258&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;28&lt;/th&gt;
-&lt;td&gt;Wild Tales (2014)&lt;/td&gt;
-&lt;td&gt;96&lt;/td&gt;
-&lt;td&gt;92&lt;/td&gt;
-&lt;td&gt;77&lt;/td&gt;
-&lt;td&gt;8.8&lt;/td&gt;
-&lt;td&gt;8.2&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.1&lt;/td&gt;
-&lt;td&gt;4.80&lt;/td&gt;
-&lt;td&gt;4.60&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;4.10&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;107&lt;/td&gt;
-&lt;td&gt;50285&lt;/td&gt;
-&lt;td&gt;235&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;29&lt;/th&gt;
-&lt;td&gt;The End of the Tour (2015)&lt;/td&gt;
-&lt;td&gt;92&lt;/td&gt;
-&lt;td&gt;89&lt;/td&gt;
-&lt;td&gt;84&lt;/td&gt;
-&lt;td&gt;7.5&lt;/td&gt;
-&lt;td&gt;7.9&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.1&lt;/td&gt;
-&lt;td&gt;4.60&lt;/td&gt;
-&lt;td&gt;4.45&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.95&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;19&lt;/td&gt;
-&lt;td&gt;1320&lt;/td&gt;
-&lt;td&gt;121&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;...&lt;/th&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;116&lt;/th&gt;
-&lt;td&gt;Clouds of Sils Maria (2015)&lt;/td&gt;
-&lt;td&gt;89&lt;/td&gt;
-&lt;td&gt;67&lt;/td&gt;
-&lt;td&gt;78&lt;/td&gt;
-&lt;td&gt;7.1&lt;/td&gt;
-&lt;td&gt;6.8&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.4&lt;/td&gt;
-&lt;td&gt;4.45&lt;/td&gt;
-&lt;td&gt;3.35&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.40&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;36&lt;/td&gt;
-&lt;td&gt;11392&lt;/td&gt;
-&lt;td&gt;162&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;117&lt;/th&gt;
-&lt;td&gt;Testament of Youth (2015)&lt;/td&gt;
-&lt;td&gt;81&lt;/td&gt;
-&lt;td&gt;79&lt;/td&gt;
-&lt;td&gt;77&lt;/td&gt;
-&lt;td&gt;7.9&lt;/td&gt;
-&lt;td&gt;7.3&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.9&lt;/td&gt;
-&lt;td&gt;4.05&lt;/td&gt;
-&lt;td&gt;3.95&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.65&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;15&lt;/td&gt;
-&lt;td&gt;5495&lt;/td&gt;
-&lt;td&gt;127&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;118&lt;/th&gt;
-&lt;td&gt;Infinitely Polar Bear (2015)&lt;/td&gt;
-&lt;td&gt;80&lt;/td&gt;
-&lt;td&gt;76&lt;/td&gt;
-&lt;td&gt;64&lt;/td&gt;
-&lt;td&gt;7.9&lt;/td&gt;
-&lt;td&gt;7.2&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.9&lt;/td&gt;
-&lt;td&gt;4.00&lt;/td&gt;
-&lt;td&gt;3.80&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.60&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;8&lt;/td&gt;
-&lt;td&gt;1062&lt;/td&gt;
-&lt;td&gt;124&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;119&lt;/th&gt;
-&lt;td&gt;Phoenix (2015)&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;81&lt;/td&gt;
-&lt;td&gt;91&lt;/td&gt;
-&lt;td&gt;8.0&lt;/td&gt;
-&lt;td&gt;7.2&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.4&lt;/td&gt;
-&lt;td&gt;4.95&lt;/td&gt;
-&lt;td&gt;4.05&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.60&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;21&lt;/td&gt;
-&lt;td&gt;3687&lt;/td&gt;
-&lt;td&gt;70&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;120&lt;/th&gt;
-&lt;td&gt;The Wolfpack (2015)&lt;/td&gt;
-&lt;td&gt;84&lt;/td&gt;
-&lt;td&gt;73&lt;/td&gt;
-&lt;td&gt;75&lt;/td&gt;
-&lt;td&gt;7.0&lt;/td&gt;
-&lt;td&gt;7.1&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.4&lt;/td&gt;
-&lt;td&gt;4.20&lt;/td&gt;
-&lt;td&gt;3.65&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.55&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;8&lt;/td&gt;
-&lt;td&gt;1488&lt;/td&gt;
-&lt;td&gt;66&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;121&lt;/th&gt;
-&lt;td&gt;The Stanford Prison Experiment (2015)&lt;/td&gt;
-&lt;td&gt;84&lt;/td&gt;
-&lt;td&gt;87&lt;/td&gt;
-&lt;td&gt;68&lt;/td&gt;
-&lt;td&gt;8.5&lt;/td&gt;
-&lt;td&gt;7.1&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.9&lt;/td&gt;
-&lt;td&gt;4.20&lt;/td&gt;
-&lt;td&gt;4.35&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.55&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td&gt;950&lt;/td&gt;
-&lt;td&gt;51&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;122&lt;/th&gt;
-&lt;td&gt;Tangerine (2015)&lt;/td&gt;
-&lt;td&gt;95&lt;/td&gt;
-&lt;td&gt;86&lt;/td&gt;
-&lt;td&gt;86&lt;/td&gt;
-&lt;td&gt;7.3&lt;/td&gt;
-&lt;td&gt;7.4&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.9&lt;/td&gt;
-&lt;td&gt;4.75&lt;/td&gt;
-&lt;td&gt;4.30&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.70&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;14&lt;/td&gt;
-&lt;td&gt;696&lt;/td&gt;
-&lt;td&gt;36&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;123&lt;/th&gt;
-&lt;td&gt;Magic Mike XXL (2015)&lt;/td&gt;
-&lt;td&gt;62&lt;/td&gt;
-&lt;td&gt;64&lt;/td&gt;
-&lt;td&gt;60&lt;/td&gt;
-&lt;td&gt;5.4&lt;/td&gt;
-&lt;td&gt;6.3&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.4&lt;/td&gt;
-&lt;td&gt;3.10&lt;/td&gt;
-&lt;td&gt;3.20&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.15&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;52&lt;/td&gt;
-&lt;td&gt;11937&lt;/td&gt;
-&lt;td&gt;9363&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;124&lt;/th&gt;
-&lt;td&gt;Home (2015)&lt;/td&gt;
-&lt;td&gt;45&lt;/td&gt;
-&lt;td&gt;65&lt;/td&gt;
-&lt;td&gt;55&lt;/td&gt;
-&lt;td&gt;7.3&lt;/td&gt;
-&lt;td&gt;6.7&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.4&lt;/td&gt;
-&lt;td&gt;2.25&lt;/td&gt;
-&lt;td&gt;3.25&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.35&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;177&lt;/td&gt;
-&lt;td&gt;41158&lt;/td&gt;
-&lt;td&gt;7705&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;125&lt;/th&gt;
-&lt;td&gt;The Wedding Ringer (2015)&lt;/td&gt;
-&lt;td&gt;27&lt;/td&gt;
-&lt;td&gt;66&lt;/td&gt;
-&lt;td&gt;35&lt;/td&gt;
-&lt;td&gt;3.3&lt;/td&gt;
-&lt;td&gt;6.7&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.4&lt;/td&gt;
-&lt;td&gt;1.35&lt;/td&gt;
-&lt;td&gt;3.30&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.35&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;126&lt;/td&gt;
-&lt;td&gt;37292&lt;/td&gt;
-&lt;td&gt;6506&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;126&lt;/th&gt;
-&lt;td&gt;Woman in Gold (2015)&lt;/td&gt;
-&lt;td&gt;52&lt;/td&gt;
-&lt;td&gt;81&lt;/td&gt;
-&lt;td&gt;51&lt;/td&gt;
-&lt;td&gt;7.2&lt;/td&gt;
-&lt;td&gt;7.4&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.4&lt;/td&gt;
-&lt;td&gt;2.60&lt;/td&gt;
-&lt;td&gt;4.05&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.70&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;72&lt;/td&gt;
-&lt;td&gt;17957&lt;/td&gt;
-&lt;td&gt;2435&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;127&lt;/th&gt;
-&lt;td&gt;The Last Five Years (2015)&lt;/td&gt;
-&lt;td&gt;60&lt;/td&gt;
-&lt;td&gt;60&lt;/td&gt;
-&lt;td&gt;60&lt;/td&gt;
-&lt;td&gt;6.9&lt;/td&gt;
-&lt;td&gt;6.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.4&lt;/td&gt;
-&lt;td&gt;3.00&lt;/td&gt;
-&lt;td&gt;3.00&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.00&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;20&lt;/td&gt;
-&lt;td&gt;4110&lt;/td&gt;
-&lt;td&gt;99&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;128&lt;/th&gt;
-&lt;td&gt;Mission: Impossible â€“ Rogue Nation (2015)&lt;/td&gt;
-&lt;td&gt;92&lt;/td&gt;
-&lt;td&gt;90&lt;/td&gt;
-&lt;td&gt;75&lt;/td&gt;
-&lt;td&gt;8.0&lt;/td&gt;
-&lt;td&gt;7.8&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.4&lt;/td&gt;
-&lt;td&gt;4.60&lt;/td&gt;
-&lt;td&gt;4.50&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.90&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;362&lt;/td&gt;
-&lt;td&gt;82579&lt;/td&gt;
-&lt;td&gt;8357&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;129&lt;/th&gt;
-&lt;td&gt;Amy (2015)&lt;/td&gt;
-&lt;td&gt;97&lt;/td&gt;
-&lt;td&gt;91&lt;/td&gt;
-&lt;td&gt;85&lt;/td&gt;
-&lt;td&gt;8.8&lt;/td&gt;
-&lt;td&gt;8.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.4&lt;/td&gt;
-&lt;td&gt;4.85&lt;/td&gt;
-&lt;td&gt;4.55&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;4.00&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;60&lt;/td&gt;
-&lt;td&gt;5630&lt;/td&gt;
-&lt;td&gt;729&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;130&lt;/th&gt;
-&lt;td&gt;Jurassic World (2015)&lt;/td&gt;
-&lt;td&gt;71&lt;/td&gt;
-&lt;td&gt;81&lt;/td&gt;
-&lt;td&gt;59&lt;/td&gt;
-&lt;td&gt;7.0&lt;/td&gt;
-&lt;td&gt;7.3&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.55&lt;/td&gt;
-&lt;td&gt;4.05&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.65&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;1281&lt;/td&gt;
-&lt;td&gt;241807&lt;/td&gt;
-&lt;td&gt;34390&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;131&lt;/th&gt;
-&lt;td&gt;Minions (2015)&lt;/td&gt;
-&lt;td&gt;54&lt;/td&gt;
-&lt;td&gt;52&lt;/td&gt;
-&lt;td&gt;56&lt;/td&gt;
-&lt;td&gt;5.7&lt;/td&gt;
-&lt;td&gt;6.7&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;2.70&lt;/td&gt;
-&lt;td&gt;2.60&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.35&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;204&lt;/td&gt;
-&lt;td&gt;55895&lt;/td&gt;
-&lt;td&gt;14998&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;132&lt;/th&gt;
-&lt;td&gt;Max (2015)&lt;/td&gt;
-&lt;td&gt;35&lt;/td&gt;
-&lt;td&gt;73&lt;/td&gt;
-&lt;td&gt;47&lt;/td&gt;
-&lt;td&gt;5.9&lt;/td&gt;
-&lt;td&gt;7.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;1.75&lt;/td&gt;
-&lt;td&gt;3.65&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.50&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;15&lt;/td&gt;
-&lt;td&gt;5444&lt;/td&gt;
-&lt;td&gt;3412&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;133&lt;/th&gt;
-&lt;td&gt;Paul Blart: Mall Cop 2 (2015)&lt;/td&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;36&lt;/td&gt;
-&lt;td&gt;13&lt;/td&gt;
-&lt;td&gt;2.4&lt;/td&gt;
-&lt;td&gt;4.3&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;0.25&lt;/td&gt;
-&lt;td&gt;1.80&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;2.15&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;td&gt;1.0&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;211&lt;/td&gt;
-&lt;td&gt;15004&lt;/td&gt;
-&lt;td&gt;3054&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;134&lt;/th&gt;
-&lt;td&gt;The Longest Ride (2015)&lt;/td&gt;
-&lt;td&gt;31&lt;/td&gt;
-&lt;td&gt;73&lt;/td&gt;
-&lt;td&gt;33&lt;/td&gt;
-&lt;td&gt;4.8&lt;/td&gt;
-&lt;td&gt;7.2&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;1.55&lt;/td&gt;
-&lt;td&gt;3.65&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.60&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;49&lt;/td&gt;
-&lt;td&gt;25214&lt;/td&gt;
-&lt;td&gt;2603&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;135&lt;/th&gt;
-&lt;td&gt;The Lazarus Effect (2015)&lt;/td&gt;
-&lt;td&gt;14&lt;/td&gt;
-&lt;td&gt;23&lt;/td&gt;
-&lt;td&gt;31&lt;/td&gt;
-&lt;td&gt;4.9&lt;/td&gt;
-&lt;td&gt;5.2&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;0.70&lt;/td&gt;
-&lt;td&gt;1.15&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;2.60&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;td&gt;1.0&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;62&lt;/td&gt;
-&lt;td&gt;17691&lt;/td&gt;
-&lt;td&gt;1651&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;136&lt;/th&gt;
-&lt;td&gt;The Woman In Black 2 Angel of Death (2015)&lt;/td&gt;
-&lt;td&gt;22&lt;/td&gt;
-&lt;td&gt;25&lt;/td&gt;
-&lt;td&gt;42&lt;/td&gt;
-&lt;td&gt;4.4&lt;/td&gt;
-&lt;td&gt;4.9&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;1.10&lt;/td&gt;
-&lt;td&gt;1.25&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;2.45&lt;/td&gt;
-&lt;td&gt;1.0&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;55&lt;/td&gt;
-&lt;td&gt;14873&lt;/td&gt;
-&lt;td&gt;1333&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;137&lt;/th&gt;
-&lt;td&gt;Danny Collins (2015)&lt;/td&gt;
-&lt;td&gt;77&lt;/td&gt;
-&lt;td&gt;75&lt;/td&gt;
-&lt;td&gt;58&lt;/td&gt;
-&lt;td&gt;7.1&lt;/td&gt;
-&lt;td&gt;7.1&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.85&lt;/td&gt;
-&lt;td&gt;3.75&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.55&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;33&lt;/td&gt;
-&lt;td&gt;11206&lt;/td&gt;
-&lt;td&gt;531&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;138&lt;/th&gt;
-&lt;td&gt;Spare Parts (2015)&lt;/td&gt;
-&lt;td&gt;52&lt;/td&gt;
-&lt;td&gt;83&lt;/td&gt;
-&lt;td&gt;50&lt;/td&gt;
-&lt;td&gt;7.1&lt;/td&gt;
-&lt;td&gt;7.2&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;2.60&lt;/td&gt;
-&lt;td&gt;4.15&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.60&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;7&lt;/td&gt;
-&lt;td&gt;47377&lt;/td&gt;
-&lt;td&gt;450&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;139&lt;/th&gt;
-&lt;td&gt;Serena (2015)&lt;/td&gt;
-&lt;td&gt;18&lt;/td&gt;
-&lt;td&gt;25&lt;/td&gt;
-&lt;td&gt;36&lt;/td&gt;
-&lt;td&gt;5.3&lt;/td&gt;
-&lt;td&gt;5.4&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;0.90&lt;/td&gt;
-&lt;td&gt;1.25&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;2.70&lt;/td&gt;
-&lt;td&gt;1.0&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;19&lt;/td&gt;
-&lt;td&gt;12165&lt;/td&gt;
-&lt;td&gt;50&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;140&lt;/th&gt;
-&lt;td&gt;Inside Out (2015)&lt;/td&gt;
-&lt;td&gt;98&lt;/td&gt;
-&lt;td&gt;90&lt;/td&gt;
-&lt;td&gt;94&lt;/td&gt;
-&lt;td&gt;8.9&lt;/td&gt;
-&lt;td&gt;8.6&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.90&lt;/td&gt;
-&lt;td&gt;4.50&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;4.30&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;807&lt;/td&gt;
-&lt;td&gt;96252&lt;/td&gt;
-&lt;td&gt;15749&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;141&lt;/th&gt;
-&lt;td&gt;Mr. Holmes (2015)&lt;/td&gt;
-&lt;td&gt;87&lt;/td&gt;
-&lt;td&gt;78&lt;/td&gt;
-&lt;td&gt;67&lt;/td&gt;
-&lt;td&gt;7.9&lt;/td&gt;
-&lt;td&gt;7.4&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.35&lt;/td&gt;
-&lt;td&gt;3.90&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.70&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;33&lt;/td&gt;
-&lt;td&gt;7367&lt;/td&gt;
-&lt;td&gt;1348&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;142&lt;/th&gt;
-&lt;td&gt;'71 (2015)&lt;/td&gt;
-&lt;td&gt;97&lt;/td&gt;
-&lt;td&gt;82&lt;/td&gt;
-&lt;td&gt;83&lt;/td&gt;
-&lt;td&gt;7.5&lt;/td&gt;
-&lt;td&gt;7.2&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.85&lt;/td&gt;
-&lt;td&gt;4.10&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.60&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;60&lt;/td&gt;
-&lt;td&gt;24116&lt;/td&gt;
-&lt;td&gt;192&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;143&lt;/th&gt;
-&lt;td&gt;Two Days, One Night (2014)&lt;/td&gt;
-&lt;td&gt;97&lt;/td&gt;
-&lt;td&gt;78&lt;/td&gt;
-&lt;td&gt;89&lt;/td&gt;
-&lt;td&gt;8.8&lt;/td&gt;
-&lt;td&gt;7.4&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.85&lt;/td&gt;
-&lt;td&gt;3.90&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.70&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;123&lt;/td&gt;
-&lt;td&gt;24345&lt;/td&gt;
-&lt;td&gt;118&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;144&lt;/th&gt;
-&lt;td&gt;Gett: The Trial of Viviane Amsalem (2015)&lt;/td&gt;
-&lt;td&gt;100&lt;/td&gt;
-&lt;td&gt;81&lt;/td&gt;
-&lt;td&gt;90&lt;/td&gt;
-&lt;td&gt;7.3&lt;/td&gt;
-&lt;td&gt;7.8&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;5.00&lt;/td&gt;
-&lt;td&gt;4.05&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.90&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;19&lt;/td&gt;
-&lt;td&gt;1955&lt;/td&gt;
-&lt;td&gt;59&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;145&lt;/th&gt;
-&lt;td&gt;Kumiko, The Treasure Hunter (2015)&lt;/td&gt;
-&lt;td&gt;87&lt;/td&gt;
-&lt;td&gt;63&lt;/td&gt;
-&lt;td&gt;68&lt;/td&gt;
-&lt;td&gt;6.4&lt;/td&gt;
-&lt;td&gt;6.7&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;4.35&lt;/td&gt;
-&lt;td&gt;3.15&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;3.35&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;19&lt;/td&gt;
-&lt;td&gt;5289&lt;/td&gt;
-&lt;td&gt;41&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;146 rows × 22 columns&lt;/p&gt;
-&lt;/div&gt;
+&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;                             FILM  RottenTomatoes  RottenTomatoes_User  \
+0  Avengers: Age of Ultron (2015)              74                   86   
+1               Cinderella (2015)              85                   80   
+2                  Ant-Man (2015)              80                   90   
+
+   Metacritic  Metacritic_User  IMDB  Fandango_Stars  Fandango_Ratingvalue  \
+0          66              7.1   7.8             5.0                   4.5   
+1          67              7.5   7.1             5.0                   4.5   
+2          64              8.1   7.8             5.0                   4.5   
+
+   RT_norm  RT_user_norm         ...           IMDB_norm  RT_norm_round  \
+0     3.70           4.3         ...                3.90            3.5   
+1     4.25           4.0         ...                3.55            4.5   
+2     4.00           4.5         ...                3.90            4.0   
+
+   RT_user_norm_round  Metacritic_norm_round  Metacritic_user_norm_round  \
+0                 4.5                    3.5                         3.5   
+1                 4.0                    3.5                         4.0   
+2                 4.5                    3.0                         4.0   
+
+   IMDB_norm_round  Metacritic_user_vote_count  IMDB_user_vote_count  \
+0              4.0                        1330                271107   
+1              3.5                         249                 65709   
+2              4.0                         627                103660   
+
+   Fandango_votes  Fandango_Difference  
+0           14846                  0.5  
+1           12640                  0.5  
+2           12055                  0.5  
+
+[3 rows x 22 columns]
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2510,7 +1045,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [27]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;matplotlib&lt;/span&gt; inline
@@ -2522,7 +1057,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [28]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [3]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Metacritic_norm_round"&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
@@ -2536,91 +1071,65 @@ h6:hover .anchor-link {
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,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
-4uLidPcIAHDJ85H6ZZddpi1btqiqqkqJREKNjY0EOgAELONvkgEA8E/arih1cyHSM888o5tvvlmR
-SETt7e3pKu25p/3792v69OkqLy9XeXm5XnzxxYz209jYqFAopHnz5o25jd8zctOX33OSBs/RVFZW
-qqSkRKWlpXr99ddH3c7Pebnpye9ZnT9/XhUVFSorK1NJSYmef/75Ubfzc05uegpin5IGr68pLy9X
-TU3NqPcH8fgbrydPczJpcPHiRXPjjTeajo4Oc+HCBTN//nxz7NixYdu0traaJUuWGGOM+eqrr0xF
-RUU6SqfUUywWM9XV1Rnt45+++OIL09bWZkpLS0e93+8Zue3L7zkZY0xXV5dpa2szxhjz22+/mVtu
-uSXwfcpNT0HM6vfffzfGGDMwMGAqKirMl19+Oez+IParZD0FMSdjjHn11VfNqlWrRq0d1ONvvJ68
-zCktR+puLkRqaWnRY489JkmqqKhQX1+furszd2Wn24ujjI+rTwsXLlR+fv6Y9/s9I7d9Sf7OSZLC
-4bAikYgkKS8vT8XFxSOug/B7Xm56kvyf1dSpUyUNHiEnEokRf8sg9qtkPUn+z6mzs1Otra1avXr1
-qPcHMadkPUkTn1NaQt3NhUj/3qagoCCjFyu5vTjq4MGDikQiWrp0qY4ePZqxftzwe0YTEeScOjo6
-1N7eroqKimG3BzmvsXqS/J9VIpFQWVmZwuGwotGo5s6dO+z+IOaUrCfJ/zmtXbtWL7/88phPeQ1i
-Tsl6kiY+p6x+lcYFCxboxx9/VHt7u9asWaNly5YF3dKkFOSc+vv7VVdXp82bNysvL8+3uuMZr6cg
-ZpWTk6O2tjZ1dnbq888/1/79+zNeM9We/J7Tnj17FAqFFIlEZIzx/b8Erz15mVNaQt3NhUgFBQU6
-derUuNukk5ue8vLyhv5NXLx4sf7880/9/PPPGespGb9n5FZQcxoYGFBdXZ3q6+tVW1s74v4g5pWs
-pyD3qWnTpmnp0qX69ttvh90e5H41Vk9+z+nAgQPavXu3brjhBj366KP67LPPhpZa/ub3nNz05GlO
-Ka7xG2MGT4b8fVLy/PnzZv78+ebo0aPDttmzZ8/QSYiDBw9m/CSEm57i8fjQ519//bUpLCzMaE/G
-GPPDDz+Y2267bdT7/J6R276CmJMxxtTX15u1a9eOeX8Q80rWk9+zOnPmjPnll1+MMcacO3fO3H33
-3eaTTz4Zto3fc3LTU1D7lDFjn3wM8vE3Vk9e5pSW134Z60KkrVu3ynEcPfXUU1qyZIlaW1t10003
-6corr9S7776bjtIp9fTBBx/ozTffVG5urq644gq9//77Ge1p5cqVisViOnv2rK6//no1NzfrwoUL
-gc3IbV9+z0kaPIp57733VFpaqrKyMjmOow0bNujkyZOBzctNT37PqqurSw0NDTLGKJFIqL6+Xvfd
-d1+gjz03PQWxT40myDm56cnLnLj4CAAsktUnSgHANoQ6AFiEUAcAixDqAGARQh0ALEKoA4BFCHUA
-sAihDgAW+T9oQJYzLnAJ0gAAAABJRU5ErkJggg==
+&lt;img src="data:image/png;base64,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
+Mpr+JOl82yNDkKsWEXEkIvYUyyckHdB7v0U88DkrmWvgijl4u3g4t7jNfHOrjvkqk6sWti+StErS
+L1rsUsvvZIlclRq2Qi97OYHPFn9GPW37k4OJdkbDfBmEWufK9pikS9Q8upuu1jk7Qy6phjkr/kzf
+K2lK0vaIGIr5KpFLquc19mNJ35P0Tovtdb2+2uWSKpyvYSv0MvZIGo2IT0v6qaTf1JxnmNU6V7bn
+SXpM0q0RcXyQY59Jm1y1zFlEnIqIJWp+43qp7U8NYtx2SuQa+HzZ/rKkqYjYXfVYnSiZq9L5GrZC
+b3s5gYg4fvrPwGh+Dn6u7QWDizirUpdBGLQ658r2XDVL86GIeHyWXWqZs3a56n59RcS/Je2UtHLG
+plpfY61y1TRfyyV9xfZBNU/LfsH2r2bsU8d8tc1V9XwNW6G3vZyA7Y/YdrG8VM3/hn8NPOm7bZH0
+jeKd9WWS3oqIIzVnqm2uijE3SjoQEfe22G3gc1YmVx1zZrth+/xi+UOSrpD0txm71TFfbXPVMV8R
+8f2IuCgixtTsiD9ExNdn7Dbw+SqTq+r5qvxqi52IFpcTsP2tYvvPJX1V0rdtn5T0X0nXRvH2cVVs
+P6Lmu9MLbB+SdIeabxCdzrRNzXfVX5H0H0nfrDJPB7kGPleF5ZKuk/RCcf5Vkm6XNDotWx1zViZX
+HXM2Immzm/9ozDmSHo2Ip2a87uuYrzK56nqNvccQzFeZXJXOF98UBYAkhu2UCwCgSxQ6ACRBoQNA
+EhQ6ACRBoQNAEhQ6ACRBoQNAEhQ6ACTxf7lOkeacw2vIAAAAAElFTkSuQmCC
 " /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2629,7 +1138,7 @@ sAihDgAW+T9oQJYzLnAJ0gAAAABJRU5ErkJggg==
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [29]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [4]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Fandango_Stars"&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
@@ -2643,89 +1152,70 @@ sAihDgAW+T9oQJYzLnAJ0gAAAABJRU5ErkJggg==
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,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
+&lt;img src="data:image/png;base64,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
++D/vVCtCENHvLAAAAABJRU5ErkJggg==
 " /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2738,7 +1228,7 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;ul&gt;
-&lt;li&gt;As we can see, there is a huge difference between the review scores from Fandango and Metacritic. Metacritic has far more review scores greater than 3.&lt;/li&gt;
+&lt;li&gt;Como podemos ver, hay una gran diferencia entre los ratings de Fandango y Metacritic. Metacritic como podemos observar tiene muchas mas reviews con una puntuacion mas alta de 3 que&amp;nbsp;Fandango.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2748,7 +1238,7 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Mean,-Median,-And-Standard-Deviation"&gt;Mean, Median, And Standard Deviation&lt;a class="anchor-link" href="#Mean,-Median,-And-Standard-Deviation"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Media,-Mediana-y-Desviacion-Estandar-(Mean,-Median,-And-Standard-Deviation)"&gt;Media, Mediana y Desviacion Estandar (Mean, Median, And Standard Deviation)&lt;a class="anchor-link" href="#Media,-Mediana-y-Desviacion-Estandar-(Mean,-Median,-And-Standard-Deviation)"&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2758,14 +1248,14 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;ul&gt;
-&lt;li&gt;Let's quantify the difference that we can appreciate in both histograms.&lt;/li&gt;
+&lt;li&gt;Vamos a cuantificar las diferencias que podemos apreciar en ambos&amp;nbsp;histogramas.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [30]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [5]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
@@ -2776,7 +1266,7 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [31]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [6]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;means&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Fandango_Stars"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt;  &lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Metacritic_norm_round"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;()]&lt;/span&gt;
@@ -2787,7 +1277,7 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [32]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [7]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;means&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -2800,7 +1290,7 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;[4.0890410958904111, 2.9726027397260273]
+&lt;pre&gt;[4.089041095890411, 2.9726027397260273]
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2809,7 +1299,7 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [33]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [8]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;medians&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;median&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Fandango_Stars"&lt;/span&gt;&lt;span class="p"&gt;]),&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;median&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Metacritic_norm_round"&lt;/span&gt;&lt;span class="p"&gt;])]&lt;/span&gt;
@@ -2820,7 +1310,7 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [34]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [9]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;medians&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -2842,7 +1332,7 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [35]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [10]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std_dev&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Fandango_Stars"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt;  &lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Metacritic_norm_round"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="p"&gt;()]&lt;/span&gt;
@@ -2853,7 +1343,7 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [36]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [11]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;std_dev&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -2866,7 +1356,7 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;[0.54038597797873344, 0.99096056137433586]
+&lt;pre&gt;[0.5403859779787333, 0.9909605613743364]
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2878,9 +1368,11 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="Methodologies-for-Metacritic-and-Fandango"&gt;Methodologies for Metacritic and Fandango&lt;a class="anchor-link" href="#Methodologies-for-Metacritic-and-Fandango"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Metacritic, do not use the user votes. You can see the votes, but the main score that appear is independent and just take the votes from professional people.&lt;/li&gt;
-&lt;li&gt;Fandango, it takes user votes in a system of 5 stars. all the movies get a rate of 3+,&lt;/li&gt;
+&lt;h3 id="Metodologia-para-Metacritic-y-Fandango.-¿Como-sacan-sus-ratings?"&gt;Metodologia para Metacritic y Fandango. ¿Como sacan sus ratings?&lt;a class="anchor-link" href="#Metodologia-para-Metacritic-y-Fandango.-¿Como-sacan-sus-ratings?"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;h6 id="Esto-solo-lo-podemos-saber-visitando-sus-respectivas-webs-y-leyendo-sus-documentaciones.-A-continuacion-pongo-lo-que-podemos-averiguar:"&gt;Esto solo lo podemos saber visitando sus respectivas webs y leyendo sus documentaciones. A continuacion pongo lo que podemos averiguar:&lt;a class="anchor-link" href="#Esto-solo-lo-podemos-saber-visitando-sus-respectivas-webs-y-leyendo-sus-documentaciones.-A-continuacion-pongo-lo-que-podemos-averiguar:"&gt;¶&lt;/a&gt;&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Metacritic no usa los votos de los usarios. Puedes ver los votos pero la calificacion principar que aparece es independiente y solo toma votos de gente&amp;nbsp;profesional.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Fandango tomo los votos de los usarios en un sistema de 5 estrellas. Aparentemente todas las peliculas obtienen un rating de&amp;nbsp;3+&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2890,14 +1382,14 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="Some-insigths-from-the-data"&gt;Some insigths from the data&lt;a class="anchor-link" href="#Some-insigths-from-the-data"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;We can apreciate that, while the mean in Matacritic is lower than the median, in Fandango it is the opposite, the means are higher than the median. It is due to the reason that the data in Fandango is skewed to the high values, always &gt;3.&lt;/p&gt;
+&lt;h3 id="Algunos-insigths-que-obtenemos-de-los-datos:"&gt;Algunos insigths que obtenemos de los datos:&lt;a class="anchor-link" href="#Algunos-insigths-que-obtenemos-de-los-datos:"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Podemos apreciar que, mientras que la media en Metacritic es menor que la mediana, en Fandango pasa lo contrario. La media es mayor que la mediana. Esto es debido a que los datos en Fandango estan sesgados hacia valores altos, siempre &gt; 3.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Standard deviation: We can appreciate how it is much lower in Fandango than in Metacritic, this is because ...&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;La desviacion estandar: Podemos apreciar que es menor en Fandango que en Metacritic. El rango en el que se mueven al final en Fandango es de 3 a 5 por lo que le margen de error es&amp;nbsp;menor.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;The mean from Fandango is much higher because the values in it goes from 3 to 5 and in Metacritic they go from 1 to 5.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;La media de Fandango es mayor porque los valores van de 3 a 5 y en Metacritic de 1 a&amp;nbsp;5.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Finally, we can appreciate that the standard deviation is lower in Fandango than in Metacritic, it suggest that the data is more spread out from the mean in Metacritic than in Fandango, so in Fandango it is more correlated. We will see it.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Finalmente, podemos apreciar que la desviacion estandar es menor en Fandango que en Metacritic, esto sugiera que los datos estan mas dispersos que la media en Metacritic y que en Fandango. Asi en Fandango esto esta mas correlacionado. Vamos a verlo a&amp;nbsp;continuación.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -2914,7 +1406,7 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [37]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [12]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;scatter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Fandango_Stars"&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Metacritic_norm_round"&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"r"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -2929,125 +1421,126 @@ YAhRBwBDiDoAGPL/Wd7gHbuHOuUAAAAASUVORK5CYII=
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,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
+&lt;img src="data:image/png;base64,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
+uIuIBOj/AwMPqDYDuSPPAAAAAElFTkSuQmCC
 " /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3056,7 +1549,7 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [38]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [13]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Continue with the second point.&lt;/span&gt;
@@ -3067,7 +1560,7 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [39]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [14]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"fm_diff"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Metacritic_norm_round"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Fandango_Stars"&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
@@ -3078,10 +1571,12 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [40]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [16]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sort_values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;by&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"fm_diff"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ascending&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sort_values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;by&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"fm_diff"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ascending&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3089,161 +1584,52 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[40]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;FILM&lt;/th&gt;
-&lt;th&gt;RottenTomatoes&lt;/th&gt;
-&lt;th&gt;RottenTomatoes_User&lt;/th&gt;
-&lt;th&gt;Metacritic&lt;/th&gt;
-&lt;th&gt;Metacritic_User&lt;/th&gt;
-&lt;th&gt;IMDB&lt;/th&gt;
-&lt;th&gt;Fandango_Stars&lt;/th&gt;
-&lt;th&gt;Fandango_Ratingvalue&lt;/th&gt;
-&lt;th&gt;RT_norm&lt;/th&gt;
-&lt;th&gt;RT_user_norm&lt;/th&gt;
-&lt;th&gt;...&lt;/th&gt;
-&lt;th&gt;RT_norm_round&lt;/th&gt;
-&lt;th&gt;RT_user_norm_round&lt;/th&gt;
-&lt;th&gt;Metacritic_norm_round&lt;/th&gt;
-&lt;th&gt;Metacritic_user_norm_round&lt;/th&gt;
-&lt;th&gt;IMDB_norm_round&lt;/th&gt;
-&lt;th&gt;Metacritic_user_vote_count&lt;/th&gt;
-&lt;th&gt;IMDB_user_vote_count&lt;/th&gt;
-&lt;th&gt;Fandango_votes&lt;/th&gt;
-&lt;th&gt;Fandango_Difference&lt;/th&gt;
-&lt;th&gt;fm_diff&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;Do You Believe? (2015)&lt;/td&gt;
-&lt;td&gt;18&lt;/td&gt;
-&lt;td&gt;84&lt;/td&gt;
-&lt;td&gt;22&lt;/td&gt;
-&lt;td&gt;4.7&lt;/td&gt;
-&lt;td&gt;5.4&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;0.90&lt;/td&gt;
-&lt;td&gt;4.20&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;1.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;1.0&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;31&lt;/td&gt;
-&lt;td&gt;3136&lt;/td&gt;
-&lt;td&gt;1793&lt;/td&gt;
-&lt;td&gt;0.5&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;85&lt;/th&gt;
-&lt;td&gt;Little Boy (2015)&lt;/td&gt;
-&lt;td&gt;20&lt;/td&gt;
-&lt;td&gt;81&lt;/td&gt;
-&lt;td&gt;30&lt;/td&gt;
-&lt;td&gt;5.9&lt;/td&gt;
-&lt;td&gt;7.4&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.3&lt;/td&gt;
-&lt;td&gt;1.00&lt;/td&gt;
-&lt;td&gt;4.05&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;1.0&lt;/td&gt;
-&lt;td&gt;4.0&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;38&lt;/td&gt;
-&lt;td&gt;5927&lt;/td&gt;
-&lt;td&gt;811&lt;/td&gt;
-&lt;td&gt;0.2&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;47&lt;/th&gt;
-&lt;td&gt;Annie (2014)&lt;/td&gt;
-&lt;td&gt;27&lt;/td&gt;
-&lt;td&gt;61&lt;/td&gt;
-&lt;td&gt;33&lt;/td&gt;
-&lt;td&gt;4.8&lt;/td&gt;
-&lt;td&gt;5.2&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.2&lt;/td&gt;
-&lt;td&gt;1.35&lt;/td&gt;
-&lt;td&gt;3.05&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;108&lt;/td&gt;
-&lt;td&gt;19222&lt;/td&gt;
-&lt;td&gt;6835&lt;/td&gt;
-&lt;td&gt;0.3&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;19&lt;/th&gt;
-&lt;td&gt;Pixels (2015)&lt;/td&gt;
-&lt;td&gt;17&lt;/td&gt;
-&lt;td&gt;54&lt;/td&gt;
-&lt;td&gt;27&lt;/td&gt;
-&lt;td&gt;5.3&lt;/td&gt;
-&lt;td&gt;5.6&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.1&lt;/td&gt;
-&lt;td&gt;0.85&lt;/td&gt;
-&lt;td&gt;2.70&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;1.0&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;td&gt;246&lt;/td&gt;
-&lt;td&gt;19521&lt;/td&gt;
-&lt;td&gt;3886&lt;/td&gt;
-&lt;td&gt;0.4&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;134&lt;/th&gt;
-&lt;td&gt;The Longest Ride (2015)&lt;/td&gt;
-&lt;td&gt;31&lt;/td&gt;
-&lt;td&gt;73&lt;/td&gt;
-&lt;td&gt;33&lt;/td&gt;
-&lt;td&gt;4.8&lt;/td&gt;
-&lt;td&gt;7.2&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;1.55&lt;/td&gt;
-&lt;td&gt;3.65&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;1.5&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;49&lt;/td&gt;
-&lt;td&gt;25214&lt;/td&gt;
-&lt;td&gt;2603&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;5 rows × 23 columns&lt;/p&gt;
-&lt;/div&gt;
+&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;                              FILM  RottenTomatoes  RottenTomatoes_User  \
+3           Do You Believe? (2015)              18                   84   
+47                    Annie (2014)              27                   61   
+19                   Pixels (2015)              17                   54   
+134        The Longest Ride (2015)              31                   73   
+133  Paul Blart: Mall Cop 2 (2015)               5                   36   
+
+     Metacritic  Metacritic_User  IMDB  Fandango_Stars  Fandango_Ratingvalue  \
+3            22              4.7   5.4             5.0                   4.5   
+47           33              4.8   5.2             4.5                   4.2   
+19           27              5.3   5.6             4.5                   4.1   
+134          33              4.8   7.2             4.5                   4.5   
+133          13              2.4   4.3             3.5                   3.5   
+
+     RT_norm  RT_user_norm   ...     RT_norm_round  RT_user_norm_round  \
+3       0.90          4.20   ...               1.0                 4.0   
+47      1.35          3.05   ...               1.5                 3.0   
+19      0.85          2.70   ...               1.0                 2.5   
+134     1.55          3.65   ...               1.5                 3.5   
+133     0.25          1.80   ...               0.5                 2.0   
+
+     Metacritic_norm_round  Metacritic_user_norm_round  IMDB_norm_round  \
+3                      1.0                         2.5              2.5   
+47                     1.5                         2.5              2.5   
+19                     1.5                         2.5              3.0   
+134                    1.5                         2.5              3.5   
+133                    0.5                         1.0              2.0   
+
+     Metacritic_user_vote_count  IMDB_user_vote_count  Fandango_votes  \
+3                            31                  3136            1793   
+47                          108                 19222            6835   
+19                          246                 19521            3886   
+134                          49                 25214            2603   
+133                         211                 15004            3054   
+
+     Fandango_Difference  fm_diff  
+3                    0.5      4.0  
+47                   0.3      3.0  
+19                   0.4      3.0  
+134                  0.0      3.0  
+133                  0.0      3.0  
+
+[5 rows x 23 columns]
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3254,13 +1640,13 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Correlations"&gt;Correlations&lt;a class="anchor-link" href="#Correlations"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Correlaciones."&gt;Correlaciones.&lt;a class="anchor-link" href="#Correlaciones."&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [49]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [17]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;scipy.stats&lt;/span&gt; &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;pearsonr&lt;/span&gt; 
@@ -3271,7 +1657,7 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [53]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [18]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;r_value&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;p_value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pearsonr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Fandango_Stars"&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Metacritic_norm_round"&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
@@ -3283,7 +1669,7 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[53]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[18]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;0.17844919073895918&lt;/pre&gt;
 &lt;/div&gt;
@@ -3297,14 +1683,14 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;ul&gt;
-&lt;li&gt;As we can see, the r_value which give us the correlation between "Fandango_Stars" and "Metacritic_norm_round" is close to zero which means the both variables have a low correlation.&lt;/li&gt;
+&lt;li&gt;Como podemos ver, el r_value que obtenemos de la correlacion entre &amp;#8220;Fandango_Stars&amp;#8221; y &amp;#8220;Metacritic_norm_round&amp;#8221; esta cerca de cero, lo que significa que ambas variables tienen una correlacion baja. Por el contrario si esta estuviera cerca de 1 tendrian una alta&amp;nbsp;correlacion.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [52]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [19]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;scipy.stats&lt;/span&gt; &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;linregress&lt;/span&gt;
@@ -3315,7 +1701,7 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [57]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [20]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;slope&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;intercept&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;r_value&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;p_value&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;stderr&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;linregress&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Metacritic_norm_round"&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Fandango_Stars"&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
@@ -3326,7 +1712,7 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [58]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [21]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;r_value&lt;/span&gt;
@@ -3337,9 +1723,9 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[58]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[21]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
-&lt;pre&gt;0.17844919073895882&lt;/pre&gt;
+&lt;pre&gt;0.17844919073895879&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3350,13 +1736,13 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h5 id="Let's-try-to-predict-what-a-3.0-score-from-Metacritic-will-result-on-Fandango."&gt;Let's try to predict what a 3.0 score from Metacritic will result on Fandango.&lt;a class="anchor-link" href="#Let's-try-to-predict-what-a-3.0-score-from-Metacritic-will-result-on-Fandango."&gt;¶&lt;/a&gt;&lt;/h5&gt;
+&lt;h3 id="Vamos-a-predecir-que-puntuacion-tendiran-los-que-votaron-3-en-Metacritic-a-Fandango."&gt;Vamos a predecir que puntuacion tendiran los que votaron 3 en Metacritic a Fandango.&lt;a class="anchor-link" href="#Vamos-a-predecir-que-puntuacion-tendiran-los-que-votaron-3-en-Metacritic-a-Fandango."&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [59]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [22]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;value_to_pred&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;
@@ -3369,7 +1755,7 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[59]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[22]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;4.0917071528212041&lt;/pre&gt;
 &lt;/div&gt;
@@ -3382,13 +1768,13 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Finding-Residuals"&gt;Finding Residuals&lt;a class="anchor-link" href="#Finding-Residuals"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h5 id="Let's-see-if-both-variables-are-linearly-related-or-not"&gt;Let's see if both variables are linearly related or not&lt;a class="anchor-link" href="#Let's-see-if-both-variables-are-linearly-related-or-not"&gt;¶&lt;/a&gt;&lt;/h5&gt;
+&lt;h1 id='Encontrando-Residuos-"Residuals"'&gt;Encontrando Residuos &amp;#8220;Residuals&amp;#8221;&lt;a class="anchor-link" href='#Encontrando-Residuos-"Residuals"'&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h4 id="Vamos-a-ver-si-ambas-variable-estan-linealmente-relacionadas-o-no."&gt;Vamos a ver si ambas variable estan linealmente relacionadas o no.&lt;a class="anchor-link" href="#Vamos-a-ver-si-ambas-variable-estan-linealmente-relacionadas-o-no."&gt;¶&lt;/a&gt;&lt;/h4&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [60]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [23]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pred_1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;slope&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;intercept&lt;/span&gt;
@@ -3400,7 +1786,7 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[60]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[23]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;3.897084996873347&lt;/pre&gt;
 &lt;/div&gt;
@@ -3410,7 +1796,7 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [61]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [24]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pred_5&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;slope&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;intercept&lt;/span&gt;
@@ -3422,7 +1808,7 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[61]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[24]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;4.2863293087690604&lt;/pre&gt;
 &lt;/div&gt;
@@ -3432,7 +1818,7 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [65]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [25]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;scatter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Metacritic_norm_round"&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;movies&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Fandango_Stars"&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
@@ -3448,143 +1834,148 @@ IDZvIiIFsXkTESmIzZuISEH/BxCI8qkIx+CLAAAAAElFTkSuQmCC
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,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
-OTk5sFqtyMnJMTrKoEpKSvD000+jpKTE6CgjS3S4fPmyPProo1JRUSErVqzw2+50OmX58uUBH0fn
-0xlm6tQUAawCzBTAKtOmJRsdSVOk5IyKGu+Tc9SosUZH0gSM8ckJjDI6kp/o6Ek+GWNiYo2OpAkY
-dcdYWoyOpGnOHIdPztRUu9GRBhVMd+qayW/duhX79++HxWIZcJ/q6mrY7XYsW7YM586dC9FLUPgc
-OXIEzc1XAdQAuACgBpcvt5huphwpObdv3w6Px4L+Obu7R5luRt8zcx+N/jmBsaaa0e/btw+dnbfR
-P2NHx7emm9H3zNzHwncsx5tuRl9SUoJ//etT9M/5z3/+r7oz+kCvAiUlJbJp0yYREamoqNCcsd+8
-eVM6OjpERKS0tFRmzpw54KvRrl27vLeKiophvzqF2sqVK3tf1aXfbYasXLnS6Gg+IiXn9OnTNXNO
-nz7d6Gg+bDabZk6bzWZ0NC+73a6Z0W431+xz/PjxmjnHjx9vdDQfGzZs0My5YcMGo6N5VVRU+HSl
-jqoeUMCvfPnll2XatGmSkpIiU6ZMkZiYGFm/fv2gX5OcnCzXrl3zfzITL9ccPny498+3j3t/6B8L
-YJXDhw8bHc1HpOTctm2bZs5t27YZHc1HXl6eZs68vDyjo3nt3btXM+PevXuNjuZj6dKlmjmXLl1q
-dDQfxcXFmjmLi4uNjjagES35/pxOp+aa/NWrV70f19bWSlJSkvaTmbjkRUSmTUvu/eHPMPVad6Tk
-HDVqrE9O867Jj/LJacY1+ZiYWJ+M5l2Tt9wxluZck09NtfvkvOvX5LUUFhbiT3/6EwDgxIkTmDNn
-DhwOB1588UUcP348BAtJ4Xfp0uc4fPgQVq6chcOHD+HSpc+NjqQpUnJ2dd3Gtm3PYfr0b7Bt23Po
-6rptdCRNIl3Iy/sv2GzXkZf3XxDpMjqSn/b2Nuzduxt2+wTs3bsb7e1tRkfSJOLB0qWPYPz4Zixd
-+ghEPEZH0nT2bAOKi/8HGzY8guLi/8HZsw1GRxoxlt5XifA8mcWCMD4dEZESgulOnvFKRKQwljwR
-kcJY8kRECmPJExEpjCVPRKQwljwRkcJY8kRECmPJExEpjCVPRKQwljwRkcJGGx2AiIiA9nagtVX7
-FgyWPBHRCOjqAr788ruibmkZuMRbW3suepyQANx7r+8tKSm4HLxAGRGRDiLAzZuDl3X/bW1tgM3m
-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
-SUVORK5CYII=
+&lt;img src="data:image/png;base64,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
 " /&gt;
 &lt;/div&gt;
 &lt;/div&gt;

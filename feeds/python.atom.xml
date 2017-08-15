@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Datascience CoderHook - Python</title><link href="https://coderhook.github.io/" rel="alternate"></link><link href="https://coderhook.github.io/feeds/python.atom.xml" rel="self"></link><id>https://coderhook.github.io/</id><updated>2017-03-03T22:00:00+01:00</updated><entry><title>Thanksgiving Celebration Insights.</title><link href="https://coderhook.github.io/thanksgiving%20insights" rel="alternate"></link><published>2017-03-03T22:00:00+01:00</published><updated>2017-03-03T22:00:00+01:00</updated><author><name>coderHook</name></author><id>tag:coderhook.github.io,2017-03-03:/thanksgiving insights</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Datascience para el Bien Social - Python</title><link href="https://coderhook.github.io/" rel="alternate"></link><link href="https://coderhook.github.io/feeds/python.atom.xml" rel="self"></link><id>https://coderhook.github.io/</id><updated>2017-03-03T22:00:00+01:00</updated><entry><title>Explorando las tendencias que se siguen en la Celebracion de Accion de gracias.</title><link href="https://coderhook.github.io/thanksgiving%20insights" rel="alternate"></link><published>2017-03-03T22:00:00+01:00</published><updated>2017-03-03T22:00:00+01:00</updated><author><name>coderHook</name></author><id>tag:coderhook.github.io,2017-03-03:/thanksgiving insights</id><summary type="html">
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Exploring-the-tendencies-in-Celebrating-Thanksgiving."&gt;Exploring the tendencies in Celebrating Thanksgiving.&lt;a class="anchor-link" href="#Exploring-the-tendencies-in-Celebrating-Thanksgiving."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="In-this-project-we-are-going-to-explore-the-tendencies-that-people-follow-in-this-celebration."&gt;In this project we are going to explore the tendencies that people follow in this celebration.&lt;a class="anchor-link" href="#In-this-project-we-are-going-to-explore-the-tendencies-that-people-follow-in-this-celebration."&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;h4 id="First,-we-are-going-to-check-what-dishes-and-desserts-are-the-favourites-among-people."&gt;First, we are going to check what dishes and desserts are the favourites among people.&lt;a class="anchor-link" href="#First,-we-are-going-to-check-what-dishes-and-desserts-are-the-favourites-among-people."&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="Secondly,-we-are-going-to-get-the-income-and-see-how-it-is-correlated-from-How-far-people-travel-to-celebrate-Thnksgiving."&gt;Secondly, we are going to get the income and see how it is correlated from How far people travel to celebrate Thnksgiving.&lt;a class="anchor-link" href="#Secondly,-we-are-going-to-get-the-income-and-see-how-it-is-correlated-from-How-far-people-travel-to-celebrate-Thnksgiving."&gt;¶&lt;/a&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+&lt;h1 id="Explorando-las-tendencias-que-se-siguen-en-la-Celebracion-de-Accion-de-gracias."&gt;Explorando las tendencias que se siguen en la Celebracion de Accion de gracias.&lt;a class="anchor-link" href="#Explorando-las-tendencias-que-se-siguen-en-la-Celebracion-de-Accion-de-gracias."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h2 id="En-este-projecto-vamos-a-explorar-las-tendecias-que-la-gente-sigue-en-accion-de-gracias."&gt;En este projecto vamos a explorar las tendecias que la gente sigue en accion de gracias.&lt;a class="anchor-link" href="#En-este-projecto-vamos-a-explorar-las-tendecias-que-la-gente-sigue-en-accion-de-gracias."&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;#### Primero, vamos a  ver que platos y postres son los favoritos entre la&amp;nbsp;gente.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;#### En segundo lugar, vamos a obtener los ingresos y ver como esto esta correlacionado con la lejania desde la que la gente viaja para celebrar Accion de&amp;nbsp;Gracias.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
 */
-/* CSS font colors for translated ANSI colors. */
+/* &lt;span class="caps"&gt;CSS&lt;/span&gt; font colors for translated &lt;span class="caps"&gt;ANSI&lt;/span&gt; colors. */
 .ansibold {
   font-weight: bold;
 }
@@ -96,13 +99,13 @@ div.cell {
   background: linear-gradient(to right, transparent -40px, transparent 1px, transparent 1px, transparent 100%);
 }
 div.cell.jupyter-soft-selected {
-  border-left-color: #90CAF9;
-  border-left-color: #E3F2FD;
+  border-left-color: #&lt;span class="caps"&gt;90CAF9&lt;/span&gt;;
+  border-left-color: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
   border-left-width: 1px;
   padding-left: 5px;
-  border-right-color: #E3F2FD;
+  border-right-color: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
   border-right-width: 1px;
-  background: #E3F2FD;
+  background: #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt;;
 }
 @media print {
   div.cell.jupyter-soft-selected {
@@ -113,7 +116,7 @@ div.cell.selected {
   border-color: #ababab;
   border-left-width: 0px;
   padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 5px, transparent 5px, transparent 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; -40px, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; 5px, transparent 5px, transparent 100%);
 }
 @media print {
   div.cell.selected {
@@ -123,13 +126,13 @@ div.cell.selected {
 div.cell.selected.jupyter-soft-selected {
   border-left-width: 0;
   padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 7px, #E3F2FD 7px, #E3F2FD 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; -40px, #&lt;span class="caps"&gt;42A5F5&lt;/span&gt; 7px, #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt; 7px, #&lt;span class="caps"&gt;E3F2FD&lt;/span&gt; 100%);
 }
 .edit_mode div.cell.selected {
-  border-color: #66BB6A;
+  border-color: #&lt;span class="caps"&gt;66BB6A&lt;/span&gt;;
   border-left-width: 0px;
   padding-left: 6px;
-  background: linear-gradient(to right, #66BB6A -40px, #66BB6A 5px, transparent 5px, transparent 100%);
+  background: linear-gradient(to right, #&lt;span class="caps"&gt;66BB6A&lt;/span&gt; -40px, #&lt;span class="caps"&gt;66BB6A&lt;/span&gt; 5px, transparent 5px, transparent 100%);
 }
 @media print {
   .edit_mode div.cell.selected {
@@ -282,7 +285,7 @@ div.input {
 }
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_prompt {
-  color: #303F9F;
+  color: #&lt;span class="caps"&gt;303F9F&lt;/span&gt;;
   border-top: 1px solid transparent;
 }
 div.input_area &gt; div.highlight {
@@ -323,7 +326,7 @@ div.input_area &gt; div.highlight &gt; pre {
   overflow-x: auto;
 }
 .CodeMirror-lines {
-  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
+  /* In &lt;span class="caps"&gt;CM2&lt;/span&gt;, this used to be 0.4em, but in &lt;span class="caps"&gt;CM3&lt;/span&gt; it went to 4px. We need the em value because */
   /* we have set a different line-height and want this to scale with that. */
   padding: 0.4em;
 }
@@ -335,7 +338,7 @@ div.input_area &gt; div.highlight &gt; pre {
   border-top-left-radius: 2px;
 }
 .CodeMirror pre {
-  /* In CM3 this went to 4px from 0 in CM2. We need the 0 value because of how we size */
+  /* In &lt;span class="caps"&gt;CM3&lt;/span&gt; this went to 4px from 0 in &lt;span class="caps"&gt;CM2&lt;/span&gt;. We need the 0 value because of how we size */
   /* .CodeMirror-lines */
   padding: 0;
   border: 0;
@@ -360,7 +363,7 @@ Adapted from GitHub theme
   color: #333333;
 }
 .highlight-string {
-  color: #BA2121;
+  color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;;
 }
 .highlight-comment {
   color: #408080;
@@ -383,11 +386,11 @@ Adapted from GitHub theme
   color: #f00;
 }
 .highlight-operator {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
   font-weight: bold;
 }
 .highlight-meta {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
 }
 /* previously not defined, copying from default codemirror */
 .highlight-def {
@@ -435,7 +438,7 @@ Adapted from GitHub theme
   color: #000;
 }
 .cm-s-ipython span.cm-operator {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
   font-weight: bold;
 }
 .cm-s-ipython span.cm-variable-2 {
@@ -449,13 +452,13 @@ Adapted from GitHub theme
   font-style: italic;
 }
 .cm-s-ipython span.cm-string {
-  color: #BA2121;
+  color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;;
 }
 .cm-s-ipython span.cm-string-2 {
   color: #f50;
 }
 .cm-s-ipython span.cm-meta {
-  color: #AA22FF;
+  color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;;
 }
 .cm-s-ipython span.cm-qualifier {
   color: #555;
@@ -510,9 +513,9 @@ div.output_wrapper {
 }
 /* class for the output area when it should be height-limited */
 div.output_scroll {
-  /* ideally, this would be max-height, but FF barfs all over that */
+  /* ideally, this would be max-height, but &lt;span class="caps"&gt;FF&lt;/span&gt; barfs all over that */
   height: 24em;
-  /* FF needs this *and the wrapper* to specify full width, or it will shrinkwrap */
+  /* &lt;span class="caps"&gt;FF&lt;/span&gt; needs this *and the wrapper* to specify full width, or it will shrinkwrap */
   width: 100%;
   overflow: auto;
   border-radius: 2px;
@@ -546,7 +549,7 @@ div.out_prompt_overlay {
   border-radius: 2px;
 }
 div.out_prompt_overlay:hover {
-  /* use inner shadow to get border that is computed the same on WebKit/FF */
+  /* use inner shadow to get border that is computed the same on WebKit/&lt;span class="caps"&gt;FF&lt;/span&gt; */
   -webkit-box-shadow: inset 0 0 1px #000;
   box-shadow: inset 0 0 1px #000;
   background: rgba(240, 240, 240, 0.5);
@@ -874,25 +877,25 @@ h6:hover .anchor-link {
 &lt;style type="text/css"&gt;.highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
-.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .err { border: 1px solid #&lt;span class="caps"&gt;FF0000&lt;/span&gt; } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
 .highlight .o { color: #666666 } /* Operator */
 .highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
 .highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
-.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cp { color: #&lt;span class="caps"&gt;BC7A00&lt;/span&gt; } /* Comment.Preproc */
 .highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
 .highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
 .highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
 .highlight .gd { color: #A00000 } /* Generic.Deleted */
 .highlight .ge { font-style: italic } /* Generic.Emph */
-.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gr { color: #&lt;span class="caps"&gt;FF0000&lt;/span&gt; } /* Generic.Error */
 .highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
 .highlight .gi { color: #00A000 } /* Generic.Inserted */
 .highlight .go { color: #888888 } /* Generic.Output */
 .highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .gt { color: #&lt;span class="caps"&gt;0044DD&lt;/span&gt; } /* Generic.Traceback */
 .highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
 .highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
 .highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
@@ -900,41 +903,41 @@ h6:hover .anchor-link {
 .highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
 .highlight .kt { color: #B00040 } /* Keyword.Type */
 .highlight .m { color: #666666 } /* Literal.Number */
-.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .s { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String */
 .highlight .na { color: #7D9029 } /* Name.Attribute */
 .highlight .nb { color: #008000 } /* Name.Builtin */
-.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .nc { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt;; font-weight: bold } /* Name.Class */
 .highlight .no { color: #880000 } /* Name.Constant */
-.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .nd { color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt; } /* Name.Decorator */
 .highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
-.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
-.highlight .nf { color: #0000FF } /* Name.Function */
-.highlight .nl { color: #A0A000 } /* Name.Label */
-.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .ne { color: #&lt;span class="caps"&gt;D2413A&lt;/span&gt;; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt; } /* Name.Function */
+.highlight .nl { color: #&lt;span class="caps"&gt;A0A000&lt;/span&gt; } /* Name.Label */
+.highlight .nn { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt;; font-weight: bold } /* Name.Namespace */
 .highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
 .highlight .nv { color: #19177C } /* Name.Variable */
-.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .ow { color: #&lt;span class="caps"&gt;AA22FF&lt;/span&gt;; font-weight: bold } /* Operator.Word */
 .highlight .w { color: #bbbbbb } /* Text.Whitespace */
 .highlight .mb { color: #666666 } /* Literal.Number.Bin */
 .highlight .mf { color: #666666 } /* Literal.Number.Float */
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
-.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
-.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
-.highlight .sc { color: #BA2121 } /* Literal.String.Char */
-.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
-.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
-.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
-.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
-.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
-.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sa { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Affix */
+.highlight .sb { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Backtick */
+.highlight .sc { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Char */
+.highlight .dl { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Delimiter */
+.highlight .sd { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt;; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Double */
+.highlight .se { color: #&lt;span class="caps"&gt;BB6622&lt;/span&gt;; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Heredoc */
+.highlight .si { color: #&lt;span class="caps"&gt;BB6688&lt;/span&gt;; font-weight: bold } /* Literal.String.Interpol */
 .highlight .sx { color: #008000 } /* Literal.String.Other */
-.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
-.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .sr { color: #&lt;span class="caps"&gt;BB6688&lt;/span&gt; } /* Literal.String.Regex */
+.highlight .s1 { color: #&lt;span class="caps"&gt;BA2121&lt;/span&gt; } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
-.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .fm { color: #&lt;span class="caps"&gt;0000FF&lt;/span&gt; } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
@@ -942,38 +945,38 @@ h6:hover .anchor-link {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;
 &lt;style type="text/css"&gt;
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-fg { color: #&lt;span class="caps"&gt;3E424D&lt;/span&gt;; }
+.ansi-black-bg { background-color: #&lt;span class="caps"&gt;3E424D&lt;/span&gt;; }
 .ansi-black-intense-fg { color: #282C36; }
 .ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-red-fg { color: #&lt;span class="caps"&gt;E75C58&lt;/span&gt;; }
+.ansi-red-bg { background-color: #&lt;span class="caps"&gt;E75C58&lt;/span&gt;; }
+.ansi-red-intense-fg { color: #&lt;span class="caps"&gt;B22B31&lt;/span&gt;; }
+.ansi-red-intense-bg { background-color: #&lt;span class="caps"&gt;B22B31&lt;/span&gt;; }
 .ansi-green-fg { color: #00A250; }
 .ansi-green-bg { background-color: #00A250; }
 .ansi-green-intense-fg { color: #007427; }
 .ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-yellow-fg { color: #&lt;span class="caps"&gt;DDB62B&lt;/span&gt;; }
+.ansi-yellow-bg { background-color: #&lt;span class="caps"&gt;DDB62B&lt;/span&gt;; }
+.ansi-yellow-intense-fg { color: #&lt;span class="caps"&gt;B27D12&lt;/span&gt;; }
+.ansi-yellow-intense-bg { background-color: #&lt;span class="caps"&gt;B27D12&lt;/span&gt;; }
+.ansi-blue-fg { color: #&lt;span class="caps"&gt;208FFB&lt;/span&gt;; }
+.ansi-blue-bg { background-color: #&lt;span class="caps"&gt;208FFB&lt;/span&gt;; }
+.ansi-blue-intense-fg { color: #&lt;span class="caps"&gt;0065CA&lt;/span&gt;; }
+.ansi-blue-intense-bg { background-color: #&lt;span class="caps"&gt;0065CA&lt;/span&gt;; }
+.ansi-magenta-fg { color: #&lt;span class="caps"&gt;D160C4&lt;/span&gt;; }
+.ansi-magenta-bg { background-color: #&lt;span class="caps"&gt;D160C4&lt;/span&gt;; }
 .ansi-magenta-intense-fg { color: #A03196; }
 .ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
+.ansi-cyan-fg { color: #&lt;span class="caps"&gt;60C6C8&lt;/span&gt;; }
+.ansi-cyan-bg { background-color: #&lt;span class="caps"&gt;60C6C8&lt;/span&gt;; }
+.ansi-cyan-intense-fg { color: #&lt;span class="caps"&gt;258F8F&lt;/span&gt;; }
+.ansi-cyan-intense-bg { background-color: #&lt;span class="caps"&gt;258F8F&lt;/span&gt;; }
+.ansi-white-fg { color: #&lt;span class="caps"&gt;C5C1B4&lt;/span&gt;; }
+.ansi-white-bg { background-color: #&lt;span class="caps"&gt;C5C1B4&lt;/span&gt;; }
+.ansi-white-intense-fg { color: #&lt;span class="caps"&gt;A1A6B2&lt;/span&gt;; }
+.ansi-white-intense-bg { background-color: #&lt;span class="caps"&gt;A1A6B2&lt;/span&gt;; }
 
 .ansi-bold { font-weight: bold; }
 &lt;/style&gt;
@@ -982,19 +985,26 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Exploring-the-tendencies-in-Celebrating-Thanksgiving."&gt;Exploring the tendencies in Celebrating Thanksgiving.&lt;a class="anchor-link" href="#Exploring-the-tendencies-in-Celebrating-Thanksgiving."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="In-this-project-we-are-going-to-explore-the-tendencies-that-people-follow-in-this-celebration."&gt;In this project we are going to explore the tendencies that people follow in this celebration.&lt;a class="anchor-link" href="#In-this-project-we-are-going-to-explore-the-tendencies-that-people-follow-in-this-celebration."&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;h4 id="First,-we-are-going-to-check-what-dishes-and-desserts-are-the-favourites-among-people."&gt;First, we are going to check what dishes and desserts are the favourites among people.&lt;a class="anchor-link" href="#First,-we-are-going-to-check-what-dishes-and-desserts-are-the-favourites-among-people."&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="Secondly,-we-are-going-to-get-the-income-and-see-how-it-is-correlated-from-How-far-people-travel-to-celebrate-Thnksgiving."&gt;Secondly, we are going to get the income and see how it is correlated from How far people travel to celebrate Thnksgiving.&lt;a class="anchor-link" href="#Secondly,-we-are-going-to-get-the-income-and-see-how-it-is-correlated-from-How-far-people-travel-to-celebrate-Thnksgiving."&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="Finally,-we-are-going-to-conclude-our-project-Linking-celebration-and-friends-and-observing-what-age-range-tends-to-celebrate-most-Thanksgiving."&gt;Finally, we are going to conclude our project Linking celebration and friends and observing what age range tends to celebrate most Thanksgiving.&lt;a class="anchor-link" href="#Finally,-we-are-going-to-conclude-our-project-Linking-celebration-and-friends-and-observing-what-age-range-tends-to-celebrate-most-Thanksgiving."&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;h1 id="Explorando-las-tendencias-que-se-siguen-en-la-Celebracion-de-Accion-de-gracias."&gt;Explorando las tendencias que se siguen en la Celebracion de Accion de gracias.&lt;a class="anchor-link" href="#Explorando-las-tendencias-que-se-siguen-en-la-Celebracion-de-Accion-de-gracias."&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;h2 id="En-este-projecto-vamos-a-explorar-las-tendecias-que-la-gente-sigue-en-accion-de-gracias."&gt;En este projecto vamos a explorar las tendecias que la gente sigue en accion de gracias.&lt;a class="anchor-link" href="#En-este-projecto-vamos-a-explorar-las-tendecias-que-la-gente-sigue-en-accion-de-gracias."&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;#### Primero, vamos a  ver que platos y postres son los favoritos entre la&amp;nbsp;gente.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;#### En segundo lugar, vamos a obtener los ingresos y ver como esto esta correlacionado con la lejania desde la que la gente viaja para celebrar Accion de&amp;nbsp;Gracias.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;#### Finalmente, vamos a concluir nuestro projecto uniendo celebracion, amigos y observando que rango de edad tiende a celebrar mas accion de&amp;nbsp;gracias.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [12]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
 
 &lt;span class="n"&gt;dataset&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'https://raw.githubusercontent.com/fivethirtyeight/data/master/thanksgiving-2015/thanksgiving-2015-poll-data.csv'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;encoding&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'latin1'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1002,174 +1012,95 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[12]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div&gt;
-&lt;style&gt;
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
+&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;   RespondentID Do you celebrate Thanksgiving?  \
+0    4337954960                            Yes   
+1    4337951949                            Yes   
+2    4337935621                            Yes   
 
-    .dataframe thead th {
-        text-align: left;
-    }
+  What is typically the main dish at your Thanksgiving dinner?  \
+0                                             Turkey             
+1                                             Turkey             
+2                                             Turkey             
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-&lt;/style&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;RespondentID&lt;/th&gt;
-&lt;th&gt;Do you celebrate Thanksgiving?&lt;/th&gt;
-&lt;th&gt;What is typically the main dish at your Thanksgiving dinner?&lt;/th&gt;
-&lt;th&gt;What is typically the main dish at your Thanksgiving dinner? - Other (please specify)&lt;/th&gt;
-&lt;th&gt;How is the main dish typically cooked?&lt;/th&gt;
-&lt;th&gt;How is the main dish typically cooked? - Other (please specify)&lt;/th&gt;
-&lt;th&gt;What kind of stuffing/dressing do you typically have?&lt;/th&gt;
-&lt;th&gt;What kind of stuffing/dressing do you typically have? - Other (please specify)&lt;/th&gt;
-&lt;th&gt;What type of cranberry saucedo you typically have?&lt;/th&gt;
-&lt;th&gt;What type of cranberry saucedo you typically have? - Other (please specify)&lt;/th&gt;
-&lt;th&gt;...&lt;/th&gt;
-&lt;th&gt;Have you ever tried to meet up with hometown friends on Thanksgiving night?&lt;/th&gt;
-&lt;th&gt;Have you ever attended a "Friendsgiving?"&lt;/th&gt;
-&lt;th&gt;Will you shop any Black Friday sales on Thanksgiving Day?&lt;/th&gt;
-&lt;th&gt;Do you work in retail?&lt;/th&gt;
-&lt;th&gt;Will you employer make you work on Black Friday?&lt;/th&gt;
-&lt;th&gt;How would you describe where you live?&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
-&lt;th&gt;What is your gender?&lt;/th&gt;
-&lt;th&gt;How much total combined money did all members of your HOUSEHOLD earn last year?&lt;/th&gt;
-&lt;th&gt;US Region&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;0&lt;/th&gt;
-&lt;td&gt;4337954960&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Turkey&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Baked&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Bread-based&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;None&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Suburban&lt;/td&gt;
-&lt;td&gt;18 - 29&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;$75,000 to $99,999&lt;/td&gt;
-&lt;td&gt;Middle Atlantic&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;td&gt;4337951949&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Turkey&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Baked&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Bread-based&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Other (please specify)&lt;/td&gt;
-&lt;td&gt;Homemade cranberry gelatin ring&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Rural&lt;/td&gt;
-&lt;td&gt;18 - 29&lt;/td&gt;
-&lt;td&gt;Female&lt;/td&gt;
-&lt;td&gt;$50,000 to $74,999&lt;/td&gt;
-&lt;td&gt;East South Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;td&gt;4337935621&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Turkey&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Roasted&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Rice-based&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Homemade&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Suburban&lt;/td&gt;
-&lt;td&gt;18 - 29&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;$0 to $9,999&lt;/td&gt;
-&lt;td&gt;Mountain&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;4337933040&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Turkey&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Baked&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Bread-based&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Homemade&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Urban&lt;/td&gt;
-&lt;td&gt;30 - 44&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;$200,000 and up&lt;/td&gt;
-&lt;td&gt;Pacific&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;4&lt;/th&gt;
-&lt;td&gt;4337931983&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Tofurkey&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Baked&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Bread-based&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Canned&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Urban&lt;/td&gt;
-&lt;td&gt;30 - 44&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;$100,000 to $124,999&lt;/td&gt;
-&lt;td&gt;Pacific&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;5 rows × 65 columns&lt;/p&gt;
-&lt;/div&gt;
+  What is typically the main dish at your Thanksgiving dinner? - Other (please specify)  \
+0                                                NaN                                      
+1                                                NaN                                      
+2                                                NaN                                      
+
+  How is the main dish typically cooked?  \
+0                                  Baked   
+1                                  Baked   
+2                                Roasted   
+
+  How is the main dish typically cooked? - Other (please specify)  \
+0                                                NaN                
+1                                                NaN                
+2                                                NaN                
+
+  What kind of stuffing/dressing do you typically have?  \
+0                                        Bread-based      
+1                                        Bread-based      
+2                                         Rice-based      
+
+  What kind of stuffing/dressing do you typically have? - Other (please specify)  \
+0                                                NaN                               
+1                                                NaN                               
+2                                                NaN                               
+
+  What type of cranberry saucedo you typically have?  \
+0                                               None   
+1                             Other (please specify)   
+2                                           Homemade   
+
+  What type of cranberry saucedo you typically have? - Other (please specify)  \
+0                                                NaN                            
+1                    Homemade cranberry gelatin ring                            
+2                                                NaN                            
+
+          ...          \
+0         ...           
+1         ...           
+2         ...           
+
+  Have you ever tried to meet up with hometown friends on Thanksgiving night?  \
+0                                                Yes                            
+1                                                 No                            
+2                                                Yes                            
+
+  Have you ever attended a "Friendsgiving?"  \
+0                                        No   
+1                                        No   
+2                                       Yes   
+
+  Will you shop any Black Friday sales on Thanksgiving Day?  \
+0                                                 No          
+1                                                Yes          
+2                                                Yes          
+
+  Do you work in retail? Will you employer make you work on Black Friday?  \
+0                     No                                              NaN   
+1                     No                                              NaN   
+2                     No                                              NaN   
+
+  How would you describe where you live?      Age What is your gender?  \
+0                               Suburban  18 - 29                 Male   
+1                                  Rural  18 - 29               Female   
+2                               Suburban  18 - 29                 Male   
+
+  How much total combined money did all members of your HOUSEHOLD earn last year?  \
+0                                 $75,000 to $99,999                                
+1                                 $50,000 to $74,999                                
+2                                       $0 to $9,999                                
+
+            US Region  
+0     Middle Atlantic  
+1  East South Central  
+2            Mountain  
+
+[3 rows x 65 columns]
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1177,7 +1108,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [13]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [3]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;header&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;unique&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -1188,13 +1119,13 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [14]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [4]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;cel_thanks_count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Do you celebrate Thanksgiving?"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;value_counts&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;cel_thanks&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"Do you celebrate Thanksgiving?"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;'Yes'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 
-&lt;span class="n"&gt;cel_thanks&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;cel_thanks&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1202,174 +1133,95 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[14]:&lt;/div&gt;
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div&gt;
-&lt;style&gt;
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
+&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;   RespondentID Do you celebrate Thanksgiving?  \
+0    4337954960                            Yes   
+1    4337951949                            Yes   
+2    4337935621                            Yes   
 
-    .dataframe thead th {
-        text-align: left;
-    }
+  What is typically the main dish at your Thanksgiving dinner?  \
+0                                             Turkey             
+1                                             Turkey             
+2                                             Turkey             
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-&lt;/style&gt;
-&lt;table border="1" class="dataframe"&gt;
-&lt;thead&gt;
-&lt;tr style="text-align: right;"&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;RespondentID&lt;/th&gt;
-&lt;th&gt;Do you celebrate Thanksgiving?&lt;/th&gt;
-&lt;th&gt;What is typically the main dish at your Thanksgiving dinner?&lt;/th&gt;
-&lt;th&gt;What is typically the main dish at your Thanksgiving dinner? - Other (please specify)&lt;/th&gt;
-&lt;th&gt;How is the main dish typically cooked?&lt;/th&gt;
-&lt;th&gt;How is the main dish typically cooked? - Other (please specify)&lt;/th&gt;
-&lt;th&gt;What kind of stuffing/dressing do you typically have?&lt;/th&gt;
-&lt;th&gt;What kind of stuffing/dressing do you typically have? - Other (please specify)&lt;/th&gt;
-&lt;th&gt;What type of cranberry saucedo you typically have?&lt;/th&gt;
-&lt;th&gt;What type of cranberry saucedo you typically have? - Other (please specify)&lt;/th&gt;
-&lt;th&gt;...&lt;/th&gt;
-&lt;th&gt;Have you ever tried to meet up with hometown friends on Thanksgiving night?&lt;/th&gt;
-&lt;th&gt;Have you ever attended a "Friendsgiving?"&lt;/th&gt;
-&lt;th&gt;Will you shop any Black Friday sales on Thanksgiving Day?&lt;/th&gt;
-&lt;th&gt;Do you work in retail?&lt;/th&gt;
-&lt;th&gt;Will you employer make you work on Black Friday?&lt;/th&gt;
-&lt;th&gt;How would you describe where you live?&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
-&lt;th&gt;What is your gender?&lt;/th&gt;
-&lt;th&gt;How much total combined money did all members of your HOUSEHOLD earn last year?&lt;/th&gt;
-&lt;th&gt;US Region&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;0&lt;/th&gt;
-&lt;td&gt;4337954960&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Turkey&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Baked&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Bread-based&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;None&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Suburban&lt;/td&gt;
-&lt;td&gt;18 - 29&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;$75,000 to $99,999&lt;/td&gt;
-&lt;td&gt;Middle Atlantic&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;td&gt;4337951949&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Turkey&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Baked&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Bread-based&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Other (please specify)&lt;/td&gt;
-&lt;td&gt;Homemade cranberry gelatin ring&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Rural&lt;/td&gt;
-&lt;td&gt;18 - 29&lt;/td&gt;
-&lt;td&gt;Female&lt;/td&gt;
-&lt;td&gt;$50,000 to $74,999&lt;/td&gt;
-&lt;td&gt;East South Central&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;td&gt;4337935621&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Turkey&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Roasted&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Rice-based&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Homemade&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Suburban&lt;/td&gt;
-&lt;td&gt;18 - 29&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;$0 to $9,999&lt;/td&gt;
-&lt;td&gt;Mountain&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;3&lt;/th&gt;
-&lt;td&gt;4337933040&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Turkey&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Baked&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Bread-based&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Homemade&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Urban&lt;/td&gt;
-&lt;td&gt;30 - 44&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;$200,000 and up&lt;/td&gt;
-&lt;td&gt;Pacific&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th&gt;4&lt;/th&gt;
-&lt;td&gt;4337931983&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Tofurkey&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Baked&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Bread-based&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Canned&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;...&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;NaN&lt;/td&gt;
-&lt;td&gt;Urban&lt;/td&gt;
-&lt;td&gt;30 - 44&lt;/td&gt;
-&lt;td&gt;Male&lt;/td&gt;
-&lt;td&gt;$100,000 to $124,999&lt;/td&gt;
-&lt;td&gt;Pacific&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;5 rows × 65 columns&lt;/p&gt;
-&lt;/div&gt;
+  What is typically the main dish at your Thanksgiving dinner? - Other (please specify)  \
+0                                                NaN                                      
+1                                                NaN                                      
+2                                                NaN                                      
+
+  How is the main dish typically cooked?  \
+0                                  Baked   
+1                                  Baked   
+2                                Roasted   
+
+  How is the main dish typically cooked? - Other (please specify)  \
+0                                                NaN                
+1                                                NaN                
+2                                                NaN                
+
+  What kind of stuffing/dressing do you typically have?  \
+0                                        Bread-based      
+1                                        Bread-based      
+2                                         Rice-based      
+
+  What kind of stuffing/dressing do you typically have? - Other (please specify)  \
+0                                                NaN                               
+1                                                NaN                               
+2                                                NaN                               
+
+  What type of cranberry saucedo you typically have?  \
+0                                               None   
+1                             Other (please specify)   
+2                                           Homemade   
+
+  What type of cranberry saucedo you typically have? - Other (please specify)  \
+0                                                NaN                            
+1                    Homemade cranberry gelatin ring                            
+2                                                NaN                            
+
+          ...          \
+0         ...           
+1         ...           
+2         ...           
+
+  Have you ever tried to meet up with hometown friends on Thanksgiving night?  \
+0                                                Yes                            
+1                                                 No                            
+2                                                Yes                            
+
+  Have you ever attended a "Friendsgiving?"  \
+0                                        No   
+1                                        No   
+2                                       Yes   
+
+  Will you shop any Black Friday sales on Thanksgiving Day?  \
+0                                                 No          
+1                                                Yes          
+2                                                Yes          
+
+  Do you work in retail? Will you employer make you work on Black Friday?  \
+0                     No                                              NaN   
+1                     No                                              NaN   
+2                     No                                              NaN   
+
+  How would you describe where you live?      Age What is your gender?  \
+0                               Suburban  18 - 29                 Male   
+1                                  Rural  18 - 29               Female   
+2                               Suburban  18 - 29                 Male   
+
+  How much total combined money did all members of your HOUSEHOLD earn last year?  \
+0                                 $75,000 to $99,999                                
+1                                 $50,000 to $74,999                                
+2                                       $0 to $9,999                                
+
+            US Region  
+0     Middle Atlantic  
+1  East South Central  
+2            Mountain  
+
+[3 rows x 65 columns]
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1380,13 +1232,13 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="2)-Exploring-Main-dishes-people-tend-to-eat-during-Thanksgiving-dinner"&gt;2) Exploring Main dishes people tend to eat during Thanksgiving dinner&lt;a class="anchor-link" href="#2)-Exploring-Main-dishes-people-tend-to-eat-during-Thanksgiving-dinner"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="2)-Explorando-los-platos-principales-que-la-gente-tiene-a-comer-durante-la-cena-de-Accion-de-gracias."&gt;2) Explorando los platos principales que la gente tiene a comer durante la cena de Accion de gracias.&lt;a class="anchor-link" href="#2)-Explorando-los-platos-principales-que-la-gente-tiene-a-comer-durante-la-cena-de-Accion-de-gracias."&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [15]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [5]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;thanks_dishes_count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'What is typically the main dish at your Thanksgiving dinner?'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;value_counts&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -1446,9 +1298,9 @@ Name: Do you typically have gravy?, dtype: object
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h6 id="Results:"&gt;Results:&lt;a class="anchor-link" href="#Results:"&gt;¶&lt;/a&gt;&lt;/h6&gt;&lt;ul&gt;
-&lt;li&gt;20 have Tofurkey for dinner&lt;/li&gt;
-&lt;li&gt;From those, 12 use gravy on it.&lt;/li&gt;
+&lt;h2 id="Resultados:"&gt;Resultados:&lt;a class="anchor-link" href="#Resultados:"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;20 tomaron Tofurkey for&amp;nbsp;cenar.&lt;/li&gt;
+&lt;li&gt;De estos, 12 usaron gravy (salsa de reino unido) con el&amp;nbsp;Tofurkey.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1458,13 +1310,13 @@ Name: Do you typically have gravy?, dtype: object
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="3)-Let's-see-what-pies-people-eat"&gt;3) Let's see what pies people eat&lt;a class="anchor-link" href="#3)-Let's-see-what-pies-people-eat"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="3)-Veamos-ahora-que-pasteles-comio-la-gente-durante-esta-celebración."&gt;3) Veamos ahora que pasteles comio la gente durante esta celebración.&lt;a class="anchor-link" href="#3)-Veamos-ahora-que-pasteles-comio-la-gente-durante-esta-celebración."&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [16]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [6]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;apple_isnull&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isnull&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Which type of pie is typically served at your Thanksgiving dinner? Please select all that apply. - Apple'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
@@ -1496,7 +1348,7 @@ dtype: int64
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="4)-Converting-Age-to-Numeric"&gt;4) Converting Age to Numeric&lt;a class="anchor-link" href="#4)-Converting-Age-to-Numeric"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="4)-Convertiendo-la-edad-a-numeros."&gt;4) Convertiendo la edad a numeros.&lt;a class="anchor-link" href="#4)-Convertiendo-la-edad-a-numeros."&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1546,16 +1398,19 @@ Name: int_age, dtype: float64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h6 id="Results:"&gt;Results:&lt;a class="anchor-link" href="#Results:"&gt;¶&lt;/a&gt;&lt;/h6&gt;&lt;ul&gt;
-&lt;li&gt;As we can observe, with the describe method we have some measurements on the ages we are working with.&lt;/li&gt;
-&lt;li&gt;We have to be aware that the ages are not exact, because our original data contains a range and we are taking the lowest age in that range. Not true ages but quitte accurate according to the data we are working with.&lt;/li&gt;
+&lt;h3 id="Resultados:"&gt;Resultados:&lt;a class="anchor-link" href="#Resultados:"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;As we can observe, with the describe method we have some measurements on the ages we are working&amp;nbsp;with.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Como podemos observar, con el metodo descrito podemos hacer mediciones sobre la edad para trabajar con&amp;nbsp;esta.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tenemos que estar atendos a que las edades no son exactas porque nuestros datos originales estaba compuesto por un rango y nosotros estamos cogiendo siempre el minimo de ese rango. Es decir, las edad no son verdaderas pero si una&amp;nbsp;aproximacion.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [18]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [7]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Age'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;value_counts&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -1566,7 +1421,7 @@ Name: int_age, dtype: float64&lt;/pre&gt;
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[18]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[7]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;45 - 59    286
 60+        264
@@ -1583,7 +1438,7 @@ Name: Age, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="5)-Converting-Income-to-Numeric"&gt;5) Converting Income to Numeric&lt;a class="anchor-link" href="#5)-Converting-Income-to-Numeric"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="5)-Convirtiendo-los-ingresos-a-numerico."&gt;5) Convirtiendo los ingresos a numerico.&lt;a class="anchor-link" href="#5)-Convirtiendo-los-ingresos-a-numerico."&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1638,8 +1493,12 @@ Name: int_income, dtype: float64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h6 id="Results:"&gt;Results:&lt;a class="anchor-link" href="#Results:"&gt;¶&lt;/a&gt;&lt;/h6&gt;&lt;p&gt;WE should be aware that we have a range of salary but we are only using the lowest value in each range.&lt;/p&gt;
-&lt;p&gt;We can se that the mean salary is pretty high. We have also a large standard deviation.&lt;/p&gt;
+&lt;h3 id="Resultados:"&gt;Resultados:&lt;a class="anchor-link" href="#Resultados:"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Debemos estar atentos a que el rango salarial, al igual que ocurria con la edad, es un rango y por tanto estamos cogiendo el minimo valor de ese&amp;nbsp;rango.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Podemos apreciar como la media de salario es bastante alta. Tambien tenemos una desviacion estandar bastante&amp;nbsp;elevada.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1648,7 +1507,7 @@ Name: int_income, dtype: float64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="6)-Correlating-Travel-Distance-and-Income"&gt;6) Correlating Travel Distance and Income&lt;a class="anchor-link" href="#6)-Correlating-Travel-Distance-and-Income"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="6)-Correacionando-la-distancia-viajada-y-los-ingresos."&gt;6) Correacionando la distancia viajada y los ingresos.&lt;a class="anchor-link" href="#6)-Correacionando-la-distancia-viajada-y-los-ingresos."&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1732,12 +1591,12 @@ Name: How far will you travel for Thanksgiving?, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="Results:"&gt;Results:&lt;a class="anchor-link" href="#Results:"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;People with incomes lower than 150000 is more used to celebrate thankgiing at home and less used to go out of town and far away.&lt;/p&gt;
+&lt;h3 id="Resultados:"&gt;Resultados:&lt;a class="anchor-link" href="#Resultados:"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Gente con ingresos por debajo de 150000 esta mas acostumbrada a celebrar Accion de gracias en casa y menos habituada a salir de la ciudad o lejos de&amp;nbsp;esta.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;People with high incomes (&gt;150000) Celebrates it at home as well.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Gente con altos ingresos (&gt;150000) celebra esta fiesta en casa&amp;nbsp;tambien.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;One interesting data is that people with income lower than 150000 is more used to go out of town but not far away than people with high income, it can be because most of them live out of their family town and they have to move to visit them.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Algo interesante que obtenemos de los datos es que la gente con bajos ingresos, por debajo de 150000, esta mas habituada a salir fuera de la ciudad pero no tan lejos como la gente con ingresos altos. Esto puede ser porque la mayoria de ellos viven lejos de sus familias y tienen que viajar para&amp;nbsp;visitarles.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -1748,7 +1607,7 @@ Name: How far will you travel for Thanksgiving?, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="7)-Linking-Friendship-and-Age"&gt;7) Linking Friendship and Age&lt;a class="anchor-link" href="#7)-Linking-Friendship-and-Age"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="7)-Relacionando-Amistad-y-edad.-Friendsgiving-una-version-de-la-fiesta-para-jovenes."&gt;7) Relacionando Amistad y edad. Friendsgiving una version de la fiesta para jovenes.&lt;a class="anchor-link" href="#7)-Relacionando-Amistad-y-edad.-Friendsgiving-una-version-de-la-fiesta-para-jovenes."&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1788,7 +1647,7 @@ Name: How far will you travel for Thanksgiving?, dtype: int64&lt;/pre&gt;
 &lt;table border="1" class="dataframe"&gt;
 &lt;thead&gt;
 &lt;tr style="text-align: right;"&gt;
-&lt;th&gt;Have you ever attended a "Friendsgiving?"&lt;/th&gt;
+&lt;th&gt;Have you ever attended a &amp;#8220;Friendsgiving?&amp;#8221;&lt;/th&gt;
 &lt;th&gt;No&lt;/th&gt;
 &lt;th&gt;Yes&lt;/th&gt;
 &lt;/tr&gt;
@@ -1853,7 +1712,7 @@ Name: How far will you travel for Thanksgiving?, dtype: int64&lt;/pre&gt;
 &lt;table border="1" class="dataframe"&gt;
 &lt;thead&gt;
 &lt;tr style="text-align: right;"&gt;
-&lt;th&gt;Have you ever attended a "Friendsgiving?"&lt;/th&gt;
+&lt;th&gt;Have you ever attended a &amp;#8220;Friendsgiving?&amp;#8221;&lt;/th&gt;
 &lt;th&gt;No&lt;/th&gt;
 &lt;th&gt;Yes&lt;/th&gt;
 &lt;/tr&gt;
@@ -1887,8 +1746,8 @@ Name: How far will you travel for Thanksgiving?, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="Findings:"&gt;Findings:&lt;a class="anchor-link" href="#Findings:"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;As we can appreciate, Young people is more likely to celebrate thanksgiving than olders.&lt;/li&gt;
+&lt;h3 id="Conclusiones:"&gt;Conclusiones:&lt;a class="anchor-link" href="#Conclusiones:"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Como podemos ver, la gente joven es mas proclive a celebrar accion de gracias que los mas&amp;nbsp;mayores.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
