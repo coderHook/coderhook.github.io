@@ -104,6 +104,16 @@
        <p>Al principio ire colgando ejercicios basicos, quiza alguna cosita mas compleja que haga para mostrar como se lleva a cabo un proyecto de Data Science,
        y que asi quede mas claro las series de post que ahremos sobre limpieza de datos, Visulaizacion de los datos, donde encontrar Datasets y por ultimo tecnicas de
        "Machine learning" que podemos utilizar para enseñar a nuestra maquina a sacar predicciones basandose en los datos que tenemos.
+       Muchos de los trabajos aqui expuestos originalmente fueron creados en Ingles, se encuentran subidos a mi pagina de Github <a href="https://github.com/coderHook/" title="My Github
+       profile" itemprop="url"><span itemprop="nickname">coderHook</span></a> siendo estos traducidos al castellano para hacer llegar el blog a toda la comunidad hispano-hablante.
+       </p>
+
+       <p>
+       Los posts tienen principalmente un enfoque práctico. Se pretende, que a partir de un "dataset" se trabaje con un par de tecnicas que se utilizan en DataScience para obtener
+       conclusiones y que le seran de utilidad al lector que quiera iniciarse en DataScience. Poco a poco se va profundizando y enfocandonos mas en temas mas sociales como "La visualizacion del sesgo
+       que existe en determinadas carreras en funcion del sexo", "Indices de criminalidad" y descubriremos como identificar tendencias en grupos como por ejemplo estudiando que grupos de personas
+       celebran "Accion de Gracias" dandonos esto la posibilidad de extrapolarlo a otros ambitos de la vida social de los individuos que forman una determinada comunidad y que puede ayudarnos a
+       predecir determinados comportamientos y predecir posibles problemas que puedan existir.
        </p>
 
        <p>
@@ -123,12 +133,12 @@
             </header>
             <ul class="list-all-articles">
                 <li>
-                <a href="https://github.com/coderHook/Apple-predicting-price/blob/master/apple_predictions.ipynb" title="Predicting the Stock Market Using Machine Learning">Predicting the Stock Market Using Machine Learning</a> <span class="proj-desc">Prediciendo los mercados usando Python Machine learning Techniques such as, linear regression and tree forest</span>
+                <a href="https://github.com/coderHook/Apple-predicting-price/blob/master/apple_predictions.ipynb" title="Predicting the Stock Market Using Machine Learning">Predicting the Stock Market Using Machine Learning</a> <span class="proj-desc">Prediciendo los mercados usando Python técnicas de Machine learning tales como, Regresion Lineal y arboles de decisión.</span>
                 </li>
             </ul>
             <ul class="list-all-articles">
                 <li>
-                <a href="https://github.com/coderHook/Project--Winning-Jeopardy" title="Ganando al juego de Jeopardy usando Python y tecnicas de analisis de datos.">Ganando al juego de Jeopardy usando Python y tecnicas de analisis de datos.</a> <span class="proj-desc">Jeopardy is an interesting game on we can use our data science habilities toknow what question can increase our chances to win the game</span>
+                <a href="https://github.com/coderHook/Project--Winning-Jeopardy" title="Ganando al juego de Jeopardy usando Python y tecnicas de analisis de datos.">Ganando al juego de Jeopardy usando Python y tecnicas de analisis de datos.</a> <span class="proj-desc">Jeopardy es un  interesante juego donde podemos mostrar nuestras habilidades de DataSciencepara saber de antemano que preguntas son mas probables de aparecer.</span>
                 </li>
             </ul>
         </div>
@@ -201,7 +211,7 @@
                 </section>
             </article>
             <article>
-                <a href="./Lets see who and what version of star wars people tend to like more.">Encuestas estar wars. ¿Que versiones de la saga son mas populares y entre&nbsp;quienes?  </a>
+                <a href="./Lets see who and what version of star wars people tend to like more.">Encuestas Star Wars. ¿Que versiones de la saga son mas populares y entre&nbsp;quienes?  </a>
                 <section>
                     posted in
                 <a href="./categories.html#data-cleaning-ref">Data cleaning</a>
