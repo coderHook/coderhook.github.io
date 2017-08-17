@@ -74,15 +74,15 @@ PROJECTS = [
             'url':
             'https://github.com/coderHook/Apple-predicting-price/blob/master/apple_predictions.ipynb',
             'description': 'Prediciendo los mercados usando Python'
-            ' Machine learning Techniques'
-            ' such as, linear regression and tree forest'},
+            ' técnicas de Machine learning'
+            ' tales como, Regresion Lineal y arboles de decisión.'},
         {
             'name': 'Ganando al juego de Jeopardy usando Python y tecnicas de analisis de datos.',
             'url':
             'https://github.com/coderHook/Project--Winning-Jeopardy',
-            'description': 'Jeopardy is an '
-            'interesting game on we can use our data science habilities to'
-            'know what question can increase our chances to win the game'}
+            'description': 'Jeopardy es un '
+            ' interesante juego donde podemos mostrar nuestras habilidades de DataScience'
+            'para saber de antemano que preguntas son mas probables de aparecer.'}
         ]
 
 LANDING_PAGE_ABOUT = {'title': 'Aprendiendo DataScience para el bien Social.',
@@ -115,6 +115,16 @@ LANDING_PAGE_ABOUT = {'title': 'Aprendiendo DataScience para el bien Social.',
        <p>Al principio ire colgando ejercicios basicos, quiza alguna cosita mas compleja que haga para mostrar como se lleva a cabo un proyecto de Data Science,
        y que asi quede mas claro las series de post que ahremos sobre limpieza de datos, Visulaizacion de los datos, donde encontrar Datasets y por ultimo tecnicas de
        "Machine learning" que podemos utilizar para enseñar a nuestra maquina a sacar predicciones basandose en los datos que tenemos.
+       Muchos de los trabajos aqui expuestos originalmente fueron creados en Ingles, se encuentran subidos a mi pagina de Github <a href="https://github.com/coderHook/" title="My Github
+       profile" itemprop="url"><span itemprop="nickname">coderHook</span></a> siendo estos traducidos al castellano para hacer llegar el blog a toda la comunidad hispano-hablante.
+       </p>
+
+       <p>
+       Los posts tienen principalmente un enfoque práctico. Se pretende, que a partir de un "dataset" se trabaje con un par de tecnicas que se utilizan en DataScience para obtener
+       conclusiones y que le seran de utilidad al lector que quiera iniciarse en DataScience. Poco a poco se va profundizando y enfocandonos mas en temas mas sociales como "La visualizacion del sesgo
+       que existe en determinadas carreras en funcion del sexo", "Indices de criminalidad" y descubriremos como identificar tendencias en grupos como por ejemplo estudiando que grupos de personas
+       celebran "Accion de Gracias" dandonos esto la posibilidad de extrapolarlo a otros ambitos de la vida social de los individuos que forman una determinada comunidad y que puede ayudarnos a
+       predecir determinados comportamientos y predecir posibles problemas que puedan existir.
        </p>
 
        <p>

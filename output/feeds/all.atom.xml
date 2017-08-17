@@ -12659,7 +12659,7 @@ h6:hover .anchor-link {
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="Python"></category><category term="SQL"></category></entry><entry><title>Encuestas estar wars. ¿Que versiones de la saga son mas populares y entre quienes?</title><link href="https://coderhook.github.io/Lets%20see%20who%20and%20what%20version%20of%20star%20wars%20people%20tend%20to%20like%20more." rel="alternate"></link><published>2017-06-02T20:00:00+02:00</published><updated>2017-06-02T20:00:00+02:00</updated><author><name>coderHook</name></author><id>tag:coderhook.github.io,2017-06-02:/Lets see who and what version of star wars people tend to like more.</id><summary type="html">
+</content><category term="Python"></category><category term="SQL"></category></entry><entry><title>Encuestas Star Wars. ¿Que versiones de la saga son mas populares y entre quienes?</title><link href="https://coderhook.github.io/Lets%20see%20who%20and%20what%20version%20of%20star%20wars%20people%20tend%20to%20like%20more." rel="alternate"></link><published>2017-06-02T20:00:00+02:00</published><updated>2017-06-02T20:00:00+02:00</updated><author><name>coderHook</name></author><id>tag:coderhook.github.io,2017-06-02:/Lets see who and what version of star wars people tend to like more.</id><summary type="html">
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
