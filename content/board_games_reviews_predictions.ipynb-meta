@@ -1,7 +1,0 @@
-Title: Prediciendo Ratings de Juegos usando Regression Lineal.
-Slug: predicting board games reviews lr
-Date: 2017-07-06 22:00
-Category: Statistics
-Tags: Python, Linear Regression, Statistics
-Author: coderHook
-Summary: En este proyecto vamos a escoger que error utilizar para nuestro modelo. Trabajaremos con Clusters y comprobaremos su correlacion. Finalmente, vamos a crear un modelo para realizar nuestras predicciones y ver como se ajustan estas a la realidad.

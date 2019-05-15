@@ -1,7 +1,0 @@
-Title: Aprendiendo a ganar al juego de preguntas "Jeopardy" usando Python y Analisis de datos. (part 1/2)
-Slug: predicting jeopardy game questions
-Date: 2017-07-04 22:00
-Category: Statistics
-Tags: Python, Linear Regression, Statistics
-Author: coderHook
-Summary: En este proyecto vamos a ver como: Normalizar el texto. Buscar respuestas en las propias preguntas. Buscar preguntas que se suelen repetir. (Intentando ganar de forma facil :), Preguntas con alto y bajo valor. Maximizando los puntos que obtenemos. Aplicando "Chi-squared test"

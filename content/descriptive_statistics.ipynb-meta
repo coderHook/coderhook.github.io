@@ -1,7 +1,0 @@
-Title: Estadistica Descriptiva con Python y Pandas.
-Slug: Descriptive Statistics
-Date: 2017-06-10 21:00
-Category: Data Visualization
-Tags: Python, Pandas, Statistics
-Author: coderHook
-Summary: En este notebook vamos a calcular la media, Varianza, la deviacion estandar, coVarianza y correlacion y tambien vamos a ver estos datos utilizando algunas tecnicas de Visulizacion de datos con matplotlib para asi entender mas en profundidad lo que estamos haciendo.
